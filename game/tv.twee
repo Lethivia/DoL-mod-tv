@@ -1,0 +1,28 @@
+:: Watch TV
+<<tvshowad>>
+<br><br>
+
+<<set _tvlist to getProgramsAtTime(Time.date)>>
+<<set _keys to Object.keys(_tvlist)>>
+<<for _i to 0; _i lt _keys.length; _i++>>
+	<<set _tmp to _tvlist[_keys[_i]]>>
+	<<link [[_tmp.name (_tmp.passtime分钟)|_tmp.passage]]>><<pass _tmp.passtime>>_tmp.onclick<</link>>_tmp.suffix
+<</for>>
+
+<br><br>
+<<link [[查看节目单|Show TV List]]>><<set $tvlistdate to new DateTime(Time.date)>><</link>>
+<br>
+<<link [[返回|Bedroom]]>><</link>>
+
+
+:: Show TV List
+<<set _tvlist to getDailyScheduleString($tvlistdate)>>
+
+_tvlist
+
+<br>
+<<link [[前一天|Show TV List]]>>$tvlistdate.addDays(-1)<</link>>
+<br>
+<<link [[后一天|Show TV List]]>>$tvlistdate.addDays(1)<</link>>
+<br>
+<<tvreturn>>

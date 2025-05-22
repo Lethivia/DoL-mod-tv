@@ -1,0 +1,36 @@
+
+:: TV Weather Forecast
+这是天气预报
+<<set _limit to Time.date.timeStamp+24*3600>>
+<<set _ts to null>>
+
+//0 晴天
+//1 薄云
+//2 阴天
+//3 小雨
+//4 大雨
+<<for _i to 0; _i lt V.weatherObj.keypointsArr.length and V.weatherObj.keypointsArr[_i].timestamp lt _limit; _i++>>
+	<<set _kp to V.weatherObj.keypointsArr[_i]>>
+	<<if _kp.value gte 3>>
+		<<set _ts to _kp.timestamp>>
+	<</if>>
+<</for>>
+<<if Weather.value gte 3>>
+<</if>>
+<<if _ts>>
+	<<set _time to Math.floot((_ts - Time.date.timeStamp) / 3600)>>
+	<<set _rain to "雨">>
+	<<if Time.season is 'winter' or Time.season is 'spring'>>
+		<<set _rain to "雨雪">>
+	<</if>>
+	<<if _time lt 1>>
+		马上将有_rain
+	<<else>>
+		_time小时候将有_rain
+	<</if>>
+<<else>>
+	未来一段时间不会有雨。
+<</if>>
+
+<br>
+<<tvreturn>>

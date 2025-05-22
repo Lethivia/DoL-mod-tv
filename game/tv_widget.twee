@@ -1,0 +1,10 @@
+:: TV Widget [widget]
+
+<<widget tvshowad>>
+	这是几条广告
+<</widget>>
+
+<<widget tvreturn>>
+	<br>
+	<<link [[返回|Watch TV]]>><</link>>
+<</widget>>
