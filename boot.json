@@ -1,0 +1,37 @@
+{
+    "name": "tv",
+    "version": "5.4.9.1",
+    "styleFileList": [],
+    "scriptFileList_inject_early": [],
+    "scriptFileList": [
+		"game/tv.js"
+	],
+    "tweeFileList": [
+        "game/tv_weather_forecast.twee",
+        "game/tv_recipe.twee",
+        "game/tv.twee",
+        "game/tv_widget.twee"
+    ],
+    "imgFileList": [],
+    "additionFile": [],
+    "addonPlugin": [
+        {
+            "modName": "TweeReplacer",
+            "addonName": "TweeReplacerAddon",
+            "modVersion": "1.0.0",
+            "params": [
+                {
+                    "passage": "Bedroom",
+                    "findString": "<<tableText \"noicon\">>",
+                    "replace": "<<tableText \"noicon\">><br>\n<<link [[电视|Watch TV]]>><</link>>\n<br>\n"
+                }
+            ]
+        }
+    ],
+    "dependenceInfo": [
+        {
+            "modName": "TweeReplacer",
+            "version": "^1.0.0"
+        }
+    ]
+}

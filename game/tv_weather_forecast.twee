@@ -1,36 +1,70 @@
-
 :: TV Weather Forecast
-这是天气预报
 <<set _limit to Time.date.timeStamp+24*3600>>
 <<set _ts to null>>
 
-//0 晴天
-//1 薄云
-//2 阴天
-//3 小雨
-//4 大雨
+/*
+0 晴天
+1 薄云
+2 阴天
+3 小雨
+4 大雨
+*/
 <<for _i to 0; _i lt V.weatherObj.keypointsArr.length and V.weatherObj.keypointsArr[_i].timestamp lt _limit; _i++>>
 	<<set _kp to V.weatherObj.keypointsArr[_i]>>
-	<<if _kp.value gte 3>>
+	<<if (Weather.value lt 3 and _kp.value gte 3) or (Weather.value gte 3 and _kp.value lt 3)>>
 		<<set _ts to _kp.timestamp>>
 	<</if>>
 <</for>>
-<<if Weather.value gte 3>>
-<</if>>
-<<if _ts>>
-	<<set _time to Math.floot((_ts - Time.date.timeStamp) / 3600)>>
-	<<set _rain to "雨">>
-	<<if Time.season is 'winter' or Time.season is 'spring'>>
-		<<set _rain to "雨雪">>
-	<</if>>
-	<<if _time lt 1>>
-		马上将有_rain
-	<<else>>
-		_time小时候将有_rain
-	<</if>>
-<<else>>
-	未来一段时间不会有雨。
+
+<<set _rain to "<span class='blue'>雨</span>">>
+<<if Time.season is 'winter' or Time.season is 'spring'>>
+	<<set _rain to "<span class='lblue'>雨雪</span>">>
 <</if>>
 
+<<if _ts>>
+	<<set _time to Math.floor((_ts - Time.date.timeStamp) / 3600)>>
+<</if>>
+
+<<if Weather.bloodMoon and Weather.dayState is "night">>
+	一位..(嘶呲)..正..报..(嗞嗞)..：
+<<elseif Weather.bloodMoon>>
+	一位衣着靓丽但长相怪异的主持人正在播报天气：
+<<else>>
+	一位衣着靓丽的主持人正在播报天气：
+<</if>>
 <br>
+
+<<if Weather.bloodMoon and Weather.dayState is "night">>
+	<span class='wraith'>
+	<<print [
+	`血月..至，...(嘶)..裂开...（嗡鸣）...隙，...（咯咯）...重复。`,
+	`今晚...（嘶嘶）...██...（滴答）...出现，..（咯吱）...不...任何...（咯咯）...声音。`,
+	][random(0,1)]>>
+	</span>
+<<else>>
+	<<if Weather.value gte 3>>
+		<<if _ts>>
+			<<if _time lt 1>>
+				当前的_rain马上将要停止。
+			<<else>>
+				当前的_rain还将持续约_time小时。
+			<</if>>
+		<<else>>
+			当前的_rain将会持续很长一段时间。
+		<</if>>
+	<<else>>
+		<<if _ts>>
+			<<if _time lt 1>>
+				马上将要下雨。
+			<<else>>
+				约_time小时候将有_rain。
+			<</if>>
+		<<else>>
+			当前的好天气将持续下去。
+		<</if>>
+	<</if>>
+
+<</if>>
+<br>
+
 <<tvreturn>>

@@ -1,0 +1,69 @@
+:: TV Recipe Widget [widget]
+<<widget "tv_recipe_select">>
+	<<unset $tv_recipe>>
+	<<set _food_keys to Object.keys(setup.plants)>>
+	<<set _possible_recipes to []>>
+	<<set $_foodOptions to Object.entries(clone(setup.plants)).filter(([key, item]) => !$plants[key].recipe and item.ingredients?.length)>>
+	<<if _args[0]>>
+		<<for $_difficulty to 1; $_difficulty lt 5; $_difficulty++>>
+			<<run $_foodOptions.forEach(([key, item]) => {
+				if (item.difficulty is $_difficulty and item.ingredients.every(ingredient => !setup.plants[ingredient].ingredients?.length or $plants[ingredient].recipe)) {
+					_possible_recipes.pushUnique(key);
+				}
+			})>>
+			<<if _possible_recipes.length>>
+				<<set $tv_recipe to _possible_recipes.pluck()>>
+				<<break>>
+			<</if>>
+		<</for>>
+	<</if>>
+	<<if !$tv_recipe>>
+		<<set $tv_recipe to $_foodOptions[random(0,$_foodOptions.length-1)][0]
+	<</if>>
+<</widget>>
+
+:: TV Recipe
+<<if $daily.tvrecipedone>>
+	电视里重复放映着之前的片段，你没有学到什么新东西。
+<<else>>
+	<<generate1>><<person1>>
+	<<set $daily.tvrecipedone to true>>
+	<<tv_recipe_select>>
+
+	电视里一位<<person>>正在讲解$tv_recipe的做法，
+	<<if $plants[$tv_recipe].recipe>>
+		你已经知道它怎么做了，你没有学到什么新东西。
+	<<else>>
+		<<set _ingredients to setup.plants[$tv_recipe].ingredients>>
+		<<he>>拿出了
+		<<if _ingredients>>
+			<<for _e to 0; _e lt setup.plants[$tv_recipe].ingredients.length; _e++>>
+				<<set _ingredient to setup.plants[$tv_recipe].ingredients[_e]>>
+				<<print setup.plants[_ingredient].singular || setup.plants[_ingredient].plural>>
+				<<tendingicon setup.plants[_ingredient].icon>>
+				<<= _e lt setup.plants[$tv_recipe].ingredients.length - 1 ? "、" : "">>
+			<</for>>
+			等各种材料，
+		<<else>>
+			各种材料，
+		<</if>>
+		<<set _chance to $housekeeping / (2 * setup.plants[$tv_recipe].difficulty)>>
+		<<if _chance gte random(1, 100)>>
+			<<set _pass to true>>
+		<<else>>
+			<<set _pass to false>>
+		<</if>>
+
+		<<if _pass>>
+			<<ghousekeeping>><<housekeeping setup.plants[$tv_recipe].difficulty 200>>
+		<<else>>
+			<<ghousekeeping 200>><<housekeeping 1 200>>
+		<</if>>
+		
+	<</if>>
+
+	<<unset $tv_recipe>>
+<<if>>
+
+<br>
+<<rvreturn>>

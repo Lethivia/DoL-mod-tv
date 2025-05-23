@@ -5,7 +5,7 @@
 // 键为节目内部名称，值为包含节目详细信息的对象。
 const programLinkMap = {
     '天气预报': { name: '天气欲报', passtime: 2, passage: 'TV Weather Forecast', onclick: '', suffix: '' },
-    '绝密食谱': { name: '撅密食谱', passtime: 30, passage: 'PASSAGE2', onclick: '', suffix: '' },
+    '绝密食谱': { name: '撅密食谱', passtime: 30, passage: 'TV Recipe', onclick: '', suffix: '' },
 };
 
 
