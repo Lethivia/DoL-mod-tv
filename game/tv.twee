@@ -1,16 +1,25 @@
 :: Watch TV
-<<tvshowad>>
-<br><br>
-
-<<set _tvlist to getProgramsAtTime(Time.date)>>
-<<set _keys to Object.keys(_tvlist)>>
-<<for _i to 0; _i lt _keys.length; _i++>>
-	<<set _tmp to _tvlist[_keys[_i]]>>
-	<<link [[_tmp.name (_tmp.passtime分钟)|_tmp.passage]]>><<pass _tmp.passtime>>_tmp.onclick<</link>>_tmp.suffix
-<</for>>
-
-<br><br>
-<<link [[查看节目单|Show TV List]]>><<set $tvlistdate to new DateTime(Time.date)>><</link>>
+<<if $daily.tvbloodmoon>>
+	电视有些异常，你决定先不要碰它。
+<<else>>
+	<<tvshowad>>
+	<br><br>
+	
+	<<set _tvlist to getProgramsAtTime(Time.date)>>
+	<<set _keys to Object.keys(_tvlist)>>
+	<<for _i to 0; _i lt _keys.length; _i++>>
+		<<set _tmp to _tvlist[_keys[_i]]>>
+		<<capture _tmp>>
+			<<link [[_tmp.name (_tmp.passtime分钟)|_tmp.passage]]>><<pass _tmp.passtime>>_tmp.onclick<</link>> _tmp.suffix
+		<</capture>>
+		<br>
+	<</for>>
+	
+	<<link [[pass24|$passage]]>><<pass 24 hour>><</link>>
+	<<link [[pass1|$passage]]>><<pass 1 hour>><</link>>
+	<br><br>
+	<<link [[查看节目单|Show TV List]]>><<set $tvlistdate to new DateTime(Time.date)>><</link>>
+<</if>>
 <br>
 <<link [[返回|Bedroom]]>><</link>>
 

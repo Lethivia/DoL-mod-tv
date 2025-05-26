@@ -4,7 +4,9 @@
 	<<set _food_keys to Object.keys(setup.plants)>>
 	<<set _possible_recipes to []>>
 	<<set $_foodOptions to Object.entries(clone(setup.plants)).filter(([key, item]) => !$plants[key].recipe and item.ingredients?.length)>>
-	<<if _args[0]>>
+	<<set $_allFood to Object.entries(clone(setup.plants)).filter(([key, item]) => item.ingredients?.length)>>
+	<<if Time.days%7 eq 0>>
+		/* 周日必选新菜谱 */
 		<<for $_difficulty to 1; $_difficulty lt 5; $_difficulty++>>
 			<<run $_foodOptions.forEach(([key, item]) => {
 				if (item.difficulty is $_difficulty and item.ingredients.every(ingredient => !setup.plants[ingredient].ingredients?.length or $plants[ingredient].recipe)) {
@@ -18,8 +20,11 @@
 		<</for>>
 	<</if>>
 	<<if !$tv_recipe>>
-		<<set $tv_recipe to $_foodOptions[random(0,$_foodOptions.length-1)][0]
+		/* 随机菜谱 */
+		<<set $tv_recipe to $_allFood.random()[0]>>
 	<</if>>
+	<<unset $_allFood>>
+	<<unset $_foodOptions>>
 <</widget>>
 
 :: TV Recipe
@@ -29,10 +34,16 @@
 	<<generate1>><<person1>>
 	<<set $daily.tvrecipedone to true>>
 	<<tv_recipe_select>>
+	<<if Time.days%7 eq 0>>
+		这是每周一次的特别节目，节目组特意安排了本地人最想学到的食谱。
+		<br><br>
+	<</if>>
 
-	电视里一位<<person>>正在讲解$tv_recipe的做法，
+	电视里一位<<person>>正在讲解<<recipe_name $tv_recipe>>的做法。
+	<br>
 	<<if $plants[$tv_recipe].recipe>>
-		你已经知道它怎么做了，你没有学到什么新东西。
+		你已经知道它怎么做了，你没有学到什么新东西，但对家务有了更深的了解。
+		<<ghousekeeping>><<housekeeping setup.plants[$tv_recipe].difficulty/2>>
 	<<else>>
 		<<set _ingredients to setup.plants[$tv_recipe].ingredients>>
 		<<he>>拿出了
@@ -47,23 +58,34 @@
 		<<else>>
 			各种材料，
 		<</if>>
+
 		<<set _chance to $housekeeping / (2 * setup.plants[$tv_recipe].difficulty)>>
 		<<if _chance gte random(1, 100)>>
+			<<if _chance gte random(1, 200)>>
+				接着开始快速地操作起来。你轻而易举的将所有步骤记了下来。
+			<<else>>
+				接着开始快速地操作起来。你勉强将步骤记了下来。
+			<</if>>
 			<<set _pass to true>>
 		<<else>>
+			接着开始眼花缭乱地操作起来。你的家务技能不足以让你理解<<his>>的每一个步骤。
 			<<set _pass to false>>
 		<</if>>
+		<br>
 
 		<<if _pass>>
-			<<ghousekeeping>><<housekeeping setup.plants[$tv_recipe].difficulty 200>>
+			<<learn_recipe $tv_recipe>><br>
+			你对家务的理解更深刻了。
+			<<gghousekeeping>><<housekeeping setup.plants[$tv_recipe].difficulty>>
 		<<else>>
-			<<ghousekeeping 200>><<housekeeping 1 200>>
+			你没能学会<<recipe_name $tv_recipe>>的制作方法，但你学到了一些家务上的技巧。
+			<<ghousekeeping>><<housekeeping 1>>
 		<</if>>
 		
 	<</if>>
 
 	<<unset $tv_recipe>>
-<<if>>
+<</if>>
 
 <br>
-<<rvreturn>>
+<<tvreturn>>

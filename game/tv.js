@@ -4,8 +4,10 @@
 // --- 节目链接/信息 Map ---
 // 键为节目内部名称，值为包含节目详细信息的对象。
 const programLinkMap = {
-    '天气预报': { name: '天气欲报', passtime: 2, passage: 'TV Weather Forecast', onclick: '', suffix: '' },
-    '绝密食谱': { name: '撅密食谱', passtime: 30, passage: 'TV Recipe', onclick: '', suffix: '' },
+    '天气预报': { name: '天气欲报', passtime: 2, passage: 'TV Weather Forecast', onclick: '', 
+		suffix: '<<if Weather.bloodMoon and Weather.dayState is "night">><span class="wraith">████</span><</if>>'},
+    '绝密食谱': { name: '撅密食谱', passtime: 30, passage: 'TV Recipe', onclick: '', 
+		suffix: '<<if Time.days%7 eq 0>><span class="lblue">特别节目</span><</if>>' },
 };
 
 
@@ -38,7 +40,7 @@ const normalSchedule = [
         /*5-8*/ [], [], [], [],
         /*9-12*/ [], [], [], [],
         /*13-16*/ [], [], [], [],
-        /*17-20*/ [], [], [], [],
+        /*17-20*/ [], ['绝密食谱'], [], [],
         /*21-23*/ [], [], []
     ],
     // Tuesday (3)
@@ -56,7 +58,7 @@ const normalSchedule = [
         /*5-8*/ [], [], [], [],
         /*9-12*/ [], [], [], [],
         /*13-16*/ [], [], [], [],
-        /*17-20*/ [], [], [], [],
+        /*17-20*/ [], ['绝密食谱'], [], [],
         /*21-23*/ [], [], []
     ],
     // Thursday (5)
@@ -74,7 +76,7 @@ const normalSchedule = [
         /*5-8*/ [], [], [], [],
         /*9-12*/ [], [], [], [],
         /*13-16*/ [], [], [], [],
-        /*17-20*/ [], [], [], [],
+        /*17-20*/ [], ['绝密食谱'], [], [],
         /*21-23*/ [], [], []
     ],
     // Saturday (7)
@@ -93,18 +95,17 @@ const normalSchedule = [
 // month: 1-12, day: 1-31, hour: 0-23, weekDay: 1-7 (1 for Sunday, ..., 7 for Saturday)
 // programs 属性是一个数组，可以包含多个节目。
 const specialSchedule = [
-    { month: 4, day: 1, hour: 14, programs: ['愚人节特别节目', '整蛊时刻'] }, // 多个节目示例
-    { day: 1, hour: 8, programs: ['每月1号特别节目'] },
-    { year: 2023, month: 12, day: 25, hour: 19, programs: ['圣诞特别晚会', '节日祝福'] }, // 2023年12月25日19
-    { weekDay: 6, hour: 20, programs: ['周五晚间访谈', '嘉宾互动'] } // 每周五
+    // { month: 4, day: 1, hour: 14, programs: ['愚人节特别节目', '整蛊时刻'] }, // 多个节目示例
+    // { day: 1, hour: 8, programs: ['每月1号特别节目'] },
+    // { year: 2023, month: 12, day: 25, hour: 19, programs: ['圣诞特别晚会', '节日祝福'] }, // 2023年12月25日19
+    // { weekDay: 6, hour: 20, programs: ['周五晚间访谈', '嘉宾互动'] } // 每周五
 ];
 
-// 唯一节目单：在特定日期和时间出现，且仅出现唯一节目单的节目。
-// 结构与特殊节目单相同。
+// 唯一节目单：在特定日期和时间出现，唯一节目单出现时无其他节目
 // weekDay: 1-7 (1 for Sunday, ..., 7 for Saturday)
 // programs 属性是一个数组，可以包含多个节目。
 const uniqueSchedule = [
-    { year: 2024, month: 7, day: 15, hour: 10, programs: ['独家新闻发布会', '记者问答环节'] }
+    // { year: 2024, month: 7, day: 15, hour: 10, programs: ['独家新闻发布会', '记者问答环节'] }
 ];
 
 // --- 辅助函数 ---
@@ -271,7 +272,7 @@ function getDailyScheduleString(date) {
         }
 
         const startHourFormatted = String(currentHour).padStart(2, '0');
-        const nextHourFormatted = String(endHour + 1).padStart(2, '0'); // 结束时间的下一小时
+        const nextHourFormatted = String(endHour).padStart(2, '0'); // 结束时间的下一小时
 
         let programContent;
         if (programsAtStartHour.length === 0) {
