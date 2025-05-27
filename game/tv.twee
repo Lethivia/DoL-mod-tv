@@ -2,6 +2,8 @@
 <<if $daily.tvbloodmoon>>
 	电视有些异常，你决定先不要碰它。
 <<else>>
+	电视里正在放着一些广告。
+	<br>
 	<<tvshowad>>
 	<br><br>
 	
