@@ -10,7 +10,8 @@
         "game/tv_weather_forecast.twee",
         "game/tv_recipe.twee",
         "game/tv.twee",
-        "game/tv_widget.twee"
+        "game/tv_widget.twee",
+        "game/tv_soap_opera.twee"
     ],
     "imgFileList": [],
     "additionFile": [],

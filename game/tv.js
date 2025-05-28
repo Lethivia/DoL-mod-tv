@@ -5,7 +5,7 @@
 // 键为节目内部名称，值为包含节目详细信息的对象。
 const programLinkMap = {
     '天气预报': { name: '天气欲报', passtime: 2, passage: 'TV Weather Forecast', onclick: '', 
-		suffix: '<<if Weather.bloodMoon and Weather.dayState is "night">><span class="wraith">████</span><</if>>'},
+		suffix: '<<if Weather.bloodMoon and Weather.dayState is "night">><span class="wraith">W̷͑͊͌͘͠Ṙ̵̽͂͐͆͠Á̶̈́͆͝I̸͌͋͌͋͂͠T̶̓͂͌̐͋͠͝Ḧ̷́̀̏̓͛͠</span><</if>>'},
     '绝密食谱': { name: '撅密食谱', passtime: 30, passage: 'TV Recipe', onclick: '', 
 		suffix: '<<if Time.days%7 eq 0>><span class="lblue">特别节目</span><</if>>' },
     '肥皂剧': { name: '多角关系放映厅', passtime: 30, passage: 'TV Soap Opera', onclick: '', suffix: '' },
