@@ -17,8 +17,6 @@
 		<br>
 	<</for>>
 	
-	<<link [[pass24|$passage]]>><<pass 24 hour>><</link>>
-	<<link [[pass1|$passage]]>><<pass 1 hour>><</link>>
 	<br><br>
 	<<link [[查看节目单|Show TV List]]>><<set $tvlistdate to new DateTime(Time.date)>><</link>>
 <</if>>

@@ -42,19 +42,20 @@
 	被子松松软软，你窝在里面，电视正放着节目。
 <</switch>>
 <<lllstress>><<stress -500>>
+<<ltiredness>><<tiredness -30>>
 <br><br>
 
 <<switch random(1,1000)>>
 	<<case 1>>
-	电视里正播放《风包舞》，探员揭露情报公司勾结外敌，紧张剧情让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《风包舞》，探员揭露情报公司勾结外敌，紧张剧情让你心跳加速。<<gstress>><<stress 20>>
 	<<case 2>>
-	电视里正播放《风包舞》，探员对抗境外势力，刺激感让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《风包舞》，探员对抗境外势力，刺激感让你不安。<<gstress>><<stress 20>>
 	<<case 3>>
-	电视里正播放《风包舞》，情报公司黑幕暴露，压抑剧情让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《风包舞》，情报公司黑幕暴露，压抑剧情让你心神不宁。<<gstress>><<stress 20>>
 	<<case 4>>
-	电视里正播放《风包舞》，探员深陷危机，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《风包舞》，探员深陷危机，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 5>>
-	电视里正播放《风包舞》，探员与敌斗智斗勇，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《风包舞》，探员与敌斗智斗勇，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 6>>
 	电视里正播放《赵亮你》，消防员与记者重逢，温馨爱情让你感到暖意。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 7>>
@@ -86,45 +87,45 @@
 	<<case 20>>
 	电视里正播放《亮贱》，战士抗敌，热血让你精神一振。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 21>>
-	电视里正播放《背平网事》，女性在乱世牺牲，悲壮让你感到压抑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《背平网事》，女性在乱世牺牲，悲壮让你感到压抑。<<gstress>><<stress 20>>
 	<<case 22>>
-	电视里正播放《背平网事》，乱世女子命运多舛，剧情让你心沉重。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《背平网事》，乱世女子命运多舛，剧情让你心沉重。<<gstress>><<stress 20>>
 	<<case 23>>
-	电视里正播放《背平网事》，女性挣扎求生，悲情让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《背平网事》，女性挣扎求生，悲情让你不安。<<gstress>><<stress 20>>
 	<<case 24>>
-	电视里正播放《背平网事》，女性的悲剧，压抑感让你难受。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《背平网事》，女性的悲剧，压抑感让你难受。<<gstress>><<stress 20>>
 	<<case 25>>
-	电视里正播放《背平网事》，乱世故事沉重，让你喘不过气。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《背平网事》，乱世故事沉重，让你喘不过气。<<gstress>><<stress 20>>
 	<<case 26>>
-	电视里正播放《纸牌污》，政客夫妇操控权力，阴谋让你感到不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《纸牌污》，政客夫妇操控权力，阴谋让你感到不安。<<gstress>><<stress 20>>
 	<<case 27>>
-	电视里正播放《纸牌污》，政治斗争残酷，压抑剧情让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《纸牌污》，政治斗争残酷，压抑剧情让你心神不宁。<<gstress>><<stress 20>>
 	<<case 28>>
-	电视里正播放《纸牌污》，夫妇步步高升，阴谋让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《纸牌污》，夫妇步步高升，阴谋让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 29>>
-	电视里正播放《纸牌污》，政治黑暗面暴露，让你感到压抑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《纸牌污》，政治黑暗面暴露，让你感到压抑。<<gstress>><<stress 20>>
 	<<case 30>>
-	电视里正播放《纸牌污》，权力斗争让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《纸牌污》，权力斗争让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 31>>
-	电视里正播放《黑鸽儿》，间谍母亲揭露秘密，紧张剧情让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑鸽儿》，间谍母亲揭露秘密，紧张剧情让你心跳加速。<<gstress>><<stress 20>>
 	<<case 32>>
-	电视里正播放《黑鸽儿》，母亲保护家人，刺激感让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑鸽儿》，母亲保护家人，刺激感让你不安。<<gstress>><<stress 20>>
 	<<case 33>>
-	电视里正播放《黑鸽儿》，间谍组织黑幕暴露，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑鸽儿》，间谍组织黑幕暴露，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 34>>
-	电视里正播放《黑鸽儿》，母亲深陷危机，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑鸽儿》，母亲深陷危机，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 35>>
-	电视里正播放《黑鸽儿》，间谍与组织斗智斗勇，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑鸽儿》，间谍与组织斗智斗勇，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 36>>
-	电视里正播放《格雷死》，侦探解开连环谋杀，紧张剧情让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《格雷死》，侦探解开连环谋杀，紧张剧情让你心跳加速。<<gstress>><<stress 20>>
 	<<case 37>>
-	电视里正播放《格雷死》，谋杀案真相揭露，刺激感让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《格雷死》，谋杀案真相揭露，刺激感让你不安。<<gstress>><<stress 20>>
 	<<case 38>>
-	电视里正播放《格雷死》，侦探对抗凶手，压抑剧情让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《格雷死》，侦探对抗凶手，压抑剧情让你心神不宁。<<gstress>><<stress 20>>
 	<<case 39>>
-	电视里正播放《格雷死》，连环杀手肆虐，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《格雷死》，连环杀手肆虐，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 40>>
-	电视里正播放《格雷死》，侦探与凶手斗智斗勇，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《格雷死》，侦探与凶手斗智斗勇，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 41>>
 	电视里正播放《9号蜜事》，独立故事揭示人性暗面，黑色幽默让你捧腹。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 42>>
@@ -146,35 +147,35 @@
 	<<case 50>>
 	电视里正播放《老有鸡》，友情与爱情交织，温馨让你感到暖意。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 51>>
-	电视里正播放《决命毒师》，化学老师制毒，犯罪之路让你压抑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《决命毒师》，化学老师制毒，犯罪之路让你压抑。<<gstress>><<stress 20>>
 	<<case 52>>
-	电视里正播放《决命毒师》，老师堕落为毒枭，剧情让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《决命毒师》，老师堕落为毒枭，剧情让你心神不宁。<<gstress>><<stress 20>>
 	<<case 53>>
-	电视里正播放《决命毒师》，制毒过程紧张刺激，让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《决命毒师》，制毒过程紧张刺激，让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 54>>
-	电视里正播放《决命毒师》，犯罪帝国崛起，黑暗让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《决命毒师》，犯罪帝国崛起，黑暗让你不安。<<gstress>><<stress 20>>
 	<<case 55>>
-	电视里正播放《决命毒师》，老师与毒贩斗智斗勇，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《决命毒师》，老师与毒贩斗智斗勇，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 56>>
-	电视里正播放《X党案》，FBI探员查超自然现象，神秘剧情让你着迷。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《X党案》，FBI探员查超自然现象，神秘剧情让你着迷。<<gstress>><<stress 20>>
 	<<case 57>>
-	电视里正播放《X党案》，外星人与阴谋，紧张感让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《X党案》，外星人与阴谋，紧张感让你不安。<<gstress>><<stress 20>>
 	<<case 58>>
-	电视里正播放《X党案》，探员揭露政府秘密，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《X党案》，探员揭露政府秘密，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 59>>
-	电视里正播放《X党案》，超自然事件频发，神秘让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《X党案》，超自然事件频发，神秘让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 60>>
-	电视里正播放《X党案》，探员与外星人斗智斗勇，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《X党案》，探员与外星人斗智斗勇，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 61>>
 	电视里正播放《拳力的游戏》，七国争霸，权谋魔法交织让你热血沸腾。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 62>>
-	电视里正播放《拳力的游戏》，家族斗争残酷，剧情让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《拳力的游戏》，家族斗争残酷，剧情让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 63>>
 	电视里正播放《拳力的游戏》，龙与冰狼战斗，壮观场面让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 64>>
-	电视里正播放《拳力的游戏》，权谋与背叛，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《拳力的游戏》，权谋与背叛，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 65>>
-	电视里正播放《拳力的游戏》，英雄恶人较量，紧张让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《拳力的游戏》，英雄恶人较量，紧张让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 66>>
 	电视里正播放《轮蹲生活》，女子在伦敦的生活趣事让你捧腹大笑。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 67>>
@@ -200,71 +201,71 @@
 	<<case 77>>
 	电视里正播放《糖炖装园》，仆人与贵族生活，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 78>>
-	电视里正播放《糖炖装园》，家族斗争与爱情，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正播放《糖炖装园》，家族斗争与爱情，紧张让你屏住呼吸。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 79>>
-	电视里正播放《糖炖装园》，历史下的家族故事，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《糖炖装园》，历史下的家族故事，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 80>>
 	电视里正播放《糖炖装园》，贵族仆人互动，温馨紧张交织。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 81>>
-	电视里正播放《神探夏落壳》，现代福尔摩斯破案，紧张剧情让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《神探夏落壳》，现代福尔摩斯破案，紧张剧情让你心跳加速。<<gstress>><<stress 20>>
 	<<case 82>>
-	电视里正播放《神探夏落壳》，夏洛克与华生联手，刺激感让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《神探夏落壳》，夏洛克与华生联手，刺激感让你不安。<<gstress>><<stress 20>>
 	<<case 83>>
-	电视里正播放《神探夏落壳》，疑案频发，压抑剧情让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《神探夏落壳》，疑案频发，压抑剧情让你心神不宁。<<gstress>><<stress 20>>
 	<<case 84>>
-	电视里正播放《神探夏落壳》，夏洛克智斗罪犯，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《神探夏落壳》，夏洛克智斗罪犯，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 85>>
-	电视里正播放《神探夏落壳》，破案惊心动魄，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《神探夏落壳》，破案惊心动魄，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 86>>
-	电视里正播放《黑京》，科技对人类的影响，剧情让你压抑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑京》，科技对人类的影响，剧情让你压抑。<<gstress>><<stress 20>>
 	<<case 87>>
-	电视里正播放《黑京》，反乌托邦故事，黑暗让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑京》，反乌托邦故事，黑暗让你心神不宁。<<gstress>><<stress 20>>
 	<<case 88>>
-	电视里正播放《黑京》，科技与人性冲突，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑京》，科技与人性冲突，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 89>>
-	电视里正播放《黑京》，每集独立故事，压抑感让你难受。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑京》，每集独立故事，压抑感让你难受。<<gstress>><<stress 20>>
 	<<case 90>>
-	电视里正播放《黑京》，未来科技黑暗面，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑京》，未来科技黑暗面，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 91>>
 	电视里正播放《网冠》，英国女王统治生涯，历史剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 92>>
-	电视里正播放《网冠》，王室家族斗争，紧张感让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《网冠》，王室家族斗争，紧张感让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 93>>
-	电视里正播放《网冠》，女王政治与家庭，剧情让你压抑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《网冠》，女王政治与家庭，剧情让你压抑。<<gstress>><<stress 20>>
 	<<case 94>>
 	电视里正播放《网冠》，历史事件再现，让你感到振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 95>>
 	电视里正播放《网冠》，王室爱恨情仇，温馨紧张交织。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 96>>
-	电视里正播放《沙死一夫》，特工与女杀手猫鼠游戏，紧张剧情让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《沙死一夫》，特工与女杀手猫鼠游戏，紧张剧情让你心跳加速。<<gstress>><<stress 20>>
 	<<case 97>>
-	电视里正播放《沙死一夫》，杀手与特工较量，刺激感让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《沙死一夫》，杀手与特工较量，刺激感让你不安。<<gstress>><<stress 20>>
 	<<case 98>>
-	电视里正播放《沙死一夫》，女杀手暗杀行动，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《沙死一夫》，女杀手暗杀行动，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 99>>
-	电视里正播放《沙死一夫》，特工追捕杀手，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《沙死一夫》，特工追捕杀手，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 100>>
-	电视里正播放《沙死一夫》，杀手与特工斗智斗勇，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《沙死一夫》，杀手与特工斗智斗勇，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 101>>
 	电视里正播放《烦花》，90年代上海商界沉浮，剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 102>>
 	电视里正播放《烦花》，商界爱情故事，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 103>>
-	电视里正播放《烦花》，上海滩爱恨情仇，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正播放《烦花》，上海滩爱恨情仇，紧张让你屏住呼吸。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 104>>
-	电视里正播放《烦花》，商界斗争残酷，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《烦花》，商界斗争残酷，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 105>>
 	电视里正播放《烦花》，90年代上海，历史感让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 106>>
-	电视里正播放《开端》，公交爆炸循环，紧张剧情让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《开端》，公交爆炸循环，紧张剧情让你心跳加速。<<gstress>><<stress 20>>
 	<<case 107>>
-	电视里正播放《开端》，救赎与真相追寻，刺激感让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《开端》，救赎与真相追寻，刺激感让你不安。<<gstress>><<stress 20>>
 	<<case 108>>
-	电视里正播放《开端》，循环中生死较量，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《开端》，循环中生死较量，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 109>>
-	电视里正播放《开端》，公交车上悬疑，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《开端》，公交车上悬疑，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 110>>
-	电视里正播放《开端》，主人公挣扎成长，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《开端》，主人公挣扎成长，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 111>>
 	电视里正播放《人世间》，周家三代人故事，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 112>>
@@ -276,31 +277,31 @@
 	<<case 115>>
 	电视里正播放《人世间》，人性光辉阴暗，剧情让你深思。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 116>>
-	电视里正播放《隐秘的脚落》，少年拍下谋杀，紧张剧情让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《隐秘的脚落》，少年拍下谋杀，紧张剧情让你心跳加速。<<gstress>><<stress 20>>
 	<<case 117>>
-	电视里正播放《隐秘的脚落》，人性深渊揭露，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《隐秘的脚落》，人性深渊揭露，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 118>>
-	电视里正播放《隐秘的脚落》，谋杀案真相，刺激感让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《隐秘的脚落》，谋杀案真相，刺激感让你不安。<<gstress>><<stress 20>>
 	<<case 119>>
-	电视里正播放《隐秘的脚落》，少年冒险危险，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《隐秘的脚落》，少年冒险危险，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 120>>
-	电视里正播放《隐秘的脚落》，黑暗人性社会阴暗，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《隐秘的脚落》，黑暗人性社会阴暗，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 121>>
-	电视里正播放《沉没的真相》，检察官揭露黑幕，紧张剧情让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《沉没的真相》，检察官揭露黑幕，紧张剧情让你心跳加速。<<gstress>><<stress 20>>
 	<<case 122>>
-	电视里正播放《沉没的真相》，冤案真相，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《沉没的真相》，冤案真相，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 123>>
-	电视里正播放《沉没的真相》，检察官牺牲，感人让你流泪。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《沉没的真相》，检察官牺牲，感人让你流泪。<<gstress>><<stress 20>>
 	<<case 124>>
-	电视里正播放《沉没的真相》，黑暗势力对抗，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《沉没的真相》，黑暗势力对抗，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 125>>
-	电视里正播放《沉没的真相》，真相揭露与代价，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《沉没的真相》，真相揭露与代价，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 126>>
 	电视里正播放《想贱你》，穿越时空找恋人，浪漫剧情让你心动。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 127>>
 	电视里正播放《想贱你》，青春爱情交织，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 128>>
-	电视里正播放《想贱你》，时空穿梭悬疑，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正播放《想贱你》，时空穿梭悬疑，紧张让你屏住呼吸。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 129>>
 	电视里正播放《想贱你》，恋人重逢分离，感人让你流泪。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 130>>
@@ -316,15 +317,15 @@
 	<<case 135>>
 	电视里正播放《俗女养成鸡》，幽默感动交织，让你心情舒畅。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 136>>
-	电视里正播放《我们与饿的距离》，杀人案后众人面对创伤，剧情让你压抑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《我们与饿的距离》，杀人案后众人面对创伤，剧情让你压抑。<<gstress>><<stress 20>>
 	<<case 137>>
-	电视里正播放《我们与饿的距离》，社会阴暗面，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《我们与饿的距离》，社会阴暗面，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 138>>
-	电视里正播放《我们与饿的距离》，受害者加害者故事，感人让你流泪。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《我们与饿的距离》，受害者加害者故事，感人让你流泪。<<gstress>><<stress 20>>
 	<<case 139>>
-	电视里正播放《我们与饿的距离》，法律道德冲突，剧情让你深思。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《我们与饿的距离》，法律道德冲突，剧情让你深思。<<gstress>><<stress 20>>
 	<<case 140>>
-	电视里正播放《我们与饿的距离》，人性光辉阴暗，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《我们与饿的距离》，人性光辉阴暗，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 141>>
 	电视里正播放《茶精》，女继承人带领茶厂，历史剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 142>>
@@ -334,7 +335,7 @@
 	<<case 144>>
 	电视里正播放《茶精》，茶文化传承，文化感让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 145>>
-	电视里正播放《茶精》，历史下商战，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《茶精》，历史下商战，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 146>>
 	电视里正播放《天桥上的魔术屎》，孩童眼中奇幻魔术，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 147>>
@@ -346,105 +347,105 @@
 	<<case 150>>
 	电视里正播放《天桥上的魔术屎》，孩童梦想勇气，让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 151>>
-	电视里正播放《大屎代》，股市风云命运交错，紧张剧情让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《大屎代》，股市风云命运交错，紧张剧情让你心跳加速。<<gstress>><<stress 20>>
 	<<case 152>>
-	电视里正播放《大屎代》，商战爱情纠葛，剧情让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正播放《大屎代》，商战爱情纠葛，剧情让你屏住呼吸。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 153>>
-	电视里正播放《大屎代》，家族兴衰背叛，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《大屎代》，家族兴衰背叛，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 154>>
-	电视里正播放《大屎代》，股市起伏人性贪婪，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《大屎代》，股市起伏人性贪婪，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 155>>
-	电视里正播放《大屎代》，商界阴谋诡计，紧张让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《大屎代》，商界阴谋诡计，紧张让你不安。<<gstress>><<stress 20>>
 	<<case 156>>
 	电视里正播放《床世纪》，企业家草根逆袭，剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 157>>
 	电视里正播放《床世纪》，商界奋斗成长，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 158>>
-	电视里正播放《床世纪》，商战爱情交织，剧情让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正播放《床世纪》，商战爱情交织，剧情让你屏住呼吸。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 159>>
-	电视里正播放《床世纪》，家族企业兴衰，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《床世纪》，家族企业兴衰，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 160>>
 	电视里正播放《床世纪》，企业家梦想坚持，让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 161>>
-	电视里正播放《金枝浴孽》，后宫妃嫔争斗，权谋剧情让你着迷。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《金枝浴孽》，后宫妃嫔争斗，权谋剧情让你着迷。<<gstress>><<stress 20>>
 	<<case 162>>
-	电视里正播放《金枝浴孽》，宫廷阴谋背叛，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《金枝浴孽》，宫廷阴谋背叛，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 163>>
-	电视里正播放《金枝浴孽》，妃嫔爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正播放《金枝浴孽》，妃嫔爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 164>>
-	电视里正播放《金枝浴孽》，后宫生存斗争，紧张让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《金枝浴孽》，后宫生存斗争，紧张让你不安。<<gstress>><<stress 20>>
 	<<case 165>>
-	电视里正播放《金枝浴孽》，宫廷权力游戏，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《金枝浴孽》，宫廷权力游戏，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 166>>
 	电视里正播放《糖心风暴》，豪门家族争斗，剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 167>>
-	电视里正播放《糖心风暴》，亲情考验人性贪婪，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《糖心风暴》，亲情考验人性贪婪，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 168>>
-	电视里正播放《糖心风暴》，家族企业兴衰，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《糖心风暴》，家族企业兴衰，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 169>>
 	电视里正播放《糖心风暴》，豪门爱恨情仇，剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 170>>
 	电视里正播放《糖心风暴》，家族温暖挣扎，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 171>>
-	电视里正播放《潜行狙鸡》，卧底警察游走黑白，紧张剧情让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《潜行狙鸡》，卧底警察游走黑白，紧张剧情让你心跳加速。<<gstress>><<stress 20>>
 	<<case 172>>
-	电视里正播放《潜行狙鸡》，卧底危险挣扎，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《潜行狙鸡》，卧底危险挣扎，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 173>>
-	电视里正播放《潜行狙鸡》，黑帮与警察较量，刺激感让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《潜行狙鸡》，黑帮与警察较量，刺激感让你不安。<<gstress>><<stress 20>>
 	<<case 174>>
-	电视里正播放《潜行狙鸡》，卧底身份暴露，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《潜行狙鸡》，卧底身份暴露，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 175>>
-	电视里正播放《潜行狙鸡》，黑白之间较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《潜行狙鸡》，黑白之间较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 176>>
-	电视里正播放《屎徒行者》，警方追查失联卧底，紧张剧情让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《屎徒行者》，警方追查失联卧底，紧张剧情让你心跳加速。<<gstress>><<stress 20>>
 	<<case 177>>
-	电视里正播放《屎徒行者》，黑帮渗透警队，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《屎徒行者》，黑帮渗透警队，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 178>>
-	电视里正播放《屎徒行者》，卧底危险挣扎，刺激感让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《屎徒行者》，卧底危险挣扎，刺激感让你不安。<<gstress>><<stress 20>>
 	<<case 179>>
-	电视里正播放《屎徒行者》，警队内鬼阴谋，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《屎徒行者》，警队内鬼阴谋，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 180>>
-	电视里正播放《屎徒行者》，卧底与黑帮较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《屎徒行者》，卧底与黑帮较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 181>>
 	电视里正播放《大太贱》，李莲英权倾朝野，历史剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 182>>
-	电视里正播放《大太贱》，宫廷阴谋背叛，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《大太贱》，宫廷阴谋背叛，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 183>>
-	电视里正播放《大太贱》，太监爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正播放《大太贱》，太监爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 184>>
-	电视里正播放《大太贱》，宫廷生存斗争，紧张让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《大太贱》，宫廷生存斗争，紧张让你不安。<<gstress>><<stress 20>>
 	<<case 185>>
-	电视里正播放《大太贱》，宫廷权力游戏，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《大太贱》，宫廷权力游戏，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 186>>
 	电视里正播放《金国枭雄》，清末寡妇建商界帝国，剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 187>>
 	电视里正播放《金国枭雄》，女性奋斗成长，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 188>>
-	电视里正播放《金国枭雄》，商战爱情交织，剧情让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正播放《金国枭雄》，商战爱情交织，剧情让你屏住呼吸。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 189>>
-	电视里正播放《金国枭雄》，家族企业兴衰，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《金国枭雄》，家族企业兴衰，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 190>>
 	电视里正播放《金国枭雄》，女性智慧勇气，让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 191>>
-	电视里正播放《法证先疯》，法证专家助破案，紧张剧情让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《法证先疯》，法证专家助破案，紧张剧情让你心跳加速。<<gstress>><<stress 20>>
 	<<case 192>>
-	电视里正播放《法证先疯》，奇案真相揭露，刺激感让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《法证先疯》，奇案真相揭露，刺激感让你不安。<<gstress>><<stress 20>>
 	<<case 193>>
-	电视里正播放《法证先疯》，法证与警方合作，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《法证先疯》，法证与警方合作，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 194>>
-	电视里正播放《法证先疯》，案件悬疑惊悚，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《法证先疯》，案件悬疑惊悚，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 195>>
-	电视里正播放《法证先疯》，法证专家智慧勇气，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《法证先疯》，法证专家智慧勇气，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 196>>
-	电视里正播放《刑屎侦缉档案》，刑警搭档查案，紧张剧情让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《刑屎侦缉档案》，刑警搭档查案，紧张剧情让你心跳加速。<<gstress>><<stress 20>>
 	<<case 197>>
-	电视里正播放《刑屎侦缉档案》，情感纠葛与案件，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正播放《刑屎侦缉档案》，情感纠葛与案件，压抑让你心神不宁。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 198>>
-	电视里正播放《刑屎侦缉档案》，警方智慧勇气，刺激感让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《刑屎侦缉档案》，警方智慧勇气，刺激感让你不安。<<gstress>><<stress 20>>
 	<<case 199>>
-	电视里正播放《刑屎侦缉档案》，案件悬疑惊悚，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《刑屎侦缉档案》，案件悬疑惊悚，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 200>>
-	电视里正播放《刑屎侦缉档案》，刑警冒险危险，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《刑屎侦缉档案》，刑警冒险危险，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 201>>
 	电视里正播放《惜游记》，师徒四人西天取经，冒险剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 202>>
@@ -452,19 +453,19 @@
 	<<case 203>>
 	电视里正播放《惜游记》，师徒友情成长，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 204>>
-	电视里正播放《惜游记》，奇幻冒险挑战，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《惜游记》，奇幻冒险挑战，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 205>>
 	电视里正播放《惜游记》，师徒智慧勇气，让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 206>>
-	电视里正播放《真环传》，甄嬛步步为营，宫廷剧情让你着迷。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《真环传》，甄嬛步步为营，宫廷剧情让你着迷。<<gstress>><<stress 20>>
 	<<case 207>>
-	电视里正播放《真环传》，后宫阴谋背叛，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《真环传》，后宫阴谋背叛，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 208>>
-	电视里正播放《真环传》，甄嬛爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正播放《真环传》，甄嬛爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 209>>
-	电视里正播放《真环传》，宫廷生存斗争，紧张让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《真环传》，宫廷生存斗争，紧张让你不安。<<gstress>><<stress 20>>
 	<<case 210>>
-	电视里正播放《真环传》，甄嬛智慧勇气，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《真环传》，甄嬛智慧勇气，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 211>>
 	电视里正播放《知否知否应是绿肥红瘦》，庶女宅斗成长，剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 212>>
@@ -472,29 +473,29 @@
 	<<case 213>>
 	电视里正播放《知否知否应是绿肥红瘦》，女性智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 214>>
-	电视里正播放《知否知否应是绿肥红瘦》，宅斗阴谋背叛，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《知否知否应是绿肥红瘦》，宅斗阴谋背叛，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 215>>
 	电视里正播放《知否知否应是绿肥红瘦》，家族温暖挣扎，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 216>>
 	电视里正播放《狼牙棒》，梅长苏为冤案复仇，剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 217>>
-	电视里正播放《狼牙棒》，权谋与背叛，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《狼牙棒》，权谋与背叛，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 218>>
 	电视里正播放《狼牙棒》，梅长苏智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 219>>
-	电视里正播放《狼牙棒》，家族爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正播放《狼牙棒》，家族爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 220>>
-	电视里正播放《狼牙棒》，历史下权谋，紧张让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《狼牙棒》，历史下权谋，紧张让你不安。<<gstress>><<stress 20>>
 	<<case 221>>
 	电视里正播放《烟禧攻略》，宫女魏璎珞逆袭，剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 222>>
-	电视里正播放《烟禧攻略》，后宫阴谋背叛，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《烟禧攻略》，后宫阴谋背叛，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 223>>
 	电视里正播放《烟禧攻略》，魏璎珞智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 224>>
-	电视里正播放《烟禧攻略》，宫廷爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正播放《烟禧攻略》，宫廷爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 225>>
-	电视里正播放《烟禧攻略》，后宫生存斗争，紧张让你不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《烟禧攻略》，后宫生存斗争，紧张让你不安。<<gstress>><<stress 20>>
 	<<case 226>>
 	电视里正播放《梦花路》，三位女子北宋闯荡，剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 227>>
@@ -502,7 +503,7 @@
 	<<case 228>>
 	电视里正播放《梦花路》，女性智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 229>>
-	电视里正播放《梦花路》，历史下商战，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《梦花路》，历史下商战，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 230>>
 	电视里正播放《梦花路》，女性友谊成长，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 231>>
@@ -510,9 +511,9 @@
 	<<case 232>>
 	电视里正播放《沉情令》，乱世爱情友情，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 233>>
-	电视里正播放《沉情令》，修士冒险挑战，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《沉情令》，修士冒险挑战，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 234>>
-	电视里正播放《沉情令》，阴谋与背叛，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《沉情令》，阴谋与背叛，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 235>>
 	电视里正播放《沉情令》，修士智慧勇气，让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 236>>
@@ -520,9 +521,9 @@
 	<<case 237>>
 	电视里正播放《山河零》，江湖爱恨情仇，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 238>>
-	电视里正播放《山河零》，血雨腥风江湖，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《山河零》，血雨腥风江湖，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 239>>
-	电视里正播放《山河零》，阴谋与背叛，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《山河零》，阴谋与背叛，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 240>>
 	电视里正播放《山河零》，江湖人智慧勇气，让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 241>>
@@ -530,7 +531,7 @@
 	<<case 242>>
 	电视里正播放《死藤》，仙女与凡人爱情，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 243>>
-	电视里正播放《死藤》，奇幻冒险挑战，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《死藤》，奇幻冒险挑战，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 244>>
 	电视里正播放《死藤》，仙女复仇救赎，剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 245>>
@@ -540,7 +541,7 @@
 	<<case 247>>
 	电视里正播放《常相思》，千年情仇纠葛，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 248>>
-	电视里正播放《常相思》，奇幻冒险挑战，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《常相思》，奇幻冒险挑战，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 249>>
 	电视里正播放《常相思》，狐女复仇救赎，剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 250>>
@@ -550,41 +551,41 @@
 	<<case 252>>
 	电视里正播放《仓兰诀》，奇幻爱情故事，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 253>>
-	电视里正播放《仓兰诀》，恶魔与花仙冒险，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《仓兰诀》，恶魔与花仙冒险，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 254>>
 	电视里正播放《仓兰诀》，共生秘密挑战，剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 255>>
 	电视里正播放《仓兰诀》，爱情跨越种族，让你心生向往。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 256>>
-	电视里正播放《散体》，人类首次接触外星文明，紧张剧情让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《散体》，人类首次接触外星文明，紧张剧情让你心跳加速。<<gstress>><<stress 20>>
 	<<case 257>>
-	电视里正播放《散体》，外星文明危机，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《散体》，外星文明危机，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 258>>
 	电视里正播放《散体》，人类智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 259>>
-	电视里正播放《散体》，外星文明秘密挑战，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《散体》，外星文明秘密挑战，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 260>>
-	电视里正播放《散体》，人类生存未来，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《散体》，人类生存未来，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 261>>
-	电视里正播放《九姨人》，女子为好友复仇，紧张剧情让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《九姨人》，女子为好友复仇，紧张剧情让你心跳加速。<<gstress>><<stress 20>>
 	<<case 262>>
-	电视里正播放《九姨人》，正义联盟组建，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《九姨人》，正义联盟组建，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 263>>
 	电视里正播放《九姨人》，女子智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 264>>
-	电视里正播放《九姨人》，复仇秘密挑战，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《九姨人》，复仇秘密挑战，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 265>>
-	电视里正播放《九姨人》，正义邪恶较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《九姨人》，正义邪恶较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 266>>
-	电视里正播放《猎罪徒奸》，画像师与刑警联手，紧张剧情让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《猎罪徒奸》，画像师与刑警联手，紧张剧情让你心跳加速。<<gstress>><<stress 20>>
 	<<case 267>>
 	电视里正播放《猎罪徒奸》，破案智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 268>>
-	电视里正播放《猎罪徒奸》，犯罪秘密挑战，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《猎罪徒奸》，犯罪秘密挑战，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 269>>
-	电视里正播放《猎罪徒奸》，画像师冒险危险，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《猎罪徒奸》，画像师冒险危险，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 270>>
-	电视里正播放《猎罪徒奸》，犯罪正义较量，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《猎罪徒奸》，犯罪正义较量，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 271>>
 	电视里正播放《乔家的耳女》，五兄妹互相扶持，温馨剧情让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 272>>
@@ -606,25 +607,25 @@
 	<<case 280>>
 	电视里正播放《大江大和》，改革开放机遇挑战，剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 281>>
-	电视里正播放《人民的名义》，检察官揭露贪腐，紧张剧情让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《人民的名义》，检察官揭露贪腐，紧张剧情让你心跳加速。<<gstress>><<stress 20>>
 	<<case 282>>
-	电视里正播放《人民的名义》，政治斗争残酷，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《人民的名义》，政治斗争残酷，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 283>>
 	电视里正播放《人民的名义》，检察官智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 284>>
-	电视里正播放《人民的名义》，贪腐案件真相，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《人民的名义》，贪腐案件真相，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 285>>
-	电视里正播放《人民的名义》，政治法律较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《人民的名义》，政治法律较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 286>>
-	电视里正播放《狂标》，刑警与黑帮博弈，紧张剧情让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《狂标》，刑警与黑帮博弈，紧张剧情让你心跳加速。<<gstress>><<stress 20>>
 	<<case 287>>
-	电视里正播放《狂标》，黑帮头目起落，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《狂标》，黑帮头目起落，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 288>>
 	电视里正播放《狂标》，刑警智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 289>>
-	电视里正播放《狂标》，犯罪正义较量，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《狂标》，犯罪正义较量，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 290>>
-	电视里正播放《狂标》，黑帮警方斗智斗勇，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《狂标》，黑帮警方斗智斗勇，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 291>>
 	电视里正播放《装腔启屎录》，都市男女伪装情感，浪漫让你心动。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 292>>
@@ -632,19 +633,19 @@
 	<<case 293>>
 	电视里正播放《装腔启屎录》，都市爱情事业，剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 294>>
-	电视里正播放《装腔启屎录》，伪装真实较量，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《装腔启屎录》，伪装真实较量，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 295>>
 	电视里正播放《装腔启屎录》，爱情力量勇气，让你心生向往。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 296>>
-	电视里正播放《消失的十一层》，神秘楼层藏离奇案件，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《消失的十一层》，神秘楼层藏离奇案件，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 297>>
-	电视里正播放《消失的十一层》，楼层秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《消失的十一层》，楼层秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 298>>
-	电视里正播放《消失的十一层》，案件悬疑惊悚，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《消失的十一层》，案件悬疑惊悚，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 299>>
-	电视里正播放《消失的十一层》，主人公冒险危险，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《消失的十一层》，主人公冒险危险，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 300>>
-	电视里正播放《消失的十一层》，真相揭露代价，剧情让你深思。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《消失的十一层》，真相揭露代价，剧情让你深思。<<gstress>><<stress 20>>
 	<<case 301>>
 	电视里正播放《魔登家庭》，三个家庭欢乐日常，让你捧腹大笑。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 302>>
@@ -672,29 +673,29 @@
 	<<case 313>>
 	电视里正播放《奥骨贤妻》，妻子智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 314>>
-	电视里正播放《奥骨贤妻》，法律案件悬疑惊悚，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《奥骨贤妻》，法律案件悬疑惊悚，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 315>>
 	电视里正播放《奥骨贤妻》，妻子成长挑战，让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 316>>
-	电视里正播放《黑前胜地》，金融顾问洗钱陷犯罪，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑前胜地》，金融顾问洗钱陷犯罪，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 317>>
-	电视里正播放《黑前胜地》，犯罪秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑前胜地》，犯罪秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 318>>
 	电视里正播放《黑前胜地》，主人公智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 319>>
-	电视里正播放《黑前胜地》，洗钱危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑前胜地》，洗钱危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 320>>
-	电视里正播放《黑前胜地》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑前胜地》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 321>>
-	电视里正播放《火线》，警察与毒贩长期角力，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《火线》，警察与毒贩长期角力，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 322>>
-	电视里正播放《火线》，犯罪秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《火线》，犯罪秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 323>>
 	电视里正播放《火线》，警察智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 324>>
-	电视里正播放《火线》，毒贩危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《火线》，毒贩危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 325>>
-	电视里正播放《火线》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《火线》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 326>>
 	电视里正播放《女子监狱》，女白领入狱生活，搞笑让你捧腹大笑。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 327>>
@@ -706,21 +707,21 @@
 	<<case 330>>
 	电视里正播放《女子监狱》，女囚友情爱情，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 331>>
-	电视里正播放《憨尼拔》，心理医生变连环杀手，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《憨尼拔》，心理医生变连环杀手，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 332>>
-	电视里正播放《憨尼拔》，杀手秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《憨尼拔》，杀手秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 333>>
 	电视里正播放《憨尼拔》，主人公智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 334>>
-	电视里正播放《憨尼拔》，连环杀手危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《憨尼拔》，连环杀手危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 335>>
-	电视里正播放《憨尼拔》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《憨尼拔》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 336>>
 	电视里正播放《实习医生格雷》，实习医生成长情感，剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 337>>
 	电视里正播放《实习医生格雷》，医疗温馨搞笑，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 338>>
-	电视里正播放《实习医生格雷》，医生爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正播放《实习医生格雷》，医生爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 339>>
 	电视里正播放《实习医生格雷》，医疗成长挑战，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 340>>
@@ -730,31 +731,31 @@
 	<<case 342>>
 	电视里正播放《良医》，医疗温馨搞笑，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 343>>
-	电视里正播放《良医》，医生爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正播放《良医》，医生爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 344>>
 	电视里正播放《良医》，医疗成长挑战，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 345>>
 	电视里正播放《良医》，医生友情爱情，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 346>>
-	电视里正播放《纸钞污》，教授率劫匪抢铸币厂，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《纸钞污》，教授率劫匪抢铸币厂，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 347>>
-	电视里正播放《纸钞污》，劫匪秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《纸钞污》，劫匪秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 348>>
 	电视里正播放《纸钞污》，教授智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 349>>
-	电视里正播放《纸钞污》，抢劫危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《纸钞污》，抢劫危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 350>>
-	电视里正播放《纸钞污》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《纸钞污》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 351>>
-	电视里正播放《黑袍纠茶队》，反英雄对抗腐败超英，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑袍纠茶队》，反英雄对抗腐败超英，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 352>>
-	电视里正播放《黑袍纠茶队》，超英秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑袍纠茶队》，超英秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 353>>
 	电视里正播放《黑袍纠茶队》，组织智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 354>>
-	电视里正播放《黑袍纠茶队》，腐败危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑袍纠茶队》，腐败危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 355>>
-	电视里正播放《黑袍纠茶队》，正义邪恶较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑袍纠茶队》，正义邪恶较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 356>>
 	电视里正播放《亢奋》，青少年性毒品身份探索，剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 357>>
@@ -766,15 +767,15 @@
 	<<case 360>>
 	电视里正播放《亢奋》，青少年友情爱情，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 361>>
-	电视里正播放《十三个原音》，女孩自杀前真相，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《十三个原音》，女孩自杀前真相，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 362>>
-	电视里正播放《十三个原音》，真相揭露挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《十三个原音》，真相揭露挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 363>>
 	电视里正播放《十三个原音》，女孩智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 364>>
-	电视里正播放《十三个原音》，自杀危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《十三个原音》，自杀危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 365>>
-	电视里正播放《十三个原音》，真相谎言较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《十三个原音》，真相谎言较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 366>>
 	电视里正播放《绝望主妇》，郊区主妇秘密生活，搞笑让你捧腹大笑。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 367>>
@@ -786,41 +787,41 @@
 	<<case 370>>
 	电视里正播放《绝望主妇》，主妇友情爱情，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 371>>
-	电视里正播放《明校风暴》，名校学生权力谋杀，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《明校风暴》，名校学生权力谋杀，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 372>>
-	电视里正播放《明校风暴》，学生秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《明校风暴》，学生秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 373>>
 	电视里正播放《明校风暴》，学生智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 374>>
-	电视里正播放《明校风暴》，谋杀危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《明校风暴》，谋杀危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 375>>
-	电视里正播放《明校风暴》，权力正义较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《明校风暴》，权力正义较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 376>>
 	电视里正播放《网冠》，英国女王政治家庭，剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 377>>
 	电视里正播放《网冠》，王室温馨搞笑，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 378>>
-	电视里正播放《网冠》，女王爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正播放《网冠》，女王爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 379>>
 	电视里正播放《网冠》，王室成长挑战，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 380>>
 	电视里正播放《网冠》，女王友情爱情，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 381>>
-	电视里正播放《浴血黑帮》，黑帮家族战后崛起，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《浴血黑帮》，黑帮家族战后崛起，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 382>>
-	电视里正播放《浴血黑帮》，黑帮秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《浴血黑帮》，黑帮秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 383>>
 	电视里正播放《浴血黑帮》，家族智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 384>>
-	电视里正播放《浴血黑帮》，崛起危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《浴血黑帮》，崛起危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 385>>
-	电视里正播放《浴血黑帮》，黑帮正义较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《浴血黑帮》，黑帮正义较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 386>>
 	电视里正播放《正长人》，爱尔兰青年复杂爱情，浪漫让你心动。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 387>>
 	电视里正播放《正长人》，青年温馨搞笑，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 388>>
-	电视里正播放《正长人》，青年爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正播放《正长人》，青年爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 389>>
 	电视里正播放《正长人》，青年成长挑战，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 390>>
@@ -830,7 +831,7 @@
 	<<case 392>>
 	电视里正播放《皮囊》，青年温馨搞笑，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 393>>
-	电视里正播放《皮囊》，青年爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正播放《皮囊》，青年爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 394>>
 	电视里正播放《皮囊》，青年成长挑战，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 395>>
@@ -840,51 +841,51 @@
 	<<case 397>>
 	电视里正播放《神秘博士》，博士温馨搞笑，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 398>>
-	电视里正播放《神秘博士》，博士爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正播放《神秘博士》，博士爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 399>>
 	电视里正播放《神秘博士》，博士成长挑战，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 400>>
 	电视里正播放《神秘博士》，博士友情爱情，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 401>>
-	电视里正播放《福尔摩斯：基本演绎法》，纽约版福尔摩斯破案，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《福尔摩斯：基本演绎法》，纽约版福尔摩斯破案，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 402>>
-	电视里正播放《福尔摩斯：基本演绎法》，福尔摩斯秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《福尔摩斯：基本演绎法》，福尔摩斯秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 403>>
 	电视里正播放《福尔摩斯：基本演绎法》，福尔摩斯智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 404>>
-	电视里正播放《福尔摩斯：基本演绎法》，破案危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《福尔摩斯：基本演绎法》，破案危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 405>>
-	电视里正播放《福尔摩斯：基本演绎法》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《福尔摩斯：基本演绎法》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 406>>
-	电视里正播放《疑犯追踪》，AI筛选犯罪预警，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《疑犯追踪》，AI筛选犯罪预警，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 407>>
-	电视里正播放《疑犯追踪》，孤胆英雄秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《疑犯追踪》，孤胆英雄秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 408>>
 	电视里正播放《疑犯追踪》，英雄智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 409>>
-	电视里正播放《疑犯追踪》，犯罪危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《疑犯追踪》，犯罪危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 410>>
-	电视里正播放《疑犯追踪》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《疑犯追踪》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 411>>
-	电视里正播放《真探》，警探十七年追连环杀人，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《真探》，警探十七年追连环杀人，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 412>>
-	电视里正播放《真探》，杀手秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《真探》，杀手秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 413>>
 	电视里正播放《真探》，警探智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 414>>
-	电视里正播放《真探》，连环杀手危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《真探》，连环杀手危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 415>>
-	电视里正播放《真探》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《真探》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 416>>
-	电视里正播放《冰血暴》，小镇犯罪连锁反应，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《冰血暴》，小镇犯罪连锁反应，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 417>>
-	电视里正播放《冰血暴》，犯罪秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《冰血暴》，犯罪秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 418>>
 	电视里正播放《冰血暴》，小镇智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 419>>
-	电视里正播放《冰血暴》，犯罪危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《冰血暴》，犯罪危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 420>>
-	电视里正播放《冰血暴》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《冰血暴》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 421>>
 	电视里正播放《副总统》，美国副总统荒诞日常，搞笑让你捧腹大笑。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 422>>
@@ -896,115 +897,115 @@
 	<<case 425>>
 	电视里正播放《副总统》，副总统友情爱情，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 426>>
-	电视里正播放《纸牌污》，政客夫妇操控白宫，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《纸牌污》，政客夫妇操控白宫，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 427>>
-	电视里正播放《纸牌污》，政治秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《纸牌污》，政治秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 428>>
 	电视里正播放《纸牌污》，夫妇智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 429>>
-	电视里正播放《纸牌污》，权力危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《纸牌污》，权力危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 430>>
-	电视里正播放《纸牌污》，政治正义较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《纸牌污》，政治正义较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 431>>
-	电视里正播放《风骚律师》，小律师堕落毒枭顾问，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《风骚律师》，小律师堕落毒枭顾问，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 432>>
-	电视里正播放《风骚律师》，律师秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《风骚律师》，律师秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 433>>
 	电视里正播放《风骚律师》，律师智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 434>>
-	电视里正播放《风骚律师》，堕落危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《风骚律师》，堕落危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 435>>
-	电视里正播放《风骚律师》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《风骚律师》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 436>>
-	电视里正播放《决命毒师》，老师制毒建黑道帝国，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《决命毒师》，老师制毒建黑道帝国，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 437>>
-	电视里正播放《决命毒师》，老师秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《决命毒师》，老师秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 438>>
 	电视里正播放《决命毒师》，老师智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 439>>
-	电视里正播放《决命毒师》，堕落危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《决命毒师》，堕落危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 440>>
-	电视里正播放《决命毒师》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《决命毒师》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 441>>
 	电视里正播放《拳力的游戏》，七国争霸铁王座，剧情让你着迷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 442>>
-	电视里正播放《拳力的游戏》，冰火交织权谋，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《拳力的游戏》，冰火交织权谋，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 443>>
 	电视里正播放《拳力的游戏》，家族爱恨情仇，剧情让你深思。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 444>>
 	电视里正播放《拳力的游戏》，龙与狼的较量，壮观让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 445>>
-	电视里正播放《拳力的游戏》，权谋与背叛，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《拳力的游戏》，权谋与背叛，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 446>>
-	电视里正播放《龙之家族》，坦格利安家族内斗，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《龙之家族》，坦格利安家族内斗，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 447>>
-	电视里正播放《龙之家族》，龙族秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《龙之家族》，龙族秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 448>>
 	电视里正播放《龙之家族》，家族智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 449>>
-	电视里正播放《龙之家族》，内战危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《龙之家族》，内战危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 450>>
-	电视里正播放《龙之家族》，家族正义较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《龙之家族》，家族正义较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 451>>
-	电视里正播放《安眠书店》，书店店主变杀手，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《安眠书店》，书店店主变杀手，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 452>>
-	电视里正播放《安眠书店》，杀手秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《安眠书店》，杀手秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 453>>
 	电视里正播放《安眠书店》，店主智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 454>>
-	电视里正播放《安眠书店》，痴狂危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《安眠书店》，痴狂危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 455>>
-	电视里正播放《安眠书店》，爱情犯罪较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《安眠书店》，爱情犯罪较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 456>>
-	电视里正播放《心灵猎人》，FBI探员研究杀人心理，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《心灵猎人》，FBI探员研究杀人心理，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 457>>
-	电视里正播放《心灵猎人》，心理秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《心灵猎人》，心理秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 458>>
 	电视里正播放《心灵猎人》，探员智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 459>>
-	电视里正播放《心灵猎人》，研究危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《心灵猎人》，研究危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 460>>
-	电视里正播放《心灵猎人》，犯罪心理较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《心灵猎人》，犯罪心理较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 461>>
-	电视里正播放《暗黑》，德国小镇穿越谜团，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《暗黑》，德国小镇穿越谜团，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 462>>
-	电视里正播放《暗黑》，家族秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《暗黑》，家族秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 463>>
 	电视里正播放《暗黑》，小镇智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 464>>
-	电视里正播放《暗黑》，穿越危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《暗黑》，穿越危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 465>>
-	电视里正播放《暗黑》，时空命运较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《暗黑》，时空命运较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 466>>
-	电视里正播放《黑京》，科技反乌托邦人性实验，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑京》，科技反乌托邦人性实验，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 467>>
-	电视里正播放《黑京》，未来秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑京》，未来秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 468>>
 	电视里正播放《黑京》，科技智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 469>>
-	电视里正播放《黑京》，反乌托邦危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑京》，反乌托邦危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 470>>
-	电视里正播放《黑京》，人性科技较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《黑京》，人性科技较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 471>>
-	电视里正播放《维兰德》，瑞典警探冷静查案，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《维兰德》，瑞典警探冷静查案，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 472>>
-	电视里正播放《维兰德》，社会秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《维兰德》，社会秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 473>>
 	电视里正播放《维兰德》，警探智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 474>>
-	电视里正播放《维兰德》，查案危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《维兰德》，查案危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 475>>
-	电视里正播放《维兰德》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《维兰德》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 476>>
-	电视里正播放《神探夏落壳》，伦敦版夏洛克破案，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《神探夏落壳》，伦敦版夏洛克破案，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 477>>
-	电视里正播放《神探夏落壳》，夏洛克秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《神探夏落壳》，夏洛克秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 478>>
 	电视里正播放《神探夏落壳》，夏洛克智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 479>>
-	电视里正播放《神探夏落壳》，破案危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《神探夏落壳》，破案危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 480>>
-	电视里正播放《神探夏落壳》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《神探夏落壳》，犯罪正义较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 481>>
 	电视里正播放《性爱自修室》，青少年探索情欲困惑，搞笑让你捧腹大笑。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 482>>
@@ -1016,15 +1017,15 @@
 	<<case 485>>
 	电视里正播放《性爱自修室》，青年友情爱情，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 486>>
-	电视里正播放《一触即发》，CIA分析员卷入阴谋，紧张让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《一触即发》，CIA分析员卷入阴谋，紧张让你心跳加速。<<gstress>><<stress 20>>
 	<<case 487>>
-	电视里正播放《一触即发》，恐怖主义秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《一触即发》，恐怖主义秘密挑战，压抑让你心神不宁。<<gstress>><<stress 20>>
 	<<case 488>>
 	电视里正播放《一触即发》，分析员智慧勇气，剧情让你振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 489>>
-	电视里正播放《一触即发》，阴谋危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《一触即发》，阴谋危险挣扎，紧张让你屏住呼吸。<<gstress>><<stress 20>>
 	<<case 490>>
-	电视里正播放《一触即发》，正义邪恶较量，让你冷汗直流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正播放《一触即发》，正义邪恶较量，让你冷汗直流。<<gstress>><<stress 20>>
 	<<case 491>>
 	电视里正播放《轮蹲生活》，女性面对孤独创伤，搞笑让你捧腹大笑。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 492>>
@@ -1040,21 +1041,21 @@
 	<<case 497>>
 	电视里正播放《王后旗下》，棋手温馨搞笑，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 498>>
-	电视里正播放《王后旗下》，棋手爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正播放《王后旗下》，棋手爱恨情仇，剧情让你屏住呼吸。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 499>>
 	电视里正播放《王后旗下》，逆袭成长挑战，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 500>>
 	电视里正播放《王后旗下》，棋手友情爱情，温馨让你幸福。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 501>>
-	电视里正在播放《风暴污》，探员揭露一家情报公司与境外势力勾结的内幕，黑暗交易让人感到不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《风暴污》，探员揭露一家情报公司与境外势力勾结的内幕，黑暗交易让人感到不安。<<gstress>><<stress 20>>
 	<<case 502>>
-	《疯报务》中，探员为了揭露情报公司的勾结内幕，身陷险境，剧情紧张刺激。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《疯报务》中，探员为了揭露情报公司的勾结内幕，身陷险境，剧情紧张刺激。<<gstress>><<stress 20>>
 	<<case 503>>
-	在《风暴污》中，探员为了揭露真相，不得不与境外势力周旋，小镇的黑暗势力也蠢蠢欲动。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	在《风暴污》中，探员为了揭露真相，不得不与境外势力周旋，小镇的黑暗势力也蠢蠢欲动。<<gstress>><<stress 20>>
 	<<case 504>>
-	电视里放着《风暴污》，探员深入虎穴，揭露情报公司与境外势力的丑陋勾结，让你对小镇的未来感到担忧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《风暴污》，探员深入虎穴，揭露情报公司与境外势力的丑陋勾结，让你对小镇的未来感到担忧。<<gstress>><<stress 20>>
 	<<case 505>>
-	《疯报务》里的探员勇敢地揭露情报公司与境外势力的勾结，虽然剧情紧张，但你期待正义的到来。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《疯报务》里的探员勇敢地揭露情报公司与境外势力的勾结，虽然剧情紧张，但你期待正义的到来。<<gstress>><<stress 20>>
 	<<case 506>>
 	电视里正在播放《照亮泥》，消防员与记者十年后重逢，续写前缘，他们的爱情故事让人感到温暖。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 507>>
@@ -1086,25 +1087,25 @@
 	<<case 520>>
 	《凉贱》描绘了李欲龙和部队的抗战故事，他们的英勇事迹让你暂时忘记了小镇的荒诞。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 521>>
-	电视里正在播放《北坪往事》，三位女性在乱世中成长与牺牲的故事，让你感受到了时代的悲剧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《北坪往事》，三位女性在乱世中成长与牺牲的故事，让你感受到了时代的悲剧。<<gstress>><<stress 20>>
 	<<case 522>>
-	《悲平往事》中，三位女性在乱世中挣扎求生，她们的命运让人唏嘘。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《悲平往事》中，三位女性在乱世中挣扎求生，她们的命运让人唏嘘。<<gstress>><<stress 20>>
 	<<case 523>>
-	《北坪往事》里的女性在乱世中展现了坚韧与牺牲，她们的故事让你感到沉重。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《北坪往事》里的女性在乱世中展现了坚韧与牺牲，她们的故事让你感到沉重。<<gstress>><<stress 20>>
 	<<case 524>>
-	电视里放着《悲平往事》，三位女性的成长与牺牲在乱世中显得尤为悲壮，让你为她们的命运感到惋惜。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《悲平往事》，三位女性的成长与牺牲在乱世中显得尤为悲壮，让你为她们的命运感到惋惜。<<gstress>><<stress 20>>
 	<<case 525>>
-	《北坪往事》讲述了三位女性在乱世中的悲惨命运，她们的牺牲让你感受到小镇之外的残酷。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《北坪往事》讲述了三位女性在乱世中的悲惨命运，她们的牺牲让你感受到小镇之外的残酷。<<gstress>><<stress 20>>
 	<<case 526>>
-	电视里正在播放《只牌屋》，政客夫妇操控权力，步步高升，他们的权谋让人不寒而栗。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《只牌屋》，政客夫妇操控权力，步步高升，他们的权谋让人不寒而栗。<<gstress>><<stress 20>>
 	<<case 527>>
-	《纸排屋》中，政客夫妇的权谋斗争让人看到了政治的黑暗面，小镇的市长和警察也与之呼应。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《纸排屋》中，政客夫妇的权谋斗争让人看到了政治的黑暗面，小镇的市长和警察也与之呼应。<<gstress>><<stress 20>>
 	<<case 528>>
-	《只牌屋》里的政客夫妇为了权力不择手段，他们的心机让你感到恐惧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《只牌屋》里的政客夫妇为了权力不择手段，他们的心机让你感到恐惧。<<gstress>><<stress 20>>
 	<<case 529>>
-	电视里放着《纸排屋》，政客夫妇的权谋让人生厌，你觉得这与小镇的腐败如出一辙。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《纸排屋》，政客夫妇的权谋让人生厌，你觉得这与小镇的腐败如出一辙。<<gstress>><<stress 20>>
 	<<case 530>>
-	《只牌屋》描绘了政客夫妇的权力游戏，他们的每一步都充满了算计，让你觉得这个世界充满黑暗。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《只牌屋》描绘了政客夫妇的权力游戏，他们的每一步都充满了算计，让你觉得这个世界充满黑暗。<<gstress>><<stress 20>>
 	<<case 531>>
 	电视里正在播放《黑歌 第二季》，间谍母亲揭露组织秘密，保护家人，她的勇气让你感动。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 532>>
@@ -1126,13 +1127,13 @@
 	<<case 540>>
 	《格雷斯 第五季》描绘了侦探破案的过程，他为受害者讨回公道，让你觉得这个世界并非全是黑暗。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 541>>
-	电视里正在播放《九号秘事 第九季》，每集独立的故事，揭示人性暗面，让你深思。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《九号秘事 第九季》，每集独立的故事，揭示人性暗面，让你深思。<<gstress>><<stress 20>>
 	<<case 542>>
-	《玖号密事 第九季》中，每一集都探讨了人性的阴暗面，让你对小镇的居民也有了新的看法。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《玖号密事 第九季》中，每一集都探讨了人性的阴暗面，让你对小镇的居民也有了新的看法。<<gstress>><<stress 20>>
 	<<case 543>>
-	《九号秘事 第九季》里的故事让人不寒而栗，它揭示了人性的复杂与险恶。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《九号秘事 第九季》里的故事让人不寒而栗，它揭示了人性的复杂与险恶。<<gstress>><<stress 20>>
 	<<case 544>>
-	电视里放着《玖号密事 第九季》，每一集都充满了悬念和反转，让你觉得人性的暗面无处不在。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《玖号密事 第九季》，每一集都充满了悬念和反转，让你觉得人性的暗面无处不在。<<gstress>><<stress 20>>
 	<<case 545>>
 	《九号秘事 第九季》展现了人性的多样性，即使是小镇居民，内心也可能有不为人知的秘密。<<gstress>><<stress 20>><<gtrauma>><<traroma 2>>
 	<<case 546>>
@@ -1146,15 +1147,15 @@
 	<<case 550>>
 	《老油记》描绘了六个好友的都市生活，他们的欢笑与泪水让你暂时忘记了小镇的烦恼。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 551>>
-	电视里正在播放《绝命肚师》，化学老师制毒，走上犯罪之路，让你对人性的堕落感到震惊。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《绝命肚师》，化学老师制毒，走上犯罪之路，让你对人性的堕落感到震惊。<<gstress>><<stress 20>>
 	<<case 552>>
-	《绝命肚师》中，化学老师从普通人沦为毒枭，他的经历让你感到不安，仿佛小镇的黑暗也随时可能爆发。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《绝命肚师》中，化学老师从普通人沦为毒枭，他的经历让你感到不安，仿佛小镇的黑暗也随时可能爆发。<<gstress>><<stress 20>>
 	<<case 553>>
-	《绝命肚师》里的化学老师为了金钱铤而走险，他的犯罪生涯让人感到恐惧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《绝命肚师》里的化学老师为了金钱铤而走险，他的犯罪生涯让人感到恐惧。<<gstress>><<stress 20>>
 	<<case 554>>
-	电视里放着《绝命肚师》，化学老师的堕落让你看到了人性的弱点，你觉得小镇的犯罪也可能来源于此。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《绝命肚师》，化学老师的堕落让你看到了人性的弱点，你觉得小镇的犯罪也可能来源于此。<<gstress>><<stress 20>>
 	<<case 555>>
-	《绝命肚师》讲述了化学老师的犯罪之路，他的选择让你深思金钱与人性的关系。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《绝命肚师》讲述了化学老师的犯罪之路，他的选择让你深思金钱与人性的关系。<<gstress>><<stress 20>>
 	<<case 556>>
 	电视里正在播放《叉档案》，FBI探员调查超自然现象，让你对未知充满了好奇。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 557>>
@@ -1166,25 +1167,25 @@
 	<<case 560>>
 	《叉档案》描绘了超自然世界的奇妙与危险，探员们的探索让你对未知充满了想象。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 561>>
-	电视里正在播放《权利的游戏》，七国争霸，权谋与魔法交织，让你感受到了史诗般的震撼。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《权利的游戏》，七国争霸，权谋与魔法交织，让你感受到了史诗般的震撼。<<gstress>><<stress 20>>
 	<<case 562>>
-	《权利的游戏》中，七国为了权力互相厮杀，血腥的场面让你感到不安，小镇的权力斗争也与之类似。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《权利的游戏》中，七国为了权力互相厮杀，血腥的场面让你感到不安，小镇的权力斗争也与之类似。<<gstress>><<stress 20>>
 	<<case 563>>
-	《权利的游戏》里的权谋斗争让人心惊胆战，魔法的加入让剧情更加扑朔迷离。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《权利的游戏》里的权谋斗争让人心惊胆战，魔法的加入让剧情更加扑朔迷离。<<gstress>><<stress 20>>
 	<<case 564>>
-	电视里放着《权利的游戏》，七国争霸的残酷让你看到了权力的诱惑与代价。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《权利的游戏》，七国争霸的残酷让你看到了权力的诱惑与代价。<<gstress>><<stress 20>>
 	<<case 565>>
-	《权利的游戏》讲述了七国之间的恩怨情仇，血雨腥风让你觉得即使在小镇，权力也可能带来灾难。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《权利的游戏》讲述了七国之间的恩怨情仇，血雨腥风让你觉得即使在小镇，权力也可能带来灾难。<<gstress>><<stress 20>>
 	<<case 566>>
-	电视里正在播放《轮敦生活》，女子在伦敦的生活与情感挣扎，让你感受到了都市的孤独。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《轮敦生活》，女子在伦敦的生活与情感挣扎，让你感受到了都市的孤独。<<gstress>><<stress 20>>
 	<<case 567>>
-	《轮蹲生活》中，女主角在伦敦的挣扎让你想起了小镇的无奈，生活不易。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《轮蹲生活》中，女主角在伦敦的挣扎让你想起了小镇的无奈，生活不易。<<gstress>><<stress 20>>
 	<<case 568>>
-	《轮敦生活》里的女主角在感情与生活中迷失，她的困境让你感到共鸣。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《轮敦生活》里的女主角在感情与生活中迷失，她的困境让你感到共鸣。<<gstress>><<stress 20>>
 	<<case 569>>
-	电视里放着《轮蹲生活》，女主角的都市生活充满了挑战，让你觉得即使在小镇，也可能面临同样的困境。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《轮蹲生活》，女主角的都市生活充满了挑战，让你觉得即使在小镇，也可能面临同样的困境。<<gstress>><<stress 20>>
 	<<case 570>>
-	《轮敦生活》描绘了女主角在伦敦的孤独与挣扎，她的故事让你暂时忘记了小镇的喧嚣。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《轮敦生活》描绘了女主角在伦敦的孤独与挣扎，她的故事让你暂时忘记了小镇的喧嚣。<<gstress>><<stress 20>>
 	<<case 571>>
 	电视里正在播放《去他妈的世界》，两位青少年踏上逃亡之旅，他们的叛逆让你感到一丝兴奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 572>>
@@ -1216,15 +1217,15 @@
 	<<case 585>>
 	《神探下落可》展现了现代福尔摩斯的独特魅力，他让小镇的黑暗事件也似乎有了解决的希望。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 586>>
-	电视里正在播放《黑井》，科技对人类社会的影响与反思，让你对未来充满了担忧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《黑井》，科技对人类社会的影响与反思，让你对未来充满了担忧。<<gstress>><<stress 20>>
 	<<case 587>>
-	《黑井》中，科技带来的反乌托邦场景让你感到毛骨悚然，你觉得小镇的科技发展也可能带来灾难。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《黑井》中，科技带来的反乌托邦场景让你感到毛骨悚然，你觉得小镇的科技发展也可能带来灾难。<<gstress>><<stress 20>>
 	<<case 588>>
-	《黑井》里的故事让人深思科技与人性的关系，它的结局往往让人感到绝望。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《黑井》里的故事让人深思科技与人性的关系，它的结局往往让人感到绝望。<<gstress>><<stress 20>>
 	<<case 589>>
-	电视里放着《黑井》，科技的反噬让人不寒而栗，你觉得小镇的居民也可能被科技所控制。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《黑井》，科技的反噬让人不寒而栗，你觉得小镇的居民也可能被科技所控制。<<gstress>><<stress 20>>
 	<<case 590>>
-	《黑井》描绘了科技失控后的世界，它的警示让你对未来充满了不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《黑井》描绘了科技失控后的世界，它的警示让你对未来充满了不安。<<gstress>><<stress 20>>
 	<<case 591>>
 	电视里正在播放《王罐》，英国女王伊丽莎白二世的统治生涯，让你感受到了王室的威严。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 592>>
@@ -1236,15 +1237,15 @@
 	<<case 595>>
 	《王罐》展现了英国女王的政治智慧，她为国家做出的贡献让人印象深刻。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 596>>
-	电视里正在播放《杀死伊芙》，特工与女杀手之间的猫鼠游戏，让你感到紧张刺激。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《杀死伊芙》，特工与女杀手之间的猫鼠游戏，让你感到紧张刺激。<<gstress>><<stress 20>>
 	<<case 597>>
-	《杀丝伊芙》中，特工和女杀手的对决充满了悬念，他们的每一次交锋都让小镇的你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《杀丝伊芙》中，特工和女杀手的对决充满了悬念，他们的每一次交锋都让小镇的你心跳加速。<<gstress>><<stress 20>>
 	<<case 598>>
-	《杀死伊芙》里的特工与女杀手互相追逐，他们的关系复杂而危险，让你感到肾上腺素飙升。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《杀死伊芙》里的特工与女杀手互相追逐，他们的关系复杂而危险，让你感到肾上腺素飙升。<<gstress>><<stress 20>>
 	<<case 599>>
-	电视里放着《杀丝伊芙》，特工和女杀手的猫鼠游戏充满了危险与诱惑，你觉得小镇的犯罪也可能如此迷人。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里放着《杀丝伊芙》，特工和女杀手的猫鼠游戏充满了危险与诱惑，你觉得小镇的犯罪也可能如此迷人。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 600>>
-	《杀死伊芙》描绘了特工与女杀手的宿命对决，他们的故事让你对人性的复杂有了新的认识。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	《杀死伊芙》描绘了特工与女杀手的宿命对决，他们的故事让你对人性的复杂有了新的认识。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 601>>
 	电视里正在播放《犯花》，90年代上海商界沉浮录，让你感受到了时代的变迁与商海的残酷。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 602>>
@@ -1256,15 +1257,15 @@
 	<<case 605>>
 	《犯花》描绘了上海商界的风云变幻，主人公们的拼搏精神让你感到振奋。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 606>>
-	电视里正在播放《开端》，公交爆炸循环中的救赎与真相，让你感到紧张与绝望。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《开端》，公交爆炸循环中的救赎与真相，让你感到紧张与绝望。<<gstress>><<stress 20>>
 	<<case 607>>
-	《开端》中，主人公们陷入公交爆炸的循环，他们为了寻求真相不断努力，让你感到一丝希望。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《开端》中，主人公们陷入公交爆炸的循环，他们为了寻求真相不断努力，让你感到一丝希望。<<gstress>><<stress 20>>
 	<<case 608>>
-	《开端》里的时间循环充满了悬念，主人公们为了解开谜团不懈努力，让你为他们的命运感到担忧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《开端》里的时间循环充满了悬念，主人公们为了解开谜团不懈努力，让你为他们的命运感到担忧。<<gstress>><<stress 20>>
 	<<case 609>>
-	电视里放着《开端》，公交爆炸的循环让人感到绝望，你觉得小镇的平静下也可能隐藏着危机。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《开端》，公交爆炸的循环让人感到绝望，你觉得小镇的平静下也可能隐藏着危机。<<gstress>><<stress 20>>
 	<<case 610>>
-	《开端》讲述了主人公们在时间循环中寻找真相的故事，他们的努力让你对正义的到来充满了期待。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《开端》讲述了主人公们在时间循环中寻找真相的故事，他们的努力让你对正义的到来充满了期待。<<gstress>><<stress 20>>
 	<<case 611>>
 	电视里正在播放《人是贱》，周家三代人半世纪的人生轨迹，让你感受到了生活的酸甜苦辣。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 612>>
@@ -1276,25 +1277,25 @@
 	<<case 615>>
 	《人是贱》描绘了周家人的平凡生活，他们的故事让你觉得即使在小镇，也能过上充实的人生。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 616>>
-	电视里正在播放《淫密角落》，少年拍下谋杀，揭露人性深渊，让你感到毛骨悚然。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《淫密角落》，少年拍下谋杀，揭露人性深渊，让你感到毛骨悚然。<<gstress>><<stress 20>>
 	<<case 617>>
-	《淫密角落》中，少年意外拍下谋杀案，他揭露的真相让人不寒而栗，小镇的平静被打破。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《淫密角落》中，少年意外拍下谋杀案，他揭露的真相让人不寒而栗，小镇的平静被打破。<<gstress>><<stress 20>>
 	<<case 618>>
-	《淫密角落》里的故事充满了阴谋与黑暗，少年们无意中卷入其中，让你感到压抑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《淫密角落》里的故事充满了阴谋与黑暗，少年们无意中卷入其中，让你感到压抑。<<gstress>><<stress 20>>
 	<<case 619>>
-	电视里放着《淫密角落》，少年拍下谋杀案的画面让你感到恐惧，你觉得小镇的表面平静下也可能隐藏着罪恶。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《淫密角落》，少年拍下谋杀案的画面让你感到恐惧，你觉得小镇的表面平静下也可能隐藏着罪恶。<<gstress>><<stress 20>>
 	<<case 620>>
-	《淫密角落》讲述了少年们无意中卷入的谋杀案，他们揭露的人性黑暗让你深思。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《淫密角落》讲述了少年们无意中卷入的谋杀案，他们揭露的人性黑暗让你深思。<<gstress>><<stress 20>>
 	<<case 621>>
-	电视里正在播放《沉默的真像》，检察官为冤案献身揭黑幕，让你感受到了正义的艰难。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《沉默的真像》，检察官为冤案献身揭黑幕，让你感受到了正义的艰难。<<gstress>><<stress 20>>
 	<<case 622>>
-	《沉默的真像》中，检察官为了冤案付出了生命的代价，他的牺牲让小镇的居民也为之动容。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《沉默的真像》中，检察官为了冤案付出了生命的代价，他的牺牲让小镇的居民也为之动容。<<gstress>><<stress 20>>
 	<<case 623>>
-	《沉默的真像》里的检察官为了真相不惜一切，他的执着让你感到敬佩与悲痛。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《沉默的真像》里的检察官为了真相不惜一切，他的执着让你感到敬佩与悲痛。<<gstress>><<stress 20>>
 	<<case 624>>
-	电视里放着《沉默的真像》，检察官的牺牲让人心痛，你觉得小镇的黑暗势力也可能逍遥法外。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《沉默的真像》，检察官的牺牲让人心痛，你觉得小镇的黑暗势力也可能逍遥法外。<<gstress>><<stress 20>>
 	<<case 625>>
-	《沉默的真像》描绘了检察官为正义献身的故事，他揭露的黑幕让你对社会充满了反思。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《沉默的真像》描绘了检察官为正义献身的故事，他揭露的黑幕让你对社会充满了反思。<<gstress>><<stress 20>>
 	<<case 626>>
 	电视里正在播放《想见你》，穿越时空寻找恋人的青春悬疑，让你对爱情充满了向往。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 627>>
@@ -1316,15 +1317,15 @@
 	<<case 635>>
 	《俗女养成季》描绘了女主角的成长过程，她的选择让你对人生有了新的思考。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 636>>
-	电视里正在播放《我们与恶的距离》，无差别杀人案后，众人面对创伤，让你感到沉重与压抑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《我们与恶的距离》，无差别杀人案后，众人面对创伤，让你感到沉重与压抑。<<gstress>><<stress 20>>
 	<<case 637>>
-	《我们与恶的距离》中，无差别杀人案后的社会创伤让你感到心痛，小镇的居民也曾经历过类似的不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《我们与恶的距离》中，无差别杀人案后的社会创伤让你感到心痛，小镇的居民也曾经历过类似的不安。<<gstress>><<stress 20>>
 	<<case 638>>
-	《我们与恶的距离》里的故事让人深思善与恶的界限，它的现实意义让你感到沉重。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《我们与恶的距离》里的故事让人深思善与恶的界限，它的现实意义让你感到沉重。<<gstress>><<stress 20>>
 	<<case 639>>
-	电视里放着《我们与恶的距离》，无差别杀人案后的影响让人触目惊心，你觉得小镇的犯罪也可能带来同样的创伤。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《我们与恶的距离》，无差别杀人案后的影响让人触目惊心，你觉得小镇的犯罪也可能带来同样的创伤。<<gstress>><<stress 20>>
 	<<case 640>>
-	《我们与恶的距离》探讨了社会创伤与人性的复杂，它的真实性让你感到不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《我们与恶的距离》探讨了社会创伤与人性的复杂，它的真实性让你感到不安。<<gstress>><<stress 20>>
 	<<case 641>>
 	电视里正在播放《茶金》，女继承人带领茶厂打入国际市场，让你感受到了女性的力量。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 642>>
@@ -1346,15 +1347,15 @@
 	<<case 650>>
 	《天骄上的魔术师》描绘了孩童们的奇幻之旅，他们的纯真与好奇让你暂时忘记了小镇的烦恼。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 651>>
-	电视里正在播放《大时代》，股市风云下的命运交错，让你感受到了时代的洪流。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《大时代》，股市风云下的命运交错，让你感受到了时代的洪流。<<gstress>><<stress 20>>
 	<<case 652>>
-	《大时代》中，股市的波动影响着每个人的命运，小镇的经济也曾有过类似的起伏。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《大时代》中，股市的波动影响着每个人的命运，小镇的经济也曾有过类似的起伏。<<gstress>><<stress 20>>
 	<<case 653>>
-	《大时代》里的股市风云充满了变数，主人公们在其中挣扎求生，让你感到人生的无常。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《大时代》里的股市风云充满了变数，主人公们在其中挣扎求生，让你感到人生的无常。<<gstress>><<stress 20>>
 	<<case 654>>
-	电视里放着《大时代》，股市的残酷让你看到了金钱的诱惑与危险，你觉得小镇的居民也应该警惕。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《大时代》，股市的残酷让你看到了金钱的诱惑与危险，你觉得小镇的居民也应该警惕。<<gstress>><<stress 20>>
 	<<case 655>>
-	《大时代》描绘了股市下的命运交错，它让你对金钱与人性有了新的认识。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《大时代》描绘了股市下的命运交错，它让你对金钱与人性有了新的认识。<<gstress>><<stress 20>>
 	<<case 656>>
 	电视里正在播放《创世纪》，企业家从草根逆袭商界巅峰，让你感受到了奋斗的力量。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 657>>
@@ -1366,55 +1367,55 @@
 	<<case 660>>
 	《创世纪》描绘了企业家的商业传奇，他的坚韧与智慧让你看到了成功的可能。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 661>>
-	电视里正在播放《金汁欲孽》，后宫妃嫔争斗权谋，让你感到宫廷的黑暗与残酷。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《金汁欲孽》，后宫妃嫔争斗权谋，让你感到宫廷的黑暗与残酷。<<gstress>><<stress 20>>
 	<<case 662>>
-	《金汁欲孽》中，后宫妃嫔为了权力互相算计，她们的勾心斗角让你感到不安，仿佛小镇的居民也在暗中较量。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《金汁欲孽》中，后宫妃嫔为了权力互相算计，她们的勾心斗角让你感到不安，仿佛小镇的居民也在暗中较量。<<gstress>><<stress 20>>
 	<<case 663>>
-	《金汁欲孽》里的后宫争斗充满了阴谋与陷阱，女人们为了生存不择手段，让你感到压抑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《金汁欲孽》里的后宫争斗充满了阴谋与陷阱，女人们为了生存不择手段，让你感到压抑。<<gstress>><<stress 20>>
 	<<case 664>>
-	电视里放着《金汁欲孽》，后宫妃嫔的权谋让你看到了人性的丑恶，你觉得小镇的性开放也可能隐藏着不为人知的秘密。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里放着《金汁欲孽》，后宫妃嫔的权谋让你看到了人性的丑恶，你觉得小镇的性开放也可能隐藏着不为人知的秘密。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 665>>
-	《金汁欲孽》描绘了后宫的残酷争斗，它让你对权力与欲望有了新的认识。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《金汁欲孽》描绘了后宫的残酷争斗，它让你对权力与欲望有了新的认识。<<gstress>><<stress 20>>
 	<<case 666>>
-	电视里正在播放《糖心风暴》，豪门家族因财生变，亲情考验人性，让你感受到了金钱的诱惑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《糖心风暴》，豪门家族因财生变，亲情考验人性，让你感受到了金钱的诱惑。<<gstress>><<stress 20>>
 	<<case 667>>
-	《糖心风暴》中，豪门家族为了财产互相争夺，他们的亲情被金钱腐蚀，让小镇的居民也为之唏嘘。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《糖心风暴》中，豪门家族为了财产互相争夺，他们的亲情被金钱腐蚀，让小镇的居民也为之唏嘘。<<gstress>><<stress 20>>
 	<<case 668>>
-	《糖心风暴》里的家族内斗充满了算计，亲情在金钱面前变得脆弱，让你感到心痛。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《糖心风暴》里的家族内斗充满了算计，亲情在金钱面前变得脆弱，让你感到心痛。<<gstress>><<stress 20>>
 	<<case 669>>
-	电视里放着《糖心风暴》，豪门家族的变故让你看到了金钱的负面影响，你觉得小镇的财富分配也可能引发矛盾。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《糖心风暴》，豪门家族的变故让你看到了金钱的负面影响，你觉得小镇的财富分配也可能引发矛盾。<<gstress>><<stress 20>>
 	<<case 670>>
-	《糖心风暴》描绘了豪门家族的恩怨情仇，它让你对金钱与亲情的关系有了新的思考。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《糖心风暴》描绘了豪门家族的恩怨情仇，它让你对金钱与亲情的关系有了新的思考。<<gstress>><<stress 20>>
 	<<case 671>>
-	电视里正在播放《潜形狙击》，卧底警察游走黑白之间，让你感到紧张与刺激。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《潜形狙击》，卧底警察游走黑白之间，让你感到紧张与刺激。<<gstress>><<stress 20>>
 	<<case 672>>
-	《潜形狙击》中，卧底警察为了正义身陷险境，他的每一次行动都让小镇的你心惊胆战。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《潜形狙击》中，卧底警察为了正义身陷险境，他的每一次行动都让小镇的你心惊胆战。<<gstress>><<stress 20>>
 	<<case 673>>
-	《潜形狙击》里的卧底警察在黑白两道之间游走，他的身份充满危险，让你感到肾上腺素飙升。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《潜形狙击》里的卧底警察在黑白两道之间游走，他的身份充满危险，让你感到肾上腺素飙升。<<gstress>><<stress 20>>
 	<<case 674>>
-	电视里放着《潜形狙击》，卧底警察的每一次任务都充满了未知，你觉得小镇的犯罪也可能如此隐秘。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《潜形狙击》，卧底警察的每一次任务都充满了未知，你觉得小镇的犯罪也可能如此隐秘。<<gstress>><<stress 20>>
 	<<case 675>>
-	《潜形狙击》描绘了卧底警察的艰辛与付出，他的牺牲让你对正义的到来充满了期待。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《潜形狙击》描绘了卧底警察的艰辛与付出，他的牺牲让你对正义的到来充满了期待。<<gstress>><<stress 20>>
 	<<case 676>>
-	电视里正在播放《使徒行者》，警方追查失联卧底，黑帮渗透警队，让你感到紧张与不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《使徒行者》，警方追查失联卧底，黑帮渗透警队，让你感到紧张与不安。<<gstress>><<stress 20>>
 	<<case 677>>
-	《使徒行者》中，警方与黑帮的斗争充满了悬念，卧底的身份让人捉摸不透，小镇的平静也可能随时被打破。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《使徒行者》中，警方与黑帮的斗争充满了悬念，卧底的身份让人捉摸不透，小镇的平静也可能随时被打破。<<gstress>><<stress 20>>
 	<<case 678>>
-	《使徒行者》里的卧底警察面临生死考验，他们的命运让人感到担忧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《使徒行者》里的卧底警察面临生死考验，他们的命运让人感到担忧。<<gstress>><<stress 20>>
 	<<case 679>>
-	电视里放着《使徒行者》，黑帮渗透警队的剧情让你感到愤怒，你觉得小镇的警察也可能被腐蚀。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《使徒行者》，黑帮渗透警队的剧情让你感到愤怒，你觉得小镇的警察也可能被腐蚀。<<gstress>><<stress 20>>
 	<<case 680>>
-	《使徒行者》描绘了卧底警察的忠诚与背叛，它让你对正义与邪恶的界限有了新的认识。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《使徒行者》描绘了卧底警察的忠诚与背叛，它让你对正义与邪恶的界限有了新的认识。<<gstress>><<stress 20>>
 	<<case 681>>
-	电视里正在播放《大太奸》，李莲英权倾朝野，宫廷波诡云谲，让你感受到了权力的腐蚀。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《大太奸》，李莲英权倾朝野，宫廷波诡云谲，让你感受到了权力的腐蚀。<<gstress>><<stress 20>>
 	<<case 682>>
-	《大太奸》中，李莲英的权势让人感到震惊，宫廷的黑暗斗争也让你对权力充满了警惕。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《大太奸》中，李莲英的权势让人感到震惊，宫廷的黑暗斗争也让你对权力充满了警惕。<<gstress>><<stress 20>>
 	<<case 683>>
-	《大太奸》里的宫廷权谋充满了算计，宦官的崛起让人感到不安，仿佛小镇的市长也在暗中操纵。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《大太奸》里的宫廷权谋充满了算计，宦官的崛起让人感到不安，仿佛小镇的市长也在暗中操纵。<<gstress>><<stress 20>>
 	<<case 684>>
-	电视里放着《大太奸》，李莲英的权力之路充满了血腥与阴谋，你觉得小镇的政治也可能如此黑暗。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《大太奸》，李莲英的权力之路充满了血腥与阴谋，你觉得小镇的政治也可能如此黑暗。<<gstress>><<stress 20>>
 	<<case 685>>
-	《大太奸》描绘了宦官的权倾朝野，它让你对历史的黑暗面有了新的认识。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《大太奸》描绘了宦官的权倾朝野，它让你对历史的黑暗面有了新的认识。<<gstress>><<stress 20>>
 	<<case 686>>
 	电视里正在播放《金国枭雄》，清末寡妇建立商界帝国，让你感受到了女性的坚韧与智慧。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 687>>
@@ -1456,15 +1457,15 @@
 	<<case 705>>
 	《西游记》描绘了神话世界的奇妙与冒险，它的故事让你暂时忘记了小镇的烦恼。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 706>>
-	电视里正在播放《真欢传》，甄嬛步步为营终成太后，让你感受到了宫廷的残酷与智慧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《真欢传》，甄嬛步步为营终成太后，让你感受到了宫廷的残酷与智慧。<<gstress>><<stress 20>>
 	<<case 707>>
-	《真欢传》中，甄嬛在后宫中步步高升，她的智慧与心机让小镇的居民也为之惊叹。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《真欢传》中，甄嬛在后宫中步步高升，她的智慧与心机让小镇的居民也为之惊叹。<<gstress>><<stress 20>>
 	<<case 708>>
-	《真欢传》里的宫廷争斗充满了阴谋，甄嬛的蜕变让你感到压抑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《真欢传》里的宫廷争斗充满了阴谋，甄嬛的蜕变让你感到压抑。<<gstress>><<stress 20>>
 	<<case 709>>
-	电视里放着《真欢传》，甄嬛的上位之路充满了血腥与牺牲，你觉得小镇的性开放风俗也可能隐藏着不为人知的权力斗争。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里放着《真欢传》，甄嬛的上位之路充满了血腥与牺牲，你觉得小镇的性开放风俗也可能隐藏着不为人知的权力斗争。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 710>>
-	《真欢传》描绘了甄嬛的宫廷生涯，它让你对权力与人性的关系有了新的认识。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《真欢传》描绘了甄嬛的宫廷生涯，它让你对权力与人性的关系有了新的认识。<<gstress>><<stress 20>>
 	<<case 711>>
 	电视里正在播放《知否知否应是绿肥红兽》，庶女在宅斗中成长为一品诰命，让你感受到了古代女性的智慧。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 712>>
@@ -1556,15 +1557,15 @@
 	<<case 755>>
 	《沧澜绝》描绘了恶魔尊与花仙的爱情故事，它让你相信即使在小镇也能找到命中注定。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 756>>
-	电视里正在播放《三替》，人类首次接触外星文明引发危机，让你对未来充满了担忧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《三替》，人类首次接触外星文明引发危机，让你对未来充满了担忧。<<gstress>><<stress 20>>
 	<<case 757>>
-	《三替》中，人类与外星文明的冲突让人感到不安，小镇的居民也开始关注宇宙的奥秘。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《三替》中，人类与外星文明的冲突让人感到不安，小镇的居民也开始关注宇宙的奥秘。<<gstress>><<stress 20>>
 	<<case 758>>
-	《三替》里的科幻设定充满了想象力，它让你对人类的未来充满了疑问。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《三替》里的科幻设定充满了想象力，它让你对人类的未来充满了疑问。<<gstress>><<stress 20>>
 	<<case 759>>
-	电视里放着《三替》，人类与外星文明的接触充满了危险，你觉得小镇的平静也可能被打破。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《三替》，人类与外星文明的接触充满了危险，你觉得小镇的平静也可能被打破。<<gstress>><<stress 20>>
 	<<case 760>>
-	《三替》描绘了人类在危机中的挣扎与选择，它让你对生存与文明有了新的思考。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《三替》描绘了人类在危机中的挣扎与选择，它让你对生存与文明有了新的思考。<<gstress>><<stress 20>>
 	<<case 761>>
 	电视里正在播放《九义人》，女子为好友复仇组织正义联盟，让你感受到了正义的力量。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 762>>
@@ -1616,15 +1617,15 @@
 	<<case 785>>
 	《人民的名义》描绘了反腐斗争的艰辛与复杂，它让你对公平与正义有了新的认识。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 786>>
-	电视里正在播放《狂彪》，刑警与黑帮头目的长年博弈，让你感到紧张与刺激。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《狂彪》，刑警与黑帮头目的长年博弈，让你感到紧张与刺激。<<gstress>><<stress 20>>
 	<<case 787>>
-	《狂彪》中，刑警与黑帮的较量充满了危险，他们的每一次交锋都让小镇的你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《狂彪》中，刑警与黑帮的较量充满了危险，他们的每一次交锋都让小镇的你心跳加速。<<gstress>><<stress 20>>
 	<<case 788>>
-	《狂彪》里的黑白对决充满了悬念，主人公们的命运让人担忧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《狂彪》里的黑白对决充满了悬念，主人公们的命运让人担忧。<<gstress>><<stress 20>>
 	<<case 789>>
-	电视里放着《狂彪》，刑警与黑帮头目的长期博弈让你感受到了罪恶的蔓延，你觉得小镇的犯罪也可能如此顽固。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《狂彪》，刑警与黑帮头目的长期博弈让你感受到了罪恶的蔓延，你觉得小镇的犯罪也可能如此顽固。<<gstress>><<stress 20>>
 	<<case 790>>
-	《狂彪》描绘了正义与邪恶的较量，它让你对人性的复杂有了新的认识。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《狂彪》描绘了正义与邪恶的较量，它让你对人性的复杂有了新的认识。<<gstress>><<stress 20>>
 	<<case 791>>
 	电视里正在播放《装枪启示录》，都市男女的伪装与情感拉锯，让你感受到了都市的浮华。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 792>>
@@ -1636,15 +1637,15 @@
 	<<case 795>>
 	《装枪启示录》描绘了都市男女的情感世界，它让你对爱情与伪装有了新的思考。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 796>>
-	电视里正在播放《消失的十一层》，神秘楼层隐藏离奇案件，让你感到紧张与好奇。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《消失的十一层》，神秘楼层隐藏离奇案件，让你感到紧张与好奇。<<gstress>><<stress 20>>
 	<<case 797>>
-	《消失的十一层》中，神秘楼层里的案件让人毛骨悚然，小镇的平静也可能随时被打破。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《消失的十一层》中，神秘楼层里的案件让人毛骨悚然，小镇的平静也可能随时被打破。<<gstress>><<stress 20>>
 	<<case 798>>
-	《消失的十一层》里的案件扑朔迷离，主人公们为了解开谜团不懈努力，让你感到一丝希望。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《消失的十一层》里的案件扑朔迷离，主人公们为了解开谜团不懈努力，让你感到一丝希望。<<gstress>><<stress 20>>
 	<<case 799>>
-	电视里放着《消失的十一层》，神秘楼层的案件让你感到恐惧，你觉得小镇的某个地方也可能隐藏着不为人知的秘密。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《消失的十一层》，神秘楼层的案件让你感到恐惧，你觉得小镇的某个地方也可能隐藏着不为人知的秘密。<<gstress>><<stress 20>>
 	<<case 800>>
-	《消失的十一层》描绘了离奇案件的侦破过程，它让你对未知充满了好奇。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《消失的十一层》描绘了离奇案件的侦破过程，它让你对未知充满了好奇。<<gstress>><<stress 20>>
 	<<case 801>>
 	电视里正在播放《磨灯家庭》，三个家庭构成的欢乐日常，让你感受到了家庭的温暖。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 802>>
@@ -1676,45 +1677,45 @@
 	<<case 815>>
 	《傲骨贤妻》描绘了女性的职场奋斗史，它让你对女性的价值有了新的认识。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 816>>
-	电视里正在播放《黑钱剩地》，金融顾问为洗钱陷入犯罪旋涡，让你感到紧张与不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《黑钱剩地》，金融顾问为洗钱陷入犯罪旋涡，让你感到紧张与不安。<<gstress>><<stress 20>>
 	<<case 817>>
-	《黑钱剩地》中，金融顾问为了洗钱铤而走险，他被卷入犯罪，让小镇的你感到恐惧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《黑钱剩地》中，金融顾问为了洗钱铤而走险，他被卷入犯罪，让小镇的你感到恐惧。<<gstress>><<stress 20>>
 	<<case 818>>
-	《黑钱剩地》里的金融顾问为了生存不得不与犯罪分子周旋，他的困境让你感到压抑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《黑钱剩地》里的金融顾问为了生存不得不与犯罪分子周旋，他的困境让你感到压抑。<<gstress>><<stress 20>>
 	<<case 819>>
-	电视里放着《黑钱剩地》，金融顾问的犯罪之路充满了危险，你觉得小镇的地下交易也可能如此猖獗。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《黑钱剩地》，金融顾问的犯罪之路充满了危险，你觉得小镇的地下交易也可能如此猖獗。<<gstress>><<stress 20>>
 	<<case 820>>
-	《黑钱剩地》描绘了金融顾问在犯罪中的挣扎，它让你对金钱与道德有了新的思考。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《黑钱剩地》描绘了金融顾问在犯罪中的挣扎，它让你对金钱与道德有了新的思考。<<gstress>><<stress 20>>
 	<<case 821>>
-	电视里正在播放《火线》，警察与毒贩的长期角力，让你感到紧张与刺激。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《火线》，警察与毒贩的长期角力，让你感到紧张与刺激。<<gstress>><<stress 20>>
 	<<case 822>>
-	《火线》中，警察与毒贩的斗争充满了危险，他们的每一次交锋都让小镇的你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《火线》中，警察与毒贩的斗争充满了危险，他们的每一次交锋都让小镇的你心跳加速。<<gstress>><<stress 20>>
 	<<case 823>>
-	《火线》里的黑白对决充满了悬念，主人公们的命运让人担忧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《火线》里的黑白对决充满了悬念，主人公们的命运让人担忧。<<gstress>><<stress 20>>
 	<<case 824>>
-	电视里放着《火线》，警察与毒贩的长期角力让你感受到了罪恶的蔓延，你觉得小镇的犯罪也可能如此顽固。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《火线》，警察与毒贩的长期角力让你感受到了罪恶的蔓延，你觉得小镇的犯罪也可能如此顽固。<<gstress>><<stress 20>>
 	<<case 825>>
-	《火线》描绘了正义与邪恶的较量，它让你对人性的复杂有了新的认识。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《火线》描绘了正义与邪恶的较量，它让你对人性的复杂有了新的认识。<<gstress>><<stress 20>>
 	<<case 826>>
-	电视里正在播放《女子监狱》，女白领入狱后的监狱生活，让你感到压抑与无奈。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《女子监狱》，女白领入狱后的监狱生活，让你感到压抑与无奈。<<gstress>><<stress 20>>
 	<<case 827>>
-	《女子监狱》中，女白领在监狱中的生活充满了挑战，她为了生存不得不适应环境，让小镇的你感到不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《女子监狱》中，女白领在监狱中的生活充满了挑战，她为了生存不得不适应环境，让小镇的你感到不安。<<gstress>><<stress 20>>
 	<<case 828>>
-	《女子监狱》里的监狱生活充满了暴力与欺凌，女主角的遭遇让人心疼。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《女子监狱》里的监狱生活充满了暴力与欺凌，女主角的遭遇让人心疼。<<gstress>><<stress 20>>
 	<<case 829>>
-	电视里放着《女子监狱》，女白领的监狱生活让你看到了人性的黑暗面，你觉得小镇的性开放风俗也可能引发类似的犯罪。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里放着《女子监狱》，女白领的监狱生活让你看到了人性的黑暗面，你觉得小镇的性开放风俗也可能引发类似的犯罪。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 830>>
-	《女子监狱》描绘了监狱生活的残酷与真实，它让你对自由与人性有了新的思考。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《女子监狱》描绘了监狱生活的残酷与真实，它让你对自由与人性有了新的思考。<<gstress>><<stress 20>>
 	<<case 831>>
-	电视里正在播放《汉尼拔》，心理医生化身连环杀手，让你感到毛骨悚然。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《汉尼拔》，心理医生化身连环杀手，让你感到毛骨悚然。<<gstress>><<stress 20>>
 	<<case 832>>
-	《汉尼拔》中，心理医生展现了其变态的一面，他化身连环杀手，让小镇的你感到恐惧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《汉尼拔》中，心理医生展现了其变态的一面，他化身连环杀手，让小镇的你感到恐惧。<<gstress>><<stress 20>>
 	<<case 833>>
-	《汉尼拔》里的杀人手法让人不寒而栗，心理医生的邪恶让你感到压抑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《汉尼拔》里的杀人手法让人不寒而栗，心理医生的邪恶让你感到压抑。<<gstress>><<stress 20>>
 	<<case 834>>
-	电视里放着《汉尼拔》，心理医生化身杀手让你看到了人性的扭曲，你觉得小镇的平静下也可能隐藏着变态。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《汉尼拔》，心理医生化身杀手让你看到了人性的扭曲，你觉得小镇的平静下也可能隐藏着变态。<<gstress>><<stress 20>>
 	<<case 835>>
-	《汉尼拔》描绘了变态杀手的内心世界，它让你对人性的黑暗有了新的认识。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《汉尼拔》描绘了变态杀手的内心世界，它让你对人性的黑暗有了新的认识。<<gstress>><<stress 20>>
 	<<case 836>>
 	电视里正在播放《实习医生格蕾》，实习医生的成长与情感历程，让你感受到了医生的不易。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 837>>
@@ -1736,45 +1737,45 @@
 	<<case 845>>
 	《良医》描绘了自闭症医生的成长与付出，它让你对生命的价值有了新的认识。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 846>>
-	电视里正在播放《纸钞屋》，教授率领劫匪团伙抢劫铸币厂，让你感到紧张与刺激。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《纸钞屋》，教授率领劫匪团伙抢劫铸币厂，让你感到紧张与刺激。<<gstress>><<stress 20>>
 	<<case 847>>
-	《纸钞屋》中，劫匪团伙的智谋让人佩服，他们抢劫铸币厂，让小镇的你感到兴奋。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《纸钞屋》中，劫匪团伙的智谋让人佩服，他们抢劫铸币厂，让小镇的你感到兴奋。<<gstress>><<stress 20>>
 	<<case 848>>
-	《纸钞屋》里的劫案充满了悬念，主人公们的每一次行动都让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《纸钞屋》里的劫案充满了悬念，主人公们的每一次行动都让你心跳加速。<<gstress>><<stress 20>>
 	<<case 849>>
-	电视里放着《纸钞屋》，劫匪团伙的犯罪充满了智慧，你觉得小镇的罪犯也可能如此狡猾。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《纸钞屋》，劫匪团伙的犯罪充满了智慧，你觉得小镇的罪犯也可能如此狡猾。<<gstress>><<stress 20>>
 	<<case 850>>
-	《纸钞屋》描绘了劫匪团伙的犯罪过程，它让你对人性与金钱有了新的认识。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《纸钞屋》描绘了劫匪团伙的犯罪过程，它让你对人性与金钱有了新的认识。<<gstress>><<stress 20>>
 	<<case 851>>
-	电视里正在播放《黑炮纠察队》，反英雄组织对抗腐败超级英雄，让你感到紧张与愤怒。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《黑炮纠察队》，反英雄组织对抗腐败超级英雄，让你感到紧张与愤怒。<<gstress>><<stress 20>>
 	<<case 852>>
-	《黑炮纠察队》中，反英雄组织为了正义对抗腐败的超级英雄，他们的行动让小镇的你感到振奋。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《黑炮纠察队》中，反英雄组织为了正义对抗腐败的超级英雄，他们的行动让小镇的你感到振奋。<<gstress>><<stress 20>>
 	<<case 853>>
-	《黑炮纠察队》里的超级英雄不再光鲜亮丽，他们的腐败让人感到失望，你觉得小镇的市长和警察也可能如此。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《黑炮纠察队》里的超级英雄不再光鲜亮丽，他们的腐败让人感到失望，你觉得小镇的市长和警察也可能如此。<<gstress>><<stress 20>>
 	<<case 854>>
-	电视里放着《黑炮纠察队》，反英雄组织为了揭露真相不懈努力，你觉得小镇的黑暗势力也应该被清除。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《黑炮纠察队》，反英雄组织为了揭露真相不懈努力，你觉得小镇的黑暗势力也应该被清除。<<gstress>><<stress 20>>
 	<<case 855>>
-	《黑炮纠察队》描绘了反英雄的斗争，它让你对权力与正义有了新的思考。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《黑炮纠察队》描绘了反英雄的斗争，它让你对权力与正义有了新的思考。<<gstress>><<stress 20>>
 	<<case 856>>
-	电视里正在播放《亢奋》，青少年的性、毒品与身份探索，让你感到沉重与不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正在播放《亢奋》，青少年的性、毒品与身份探索，让你感到沉重与不安。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 857>>
-	《亢奋》中，青少年们在性与毒品中迷失，他们的困境让小镇的你感到心痛。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	《亢奋》中，青少年们在性与毒品中迷失，他们的困境让小镇的你感到心痛。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 858>>
-	《亢奋》里的青少年们在寻找自我，他们的迷茫与挣扎让你感到一丝无奈。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	《亢奋》里的青少年们在寻找自我，他们的迷茫与挣扎让你感到一丝无奈。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 859>>
-	电视里放着《亢奋》，青少年们的世界充满了诱惑与危险，你觉得小镇的性开放风俗也可能带来负面影响。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里放着《亢奋》，青少年们的世界充满了诱惑与危险，你觉得小镇的性开放风俗也可能带来负面影响。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 860>>
-	《亢奋》描绘了青少年的成长烦恼，它让你对青春的迷茫有了新的认识。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	《亢奋》描绘了青少年的成长烦恼，它让你对青春的迷茫有了新的认识。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 861>>
-	电视里正在播放《十三个原因》，女孩自杀前的十三段真相录音，让你感到沉重与压抑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《十三个原因》，女孩自杀前的十三段真相录音，让你感到沉重与压抑。<<gstress>><<stress 20>>
 	<<case 862>>
-	《十三个原因》中，女孩通过录音揭示了她自杀的原因，她的悲剧让小镇的你感到心痛。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《十三个原因》中，女孩通过录音揭示了她自杀的原因，她的悲剧让小镇的你感到心痛。<<gstress>><<stress 20>>
 	<<case 863>>
-	《十三个原因》里的故事充满了阴影，它让你深思校园欺凌与人性的冷漠。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《十三个原因》里的故事充满了阴影，它让你深思校园欺凌与人性的冷漠。<<gstress>><<stress 20>>
 	<<case 864>>
-	电视里放着《十三个原因》，女孩的自杀让你感到绝望，你觉得小镇的居民也应该关注青少年的心理健康。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《十三个原因》，女孩的自杀让你感到绝望，你觉得小镇的居民也应该关注青少年的心理健康。<<gstress>><<stress 20>>
 	<<case 865>>
-	《十三个原因》描绘了校园欺凌的危害，它让你对生命与责任有了新的思考。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《十三个原因》描绘了校园欺凌的危害，它让你对生命与责任有了新的思考。<<gstress>><<stress 20>>
 	<<case 866>>
 	电视里正在播放《绝望煮妇》，郊区家庭主妇背后的秘密生活，让你感到好奇与不安。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 867>>
@@ -1786,15 +1787,15 @@
 	<<case 870>>
 	《绝望煮妇》描绘了家庭主妇的日常生活与秘密，它让你对婚姻与人性有了新的认识。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 871>>
-	电视里正在播放《名校疯暴》，名校中学生之间的权力与谋杀，让你感到紧张与不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《名校疯暴》，名校中学生之间的权力与谋杀，让你感到紧张与不安。<<gstress>><<stress 20>>
 	<<case 872>>
-	《名校疯暴》中，名校学生们为了权力不择手段，他们的谋杀案让小镇的你感到恐惧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《名校疯暴》中，名校学生们为了权力不择手段，他们的谋杀案让小镇的你感到恐惧。<<gstress>><<stress 20>>
 	<<case 873>>
-	《名校疯暴》里的学生们在光鲜亮丽的背后隐藏着黑暗，他们的故事充满了阴谋与背叛。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《名校疯暴》里的学生们在光鲜亮丽的背后隐藏着黑暗，他们的故事充满了阴谋与背叛。<<gstress>><<stress 20>>
 	<<case 874>>
-	电视里放着《名校疯暴》，名校中学生的权力斗争让你看到了人性的丑恶，你觉得小镇的年轻人也可能被欲望腐蚀。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里放着《名校疯暴》，名校中学生的权力斗争让你看到了人性的丑恶，你觉得小镇的年轻人也可能被欲望腐蚀。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 875>>
-	《名校疯暴》描绘了名校中的黑暗面，它让你对教育与人性有了新的思考。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《名校疯暴》描绘了名校中的黑暗面，它让你对教育与人性有了新的思考。<<gstress>><<stress 20>>
 	<<case 876>>
 	电视里正在播放《王罐》，英国女王政治与家庭双线挣扎，让你感受到了王室的重压。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 877>>
@@ -1806,15 +1807,15 @@
 	<<case 880>>
 	《王罐》描绘了英国女王的统治生涯，它让你对权力与责任有了新的认识。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 881>>
-	电视里正在播放《浴血黑帮》，黑帮家族在战后英国崛起，让你感到紧张与刺激。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《浴血黑帮》，黑帮家族在战后英国崛起，让你感到紧张与刺激。<<gstress>><<stress 20>>
 	<<case 882>>
-	《浴血黑帮》中，黑帮家族为了生存不断壮大，他们的血腥手段让小镇的你感到恐惧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《浴血黑帮》中，黑帮家族为了生存不断壮大，他们的血腥手段让小镇的你感到恐惧。<<gstress>><<stress 20>>
 	<<case 883>>
-	《浴血黑帮》里的黑帮斗争充满了暴力与血腥，主人公们的命运让人担忧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《浴血黑帮》里的黑帮斗争充满了暴力与血腥，主人公们的命运让人担忧。<<gstress>><<stress 20>>
 	<<case 884>>
-	电视里放着《浴血黑帮》，黑帮家族的崛起让你看到了罪恶的蔓延，你觉得小镇的地下势力也可能如此猖獗。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《浴血黑帮》，黑帮家族的崛起让你看到了罪恶的蔓延，你觉得小镇的地下势力也可能如此猖獗。<<gstress>><<stress 20>>
 	<<case 885>>
-	《浴血黑帮》描绘了黑帮家族的生存与发展，它让你对人性的黑暗有了新的认识。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《浴血黑帮》描绘了黑帮家族的生存与发展，它让你对人性的黑暗有了新的认识。<<gstress>><<stress 20>>
 	<<case 886>>
 	电视里正在播放《正常人》，爱尔兰青年的复杂爱情，让你感受到了青春的迷茫。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 887>>
@@ -1866,25 +1867,25 @@
 	<<case 910>>
 	《疑犯追踪》描绘了科技与正义的较量，它让你对未来充满了思考。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 911>>
-	电视里正在播放《真探》，警探十七年追查连环杀人案，让你感到沉重与压抑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《真探》，警探十七年追查连环杀人案，让你感到沉重与压抑。<<gstress>><<stress 20>>
 	<<case 912>>
-	《真探》中，警探为了连环杀人案付出了十七年的时间，他的执着让小镇的你感到心痛。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《真探》中，警探为了连环杀人案付出了十七年的时间，他的执着让小镇的你感到心痛。<<gstress>><<stress 20>>
 	<<case 913>>
-	《真探》里的连环杀人案充满了黑暗与绝望，警探们在追查过程中也付出了巨大代价。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《真探》里的连环杀人案充满了黑暗与绝望，警探们在追查过程中也付出了巨大代价。<<gstress>><<stress 20>>
 	<<case 914>>
-	电视里放着《真探》，警探的追查之路充满了牺牲，你觉得小镇的犯罪也可能如此隐秘。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《真探》，警探的追查之路充满了牺牲，你觉得小镇的犯罪也可能如此隐秘。<<gstress>><<stress 20>>
 	<<case 915>>
-	《真探》描绘了犯罪的残酷与人性的复杂，它让你对正义的到来充满了疑问。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《真探》描绘了犯罪的残酷与人性的复杂，它让你对正义的到来充满了疑问。<<gstress>><<stress 20>>
 	<<case 916>>
-	电视里正在播放《冰血暴》，小镇犯罪连锁反应，黑色幽默贯穿，让你感到一丝不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《冰血暴》，小镇犯罪连锁反应，黑色幽默贯穿，让你感到一丝不安。<<gstress>><<stress 20>>
 	<<case 917>>
-	《冰血暴》中，小镇的犯罪引发了一系列连锁反应，它的黑色幽默让小镇的你感到荒诞。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《冰血暴》中，小镇的犯罪引发了一系列连锁反应，它的黑色幽默让小镇的你感到荒诞。<<gstress>><<stress 20>>
 	<<case 918>>
-	《冰血暴》里的犯罪故事充满了意外，它让你对命运的无常有了新的认识。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《冰血暴》里的犯罪故事充满了意外，它让你对命运的无常有了新的认识。<<gstress>><<stress 20>>
 	<<case 919>>
-	电视里放着《冰血暴》，小镇的犯罪让你看到了人性的弱点，你觉得小镇的平静下也可能隐藏着危险。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《冰血暴》，小镇的犯罪让你看到了人性的弱点，你觉得小镇的平静下也可能隐藏着危险。<<gstress>><<stress 20>>
 	<<case 920>>
-	《冰血暴》描绘了犯罪的荒诞与人性的复杂，它让你对生活充满了反思。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《冰血暴》描绘了犯罪的荒诞与人性的复杂，它让你对生活充满了反思。<<gstress>><<stress 20>>
 	<<case 921>>
 	电视里正在播放《负总统》，美国副总统的荒诞政治日常，让你感到一丝好笑。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 922>>
@@ -1896,95 +1897,95 @@
 	<<case 925>>
 	《负总统》描绘了政治的荒诞与现实，它让你对权力有了新的理解。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 926>>
-	电视里正在播放《只牌屋》，政坛夫妻联手操控白宫权力，让你感到紧张与不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《只牌屋》，政坛夫妻联手操控白宫权力，让你感到紧张与不安。<<gstress>><<stress 20>>
 	<<case 927>>
-	《只牌屋》中，政坛夫妻为了权力互相算计，他们的权谋让小镇的你感到恐惧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《只牌屋》中，政坛夫妻为了权力互相算计，他们的权谋让小镇的你感到恐惧。<<gstress>><<stress 20>>
 	<<case 928>>
-	《只牌屋》里的政坛夫妻为了上位不择手段，他们的心机让你感到压抑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《只牌屋》里的政坛夫妻为了上位不择手段，他们的心机让你感到压抑。<<gstress>><<stress 20>>
 	<<case 929>>
-	电视里放着《只牌屋》，政坛夫妻的权力游戏充满了阴谋，你觉得小镇的政治也可能如此黑暗。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《只牌屋》，政坛夫妻的权力游戏充满了阴谋，你觉得小镇的政治也可能如此黑暗。<<gstress>><<stress 20>>
 	<<case 930>>
-	《只牌屋》描绘了权力的腐蚀与人性的扭曲，它让你对政治充满了反思。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《只牌屋》描绘了权力的腐蚀与人性的扭曲，它让你对政治充满了反思。<<gstress>><<stress 20>>
 	<<case 931>>
-	电视里正在播放《风骚律师》，小律师逐步堕落为毒枭顾问，让你感到沉重与无奈。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《风骚律师》，小律师逐步堕落为毒枭顾问，让你感到沉重与无奈。<<gstress>><<stress 20>>
 	<<case 932>>
-	《风骚律师》中，小律师为了金钱逐步堕落，他的经历让小镇的你感到不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《风骚律师》中，小律师为了金钱逐步堕落，他的经历让小镇的你感到不安。<<gstress>><<stress 20>>
 	<<case 933>>
-	《风骚律师》里的律师在道德与利益之间挣扎，他的选择让人唏嘘。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《风骚律师》里的律师在道德与利益之间挣扎，他的选择让人唏嘘。<<gstress>><<stress 20>>
 	<<case 934>>
-	电视里放着《风骚律师》，律师的堕落之路充满了诱惑与危险，你觉得小镇的居民也可能经受不住诱惑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《风骚律师》，律师的堕落之路充满了诱惑与危险，你觉得小镇的居民也可能经受不住诱惑。<<gstress>><<stress 20>>
 	<<case 935>>
-	《风骚律师》描绘了人性的堕落与挣扎，它让你对道德与金钱有了新的思考。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《风骚律师》描绘了人性的堕落与挣扎，它让你对道德与金钱有了新的思考。<<gstress>><<stress 20>>
 	<<case 936>>
-	电视里正在播放《绝命肚师》，化学老师制毒崛起黑道帝国，让你感到紧张与不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《绝命肚师》，化学老师制毒崛起黑道帝国，让你感到紧张与不安。<<gstress>><<stress 20>>
 	<<case 937>>
-	《绝命肚师》中，化学老师从普通人沦为毒枭，他的经历让小镇的你感到恐惧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《绝命肚师》中，化学老师从普通人沦为毒枭，他的经历让小镇的你感到恐惧。<<gstress>><<stress 20>>
 	<<case 938>>
-	《绝命肚师》里的化学老师为了金钱铤而走险，他的犯罪生涯让人感到压抑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《绝命肚师》里的化学老师为了金钱铤而走险，他的犯罪生涯让人感到压抑。<<gstress>><<stress 20>>
 	<<case 939>>
-	电视里放着《绝命肚师》，化学老师的堕落让你看到了人性的弱点，你觉得小镇的犯罪也可能来源于此。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《绝命肚师》，化学老师的堕落让你看到了人性的弱点，你觉得小镇的犯罪也可能来源于此。<<gstress>><<stress 20>>
 	<<case 940>>
-	《绝命肚师》描绘了化学老师的犯罪之路，它让你对金钱与人性有了新的认识。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《绝命肚师》描绘了化学老师的犯罪之路，它让你对金钱与人性有了新的认识。<<gstress>><<stress 20>>
 	<<case 941>>
-	电视里正在播放《权利的游戏》，七国争霸铁王座，冰火交织，让你感受到了史诗般的震撼。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《权利的游戏》，七国争霸铁王座，冰火交织，让你感受到了史诗般的震撼。<<gstress>><<stress 20>>
 	<<case 942>>
-	《权利的游戏》中，七国为了权力互相厮杀，血腥的场面让你感到不安，小镇的权力斗争也与之类似。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《权利的游戏》中，七国为了权力互相厮杀，血腥的场面让你感到不安，小镇的权力斗争也与之类似。<<gstress>><<stress 20>>
 	<<case 943>>
-	《权利的游戏》里的权谋斗争让人心惊胆战，魔法的加入让剧情更加扑朔迷离。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《权利的游戏》里的权谋斗争让人心惊胆战，魔法的加入让剧情更加扑朔迷离。<<gstress>><<stress 20>>
 	<<case 944>>
-	电视里放着《权利的游戏》，七国争霸的残酷让你看到了权力的诱惑与代价。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《权利的游戏》，七国争霸的残酷让你看到了权力的诱惑与代价。<<gstress>><<stress 20>>
 	<<case 945>>
-	《权利的游戏》讲述了七国之间的恩怨情仇，血雨腥风让你觉得即使在小镇，权力也可能带来灾难。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《权利的游戏》讲述了七国之间的恩怨情仇，血雨腥风让你觉得即使在小镇，权力也可能带来灾难。<<gstress>><<stress 20>>
 	<<case 946>>
-	电视里正在播放《龙之家族》，坦格利安家族内斗引发内战，让你感到紧张与不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《龙之家族》，坦格利安家族内斗引发内战，让你感到紧张与不安。<<gstress>><<stress 20>>
 	<<case 947>>
-	《龙之家族》中，坦格利安家族为了权力互相厮杀，他们的内斗让小镇的你感到恐惧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《龙之家族》中，坦格利安家族为了权力互相厮杀，他们的内斗让小镇的你感到恐惧。<<gstress>><<stress 20>>
 	<<case 948>>
-	《龙之家族》里的家族内斗充满了血腥与阴谋，主人公们的命运让人担忧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《龙之家族》里的家族内斗充满了血腥与阴谋，主人公们的命运让人担忧。<<gstress>><<stress 20>>
 	<<case 949>>
-	电视里放着《龙之家族》，坦格利安家族的内战让你看到了权力的代价，你觉得小镇的权力斗争也可能如此残酷。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《龙之家族》，坦格利安家族的内战让你看到了权力的代价，你觉得小镇的权力斗争也可能如此残酷。<<gstress>><<stress 20>>
 	<<case 950>>
-	《龙之家族》描绘了家族的兴衰与权力的争夺，它让你对历史与人性有了新的认识。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《龙之家族》描绘了家族的兴衰与权力的争夺，它让你对历史与人性有了新的认识。<<gstress>><<stress 20>>
 	<<case 951>>
-	电视里正在播放《安眠书店》，书店店主为爱痴狂演变为杀手，让你感到毛骨悚然。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里正在播放《安眠书店》，书店店主为爱痴狂演变为杀手，让你感到毛骨悚然。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 952>>
-	《安眠书店》中，书店店主为了爱不择手段，他变态的行为让小镇的你感到恐惧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	《安眠书店》中，书店店主为了爱不择手段，他变态的行为让小镇的你感到恐惧。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 953>>
-	《安眠书店》里的杀手为了爱情不断犯罪，他的变态行为让人感到压抑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	《安眠书店》里的杀手为了爱情不断犯罪，他的变态行为让人感到压抑。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 954>>
-	电视里放着《安眠书店》，书店店主的变态行为让你看到了人性的黑暗面，你觉得小镇的性开放风俗也可能隐藏着变态。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	电视里放着《安眠书店》，书店店主的变态行为让你看到了人性的黑暗面，你觉得小镇的性开放风俗也可能隐藏着变态。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 955>>
-	《安眠书店》描绘了变态杀手的内心世界，它让你对爱情与人性有了新的思考。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>><<garousal>><<arousal 500>>
+	《安眠书店》描绘了变态杀手的内心世界，它让你对爱情与人性有了新的思考。<<gstress>><<stress 20>><<garousal>><<arousal 500>>
 	<<case 956>>
-	电视里正在播放《心灵猎人》，FBI探员研究连环杀人心理，让你感到紧张与好奇。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《心灵猎人》，FBI探员研究连环杀人心理，让你感到紧张与好奇。<<gstress>><<stress 20>>
 	<<case 957>>
-	《心灵猎人》中，FBI探员深入研究连环杀人犯的心理，他们的调查让小镇的你感到不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《心灵猎人》中，FBI探员深入研究连环杀人犯的心理，他们的调查让小镇的你感到不安。<<gstress>><<stress 20>>
 	<<case 958>>
-	《心灵猎人》里的连环杀人案充满了悬念，探员们为了解开谜团不懈努力，让你感到一丝希望。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《心灵猎人》里的连环杀人案充满了悬念，探员们为了解开谜团不懈努力，让你感到一丝希望。<<gstress>><<stress 20>>
 	<<case 959>>
-	电视里放着《心灵猎人》，FBI探员的调查让你看到了犯罪心理的复杂，你觉得小镇的犯罪也可能如此诡异。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《心灵猎人》，FBI探员的调查让你看到了犯罪心理的复杂，你觉得小镇的犯罪也可能如此诡异。<<gstress>><<stress 20>>
 	<<case 960>>
-	《心灵猎人》描绘了犯罪心理学的研究过程，它让你对人性的黑暗有了新的认识。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《心灵猎人》描绘了犯罪心理学的研究过程，它让你对人性的黑暗有了新的认识。<<gstress>><<stress 20>>
 	<<case 961>>
-	电视里正在播放《暗黑》，德国小镇穿越谜团揭露家族秘密，让你感到紧张与好奇。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《暗黑》，德国小镇穿越谜团揭露家族秘密，让你感到紧张与好奇。<<gstress>><<stress 20>>
 	<<case 962>>
-	《暗黑》中，德国小镇的穿越谜团让人感到不安，家族秘密的揭露让小镇的你感到震惊。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《暗黑》中，德国小镇的穿越谜团让人感到不安，家族秘密的揭露让小镇的你感到震惊。<<gstress>><<stress 20>>
 	<<case 963>>
-	《暗黑》里的时间旅行充满了悬念，家族的秘密让人感到压抑。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《暗黑》里的时间旅行充满了悬念，家族的秘密让人感到压抑。<<gstress>><<stress 20>>
 	<<case 964>>
-	电视里放着《暗黑》，德国小镇的谜团让你看到了命运的纠缠，你觉得小镇的居民也可能被命运所操控。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《暗黑》，德国小镇的谜团让你看到了命运的纠缠，你觉得小镇的居民也可能被命运所操控。<<gstress>><<stress 20>>
 	<<case 965>>
-	《暗黑》描绘了时间旅行与家族秘密的复杂关系，它让你对命运与选择有了新的思考。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《暗黑》描绘了时间旅行与家族秘密的复杂关系，它让你对命运与选择有了新的思考。<<gstress>><<stress 20>>
 	<<case 966>>
-	电视里正在播放《黑井》，科技反乌托邦下的人性实验，让你感到紧张与不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《黑井》，科技反乌托邦下的人性实验，让你感到紧张与不安。<<gstress>><<stress 20>>
 	<<case 967>>
-	《黑井》中，科技失控后的世界让人感到毛骨悚然，你觉得小镇的科技发展也可能带来灾难。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《黑井》中，科技失控后的世界让人感到毛骨悚然，你觉得小镇的科技发展也可能带来灾难。<<gstress>><<stress 20>>
 	<<case 968>>
-	《黑井》里的科技反乌托邦让人深思，它让你对未来充满了担忧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《黑井》里的科技反乌托邦让人深思，它让你对未来充满了担忧。<<gstress>><<stress 20>>
 	<<case 969>>
-	电视里放着《黑井》，科技的反噬让人不寒而栗，你觉得小镇的居民也可能被科技所控制。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《黑井》，科技的反噬让人不寒而栗，你觉得小镇的居民也可能被科技所控制。<<gstress>><<stress 20>>
 	<<case 970>>
-	《黑井》描绘了科技失控后的世界，它的警示让你对未来充满了不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《黑井》描绘了科技失控后的世界，它的警示让你对未来充满了不安。<<gstress>><<stress 20>>
 	<<case 971>>
 	电视里正在播放《维兰得》，瑞典警探冷静查案揭露社会裂缝，让你感到一丝沉重。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 972>>
@@ -2016,25 +2017,25 @@
 	<<case 985>>
 	《性爱自修室》描绘了青少年的性困惑与成长，它让你对性教育有了新的认识。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>><<garousal>><<arousal 500>>
 	<<case 986>>
-	电视里正在播放《一触即发》，CIA分析员卷入恐怖主义阴谋，让你感到紧张与不安。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《一触即发》，CIA分析员卷入恐怖主义阴谋，让你感到紧张与不安。<<gstress>><<stress 20>>
 	<<case 987>>
-	《一触即发》中，CIA分析员被卷入恐怖主义阴谋，他的困境让小镇的你感到恐惧。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《一触即发》中，CIA分析员被卷入恐怖主义阴谋，他的困境让小镇的你感到恐惧。<<gstress>><<stress 20>>
 	<<case 988>>
-	《一触即发》里的恐怖主义阴谋充满了危险，主人公的每一次行动都让你心跳加速。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《一触即发》里的恐怖主义阴谋充满了危险，主人公的每一次行动都让你心跳加速。<<gstress>><<stress 20>>
 	<<case 989>>
-	电视里放着《一触即发》，CIA分析员的冒险之旅充满了未知，你觉得小镇的平静也可能被打破。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《一触即发》，CIA分析员的冒险之旅充满了未知，你觉得小镇的平静也可能被打破。<<gstress>><<stress 20>>
 	<<case 990>>
-	《一触即发》描绘了恐怖主义的威胁，它让你对安全与和平有了新的思考。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《一触即发》描绘了恐怖主义的威胁，它让你对安全与和平有了新的思考。<<gstress>><<stress 20>>
 	<<case 991>>
-	电视里正在播放《轮敦生活》，女性在城市中面对孤独与创伤，让你感到沉重与无奈。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里正在播放《轮敦生活》，女性在城市中面对孤独与创伤，让你感到沉重与无奈。<<gstress>><<stress 20>>
 	<<case 992>>
-	《轮敦生活》中，女主角在城市中挣扎，她的孤独与创伤让小镇的你感到心疼。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《轮敦生活》中，女主角在城市中挣扎，她的孤独与创伤让小镇的你感到心疼。<<gstress>><<stress 20>>
 	<<case 993>>
-	《轮敦生活》里的女主角在生活中迷失，她的困境让你感到共鸣。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《轮敦生活》里的女主角在生活中迷失，她的困境让你感到共鸣。<<gstress>><<stress 20>>
 	<<case 994>>
-	电视里放着《轮敦生活》，女主角的都市生活充满了挑战，你觉得即使在小镇，也可能面临同样的困境。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	电视里放着《轮敦生活》，女主角的都市生活充满了挑战，你觉得即使在小镇，也可能面临同样的困境。<<gstress>><<stress 20>>
 	<<case 995>>
-	《轮敦生活》描绘了女性在城市中的孤独与挣扎，它的故事让你暂时忘记了小镇的喧嚣。<<gstress>><<stress 20>><<gtrauma>><<trauma 2>>
+	《轮敦生活》描绘了女性在城市中的孤独与挣扎，它的故事让你暂时忘记了小镇的喧嚣。<<gstress>><<stress 20>>
 	<<case 996>>
 	电视里正在播放《王后旗下》，女棋手逆袭世界冠军战胜心魔，让你感受到了女性的力量。<<llstress>><<stress -50>><<ltiredness>><<tiredness -10>>
 	<<case 997>>
