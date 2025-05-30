@@ -1,6 +1,6 @@
 {
     "name": "tv",
-    "version": "5.4.9.2",
+    "version": "5.4.9.3-a",
     "styleFileList": [],
     "scriptFileList_inject_early": [],
     "scriptFileList": [
@@ -11,7 +11,8 @@
         "game/tv_recipe.twee",
         "game/tv.twee",
         "game/tv_widget.twee",
-        "game/tv_soap_opera.twee"
+        "game/tv_soap_opera.twee",
+		"game/tv_adultshop.twee"
     ],
     "imgFileList": [],
     "additionFile": [],
@@ -25,6 +26,16 @@
                     "passage": "Bedroom",
                     "findString": "<<tableText \"noicon\">>",
                     "replace": "<<tableText \"noicon\">><br>\n<<link [[电视|Watch TV]]>><</link>>\n<br>\n"
+                },
+                {
+                    "passage": "Adult Shop",
+                    "findString": "Adult Shop Menu]]>><<pass 1>><</link>>\n\t<</if>>",
+                    "replace": "Adult Shop Menu]]>><<pass 1>><</link>>\n\t<</if>>\n\t<<if $tvmod_adultshop_open>>\n\t\t<br>\n\t\t<<link [[浏览AV影片 (0:01)|TV Adultshop]]>><<pass 1>><</link>>\n\t<<else>>\n\t\t<<if $tvmod_adultshop_help_count gte 5>>\n\t\t\t<br>\n\t\t\t<<link [[西里斯似乎有话要对你说|TV Adultshop Open]] >><<set $tvmod_adultshop_open to true>><</link>>\n\t\t<</if>>\n\t<</if>>"
+                },
+                {
+                    "passage": "Adult Shop Widgets",
+                    "findString": "<<runeventpool>>",
+                    "replace": "<<runeventpool>>\n\t<<if $tvmod_adultshop_help_count is undefined>><<set $tvmod_adultshop_help_count to 0>><</if>>\n\t<<set $tvmod_adultshop_help_count += 1>>\n"
                 }
             ]
         }

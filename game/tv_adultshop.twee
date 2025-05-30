@@ -1,0 +1,41 @@
+:: TV Adultshop	
+你手里的影片有：
+<br>
+$tvmod_av
+
+<<listavforsale>>
+<br><br>
+你还可以购买：
+<br>
+_av_for_sale
+
+<br><br>
+<<link [[返回|Adult Shop]]>><</link>>
+
+:: TV Adultshop Open
+剧情1，西里斯感谢PC帮忙送PC一张影片，并表示后续进其他货
+<br>
+<<tvgetav "HSODA-055">>
+
+<br><br>
+<<link [[返回|Adult Shop]]>><</link>>
+
+:: TV Adultshop Widget [widget]
+<<widget tvgetav>>
+	<<set _av to _args[0]>>
+	<<if $tvmod_av is undefined>>
+		<<set $tvmod_av to []>>
+	<</if>>
+	<br>
+	<span class='gold'>你获得了一张影片:《_av》</span>
+	<<if $tvmod_av.includes(_av)>>
+		，但你其实已经有了。	
+	<<else>>
+		<<set $tvmod_av.push(_av)>>
+	<</if>>
+<</widget>>
+
+<<widget listavforsale>>
+	<<set _av_all to ["HSODA-055", "IPX-339"]>>
+	<<set _av_for_sale to _av_all.filter(a => !$tvmod_av.some(b => b === a))>>
+<</widget>>
