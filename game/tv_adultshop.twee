@@ -1,13 +1,13 @@
 :: TV Adultshop	
 你手里的影片有：
 <br>
-$tvmod_av
+<<showavtext $tvmod_av>>
 
 <<listavforsale>>
 <br><br>
 你还可以购买：
 <br>
-_av_for_sale
+<<showavtext _av_for_sale "buy">>
 
 <br><br>
 <<link [[返回|Adult Shop]]>><</link>>
@@ -19,6 +19,22 @@ _av_for_sale
 
 <br><br>
 <<link [[返回|Adult Shop]]>><</link>>
+
+:: TV Adultshop Buy
+剧情2，你向西里斯购买$tvmod_av_buy
+<br>
+
+<<set _av to setup.tvmodav[$tvmod_av_buy]>>
+<<set _cost to 0 - _av.cost*100>>
+<<if $money gte _av.cost*100>>
+	<<tvgetav $tvmod_av_buy>>
+	<<money _cost>>
+<<else>>
+	你没有足够的钱
+<</if>>
+<<unset $tvmod_av_buy>>
+<br><br>
+<<link [[返回|TV Adultshop]]>><</link>>
 
 :: TV Adultshop Widget [widget]
 <<widget tvgetav>>
@@ -36,6 +52,20 @@ _av_for_sale
 <</widget>>
 
 <<widget listavforsale>>
-	<<set _av_all to ["HSODA-055", "IPX-339"]>>
+	<<set _av_all to Object.keys(setup.tvmodav)>>
 	<<set _av_for_sale to _av_all.filter(a => !$tvmod_av.some(b => b === a))>>
+<</widget>>
+
+<<widget showavtext>>
+	<<for _t range _args[0]>>
+		<<capture _t>>
+		<<if _args[1] is "buy">>
+			<<link [[_t|TV Adultshop Buy]]>><<set $tvmod_av_buy to _t>><</link>><span class="gold">(£<<print setup.tvmodav[_t].cost>>)</span>
+		<<else>>
+			_t
+		<</if>>
+		: <<print setup.tvmodav[_t].name>> <mouse class="tooltip linkBlue">(?)<span><<print setup.tvmodav[_t].desc>></span></mouse>
+		<</capture>>
+		<br>
+	<</for>>
 <</widget>>
