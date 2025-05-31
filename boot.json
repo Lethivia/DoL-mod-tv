@@ -15,7 +15,9 @@
         "game/tv_soap_opera.twee",
 		"game/tv_adultshop.twee"
     ],
-    "imgFileList": [],
+    "imgFileList": [
+		"img/av/1.png"
+	],
     "additionFile": [],
     "addonPlugin": [
         {
