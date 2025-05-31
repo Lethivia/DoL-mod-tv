@@ -19,6 +19,10 @@
 	
 	<br><br>
 	<<link [[查看节目单|Show TV List]]>><<set $tvlistdate to new DateTime(Time.date)>><</link>>
+	<<if $tvmod_av and $tvmod_av.length gt 0>>
+		<br>
+		<<link [[播放影片|TV Play AV List]]>><<set $phase to 0>><</link>>
+	<</if>>
 <</if>>
 <br>
 <<link [[返回|Bedroom]]>><</link>>
@@ -35,3 +39,4 @@ _tvlist
 <<link [[后一天|Show TV List]]>>$tvlistdate.addDays(1)<</link>>
 <br>
 <<tvreturn>>
+

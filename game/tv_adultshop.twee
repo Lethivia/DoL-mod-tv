@@ -144,6 +144,8 @@
   <div class="title">
 		<<if _args[1] is "buy">>
 			<<link [[_t|TV Adultshop Buy]]>><<set $tvmod_av_buy to _t>><</link>><span class="gold">(£<<print setup.tvmodav[_t].cost>>)</span>
+		<<elseif _args[1] is "play">>
+			<<link [[_t|TV Play AV Enter]]>><<set $tvmod_av_play to _t>><</link>>
 		<<else>>
 			_t
 		<</if>>

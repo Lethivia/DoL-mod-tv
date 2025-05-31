@@ -1,6 +1,6 @@
 {
     "name": "tv",
-    "version": "5.4.9.3-a",
+    "version": "5.4.9.3-b",
     "styleFileList": [],
     "scriptFileList_inject_early": [],
     "scriptFileList": [
@@ -11,6 +11,7 @@
         "game/tv_weather_forecast.twee",
         "game/tv_recipe.twee",
         "game/tv.twee",
+        "game/tv_av.twee",
         "game/tv_widget.twee",
         "game/tv_soap_opera.twee",
 		"game/tv_adultshop.twee"
@@ -20,6 +21,12 @@
 	],
     "additionFile": [],
     "addonPlugin": [
+    {
+      "modName": "ModLoader DoL ImageLoaderHook",
+      "addonName": "ImageLoaderAddon",
+      "modVersion": "^2.3.0",
+      "params": []
+    },
         {
             "modName": "TweeReplacer",
             "addonName": "TweeReplacerAddon",
