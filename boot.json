@@ -5,7 +5,7 @@
     "scriptFileList_inject_early": [],
     "scriptFileList": [
 		"game/tv.js",
-		"game/03-JavaScript/tvMenu.js"
+		"game/tvMenu.js"
 	],
     "tweeFileList": [
         "game/tv_weather_forecast.twee",
