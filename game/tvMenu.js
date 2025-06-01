@@ -3,10 +3,10 @@ setup.tvmodav = {
 		name: "超绝XXX",
 		desc: "讲述了一个xxx的故事",
 		img: "img/av/1.png",
-		watch_passage: [
-			"第一幕，画面中一个xxx。。。",
-			"第二幕，xxx与xxx。。",
-			"最终，xxxxx"
+		content: [
+			"一个男人正在亲吻一个女人。",
+			"女人呻吟着。",
+			"男人与女人一起高潮，女人满足的笑着"
 		],
 		stat_up: "<<gawareness>><<awareness 5>><<garousal>><<arousal 500>>",
 		passtime: 30,
@@ -17,10 +17,10 @@ setup.tvmodav = {
 		name: "XXXXXX",
 		desc: "xxx和xx的故事",
 		img: "img/av/1.png",
-		watch_passage: [
-			"第一幕，画面中一个xxx。。。",
-			"第二幕，xxx与xxx。。",
-			"最终，xxxxx"
+		content: [
+			"一个男人正在亲吻一个女人。",
+			"女人呻吟着。",
+			"男人与女人一起高潮，女人满足的笑着"
 		],
 		stat_up: "<<gawareness>><<awareness 5>><<garousal>><<arousal 500>>",
 		passtime: 30,
