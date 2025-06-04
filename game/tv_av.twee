@@ -1,0 +1,255 @@
+:: TV Play AV List
+<<if $phase gte 0>>
+	你将影片从光碟机中拿了出来，放入盒中收好。<br>
+	<<if $avnpcindex is not undefined>><<unset $avnpcindex>><</if>>
+	<<if $avImaginationMap>><<unset $avImaginationMap>><</if>>
+	<<endcombat>>
+<</if>>
+你现在可以播放的影片有：
+<br>
+<<showavimg $tvmod_av "play">>
+<br><br>
+<<link [[返回|Watch TV]]>><<endcombat>><<$masturbationstart to 0>><<set $avImagination to false>><</link>>
+
+
+:: TV Play AV Enter
+<<avvar>>
+
+你将<span class="blue">《_avname:_av.name》</span>插入电视旁的光碟机，走回床边拿起遥控器。
+<br>
+从封面看来，这部影片讲的是_av.desc
+
+<<set $avImagination to false>>
+<br><br>
+<<link [[观看|TV Play AV]]>><<pass _av.passtime>><<set $phase to 0>><<$masturbationstart to 1>><<genavnpcall>><<arousal random(150, 250)>><</link>><<garousal>><br>
+<<if $awareness gte 200>>
+    <<link [[臆想|TV Play AV]]>><<pass _av.passtime>><<set $phase to 0>><<$masturbationstart to 1>><<avImagination true>><<genavnpcall>><<arousal _addarousal>><</link>><<combataware 3>><<ggarousal>><br>
+<</if>>
+<<link [[结束|TV Play AV List]]>><<set $phase to 1>><</link>><br>
+
+
+:: TV Play AV
+<<set $avMasturbation to false>>
+<<showAvContent>>
+
+<br><br>
+<<if $phase gte _av.content.length-1>>
+	<<link [[结束|TV Play AV List]]>><</link>>
+<<elseif $avhidelink>>
+	<<unset $avhidelink>>
+<<else>>
+	<<link [[继续|TV Play AV]]>><<set $phase += 1>><</link>><<ggarousal>><br>
+	<<link [[自慰|TV Play AV Masturbation]]>><<set $phase += 1>><</link>><<ggarousal>><br>
+	<<if $avImagination>>
+		<<link [[结束臆想|TV Play AV]]>><<avImagination false>><<set $phase += 1>><</link>><br>
+	<<elseif $awareness gte 200>>
+		<<link [[臆想|TV Play AV]]>><<avImagination true>><<set $phase += 1>><</link>><<combataware 3>><<ggarousal>><br>
+	<</if>>
+	<<link [[结束|TV Play AV List]]>><<set $phase += 1>><</link>><br>
+<</if>>
+
+
+:: TV Play AV Masturbation
+<<set $avMasturbation to true>>
+<<showAvContent>>
+<hr>
+<<effects>>
+
+<<if $masturbationstart is 1>>
+    <<set $masturbationstart to 0>>
+    <<set $masturbationstat += 1>>
+    <<masturbationstart>>
+    <!--<set $timer to random(5, 10)>-->
+<</if>>
+<<masturbationeffects>>
+<<masturbationactions>>
+
+<<if $phase gte _av.content.length-1>>
+	<div id="masturbationButtons">
+		<div id="next"><<link [[结束|TV Play AV List]]>><</link>><<nexttext>></div>
+	</div>
+<<elseif $avhidelink>>
+	<<unset $avhidelink>>
+<<else>>
+	<<if $corruptionMasturbation>>
+		<br>
+		<span class="red">你耳朵里的史莱姆不让你停下。</span>
+	<</if>>
+	<div id="masturbationButtons">
+		<div id="next"><<link [[继续|$passage]]>><<set $phase += 1>><</link>><<nexttext>></div>
+		<<if $avImagination>>
+			<div id="next"><<link [[结束臆想|$passage]]>><<avImagination false>><<set $phase += 1>><</link>><<nexttext>></div>
+		<<elseif $awareness gte 200>>
+			<div id="next"><<link [[臆想|$passage]]>><<avImagination true>><<set $phase += 1>><</link>><<nexttext>><<combataware 3>></div>
+		<</if>>
+		<<masturbationStopControls>>
+	</div>
+<</if>>
+
+:: TV Play AV Masturbation Finish
+<<showAvContent>>
+<br>----<br>
+<<if $masturbationorgasm gte 1>>
+	你收拾着床上的残局。
+<<else>>
+	你还未高潮就停了下来。<<garousal>><<gstress>><<arousal 100>><<stress 20>>
+<</if>>
+<br><br>
+<<endmasturbation>>
+<<clotheson>>
+<<endcombat>>
+
+<<set $avMasturbation to false>>
+<<if $phase gte _av.content.length-1>>
+	<<link [[结束|TV Play AV List]]>><</link>><<nexttext>>
+<<elseif $avhidelink>>
+	<<unset $avhidelink>>
+<<else>>
+	<<link [[继续观看|TV Play AV]]>><<set $phase += 1>><</link>><br>
+	<<link [[再次自慰|TV Play AV Masturbation]]>><<set $phase += 1>><</link>><br>
+	<<if $avImagination>>
+		<<link [[结束臆想|TV Play AV]]>><<avImagination false>><<set $phase += 1>><</link>><br>
+	<<elseif $awareness gte 200>>
+		<<link [[臆想|TV Play AV]]>><<avImagination true>><<set $phase += 1>><</link>><<combataware 3>><br>
+	<</if>>
+	<<link [[结束|TV Play AV List]]>><<set $phase += 1>><</link>><br>
+<</if>>
+
+
+:: TV Play AV Widget [widget]
+<<widget showAvContent>>
+	<<set _type to _args[0]>>
+	<<avvar>>
+	<<set _content to _av.content[$phase]>>
+
+	<<if $phase gt _av.content.length-1>>
+		影片已经放完了，只留下雪花般闪烁的屏幕。
+	<<elseif $avImaginationChange and $avImagination>>
+		你正在决定臆想对象：
+		<br><br>
+		<<if $imaginationMap is undefined>>
+			<<set $imaginationMap to []>>
+			<<for _i,_npc range _av.npc>>
+				<<set $imaginationMap.push(_npc.name)>>
+			<</for>>
+		<</if>>
+		<<for _i,_npc range _av.npc>>
+			<<capture _i>>
+			_npc.name: 
+			<<listbox "$imaginationMap[_i]" autoselect>>
+				<<optionsfrom [_npc.name, "你","罗宾","惠特尼","悉尼","凯拉尔","伊甸","黑狼","巨鹰","贝利"]>>
+			<</listbox>>
+			<</capture>>
+			<br>
+		<</for>>
+		<<set $avhidelink to true>>
+		<br><br>
+		<<link [[确定|$passage]]>>
+			<<set $avImaginationChange to false>>
+			<<for _i,_x range $imaginationMap>>
+				<<genavnpc _i _x>>
+			<</for>>
+		<</link>>
+	<<else>>
+        <<effects>>
+
+        <<if $arousal gte 10000>>
+            <<orgasm>>
+        <</if>>
+        <<arousal _addarousal>>
+		<<if $avMasturbation>>
+			你一边自慰一边看着影片。<br>
+		<</if>>
+		<<if $avImagination>>
+			你完全投入到剧情之中<<imaginationName>><br>
+		<</if>>
+		<<if not $avMasturbation and not $avImagination>>
+			你看着影片。<br>
+		<</if>>
+
+        <hr>
+		电视中：<br><br>
+        <<type 50ms>>
+		_content
+        <</type>>
+
+		<<if $phase gte _av.content.length-1>>
+			<br><br>
+			<!--影片结束了。-->
+		<</if>>
+	<</if>>
+<</widget>>
+
+<<widget imaginationName>>
+	<<for _i,_x range $imaginationMap>>
+        <<if _av.npc[_i].name is not _x>>
+		，将_av.npc[_i].name想象为<<if _x is "你">>你自己<<else>>_x<</if>>
+        <</if>>
+	<</for>>
+<</widget>>
+
+<<widget avvar>>
+	<<set _avname to $tvmod_av_play>>
+	<<set _av to setup.tvmodav[_avname]>>
+    <<set _addarousal to 10000/_av.content.length*random(0.5, 2)>>
+<</widget>>
+
+<<widget avImagination>>
+	<<if _args[0] is not $avImagination>>
+		<<set $avImaginationChange to true>>
+	<</if>>
+	<<set $avImagination to _args[0]>>
+	<<if $avImagination is false>>
+		<<genavnpcall>>
+	<</if>>
+<</widget>>
+
+<<widget genavnpc>>
+	<<set _tmp to _av.npc[_args[0]]>>
+	<<set _setname to _args[1]>>
+	<<generateNPC `_args[0]+1` _tmp.status _tmp.pronoun _tmp.gender _tmp.lvl>>
+	<<if _setname>>
+		<<set $NPCList[_args[0]].fullDescription to _setname>>
+	<<else>>
+		<<set $NPCList[_args[0]].fullDescription to _tmp.name>>
+	<</if>>
+<</widget>>
+
+<<widget genavnpcall>>
+	<<for _i,_x range _av.npc>>
+		<<genavnpc _i>>
+	<</for>>
+<</widget>>
+
+<<widget avnpc>>
+	<<if _args[0] gte 0>>
+		<<set $avnpcindex to _args[0]>>
+	<<else>>
+		<<set $avnpcindex to 0>>
+	<</if>>
+	<<print $NPCList[$avnpcindex].fullDescription>>
+<</widget>>
+
+<<widget "avhe">><<silently>>
+	<!-- Add the option to call for named NPCs individually -->
+	<<if _args[0] gte 0>>
+		<<set $pronoun to $NPCList[_args[0]].pronoun>>
+	<<elseif $avnpcindex>>
+		<<set $pronoun to $NPCList[$avnpcindex].pronoun>>
+	<<else>>
+		<<set $pronoun to $NPCList[0].pronoun>>
+	<</if>>
+	<<if $pronoun is "m">>
+		<<set _text_output to "他">>
+	<<elseif $pronoun is "f">>
+		<<set _text_output to "她">>
+	<<elseif $pronoun is "i">>
+		<<set _text_output to "它">>
+	<<elseif $pronoun is "n">>
+		<<set _text_output to "一只">>
+	<<elseif $pronoun is "t">>
+		<<set _text_output to "他们">>
+	<</if>>
+<</silently>>_text_output
+<</widget>>
+
