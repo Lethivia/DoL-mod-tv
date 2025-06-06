@@ -83,7 +83,7 @@
   }
 
   .thumbnail-wrapper {
-    max-width: 330px;
+    max-width: min(330px, 80%);
     margin: 0 auto;
   }
 

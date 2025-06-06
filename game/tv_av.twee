@@ -1,8 +1,12 @@
 :: TV Play AV List
-<<if $phase gte 0>>
+<<if $phase gt 0>>
 	你将影片从光碟机中拿了出来，放入盒中收好。<br>
 	<<if $avnpcindex is not undefined>><<unset $avnpcindex>><</if>>
 	<<if $avImaginationMap>><<unset $avImaginationMap>><</if>>
+    <<unset $avbranch>>
+    <<unset $avnpcli>>
+    <<unset $avnpcother>>
+    <<unset $avstatup>>
 	<<endcombat>>
 <</if>>
 你现在可以播放的影片有：
@@ -13,6 +17,7 @@
 
 
 :: TV Play AV Enter
+<<avinitvar>>
 <<avvar>>
 
 你将<span class="blue">《_avname:_av.name》</span>插入电视旁的光碟机，走回床边拿起遥控器。
@@ -33,7 +38,7 @@
 <<showAvContent>>
 
 <br><br>
-<<if $phase gte _av.content.length-1>>
+<<if $phase gte _avlength-1>>
 	<<link [[结束|TV Play AV List]]>><</link>>
 <<elseif $avhidelink>>
 	<<unset $avhidelink>>
@@ -64,7 +69,7 @@
 <<masturbationeffects>>
 <<masturbationactions>>
 
-<<if $phase gte _av.content.length-1>>
+<<if $phase gte _avlength-1>>
 	<div id="masturbationButtons">
 		<div id="next"><<link [[结束|TV Play AV List]]>><</link>><<nexttext>></div>
 	</div>
@@ -100,7 +105,7 @@
 <<endcombat>>
 
 <<set $avMasturbation to false>>
-<<if $phase gte _av.content.length-1>>
+<<if $phase gte _avlength-1>>
 	<<link [[结束|TV Play AV List]]>><</link>><<nexttext>>
 <<elseif $avhidelink>>
 	<<unset $avhidelink>>
@@ -120,9 +125,11 @@
 <<widget showAvContent>>
 	<<set _type to _args[0]>>
 	<<avvar>>
-	<<set _content to _av.content[$phase]>>
 
-	<<if $phase gt _av.content.length-1>>
+	<<set _content to _av.content[$avbranch].msg[$phase]>>
+    <<set _avlength to _av.content[$avbranch].msg.length>>
+
+	<<if $phase gt _avlength-1>>
 		影片已经放完了，只留下雪花般闪烁的屏幕。
 	<<elseif $avImaginationChange and $avImagination>>
 		你正在决定臆想对象：
@@ -137,7 +144,7 @@
 			<<capture _i>>
 			_npc.name: 
 			<<listbox "$imaginationMap[_i]" autoselect>>
-				<<optionsfrom [_npc.name, "你","罗宾","惠特尼","悉尼","凯拉尔","伊甸","黑狼","巨鹰","贝利"]>>
+				<<optionsfrom [_npc.name, "你"].concat($avnpcli, $avnpcother)>>
 			<</listbox>>
 			<</capture>>
 			<br>
@@ -167,15 +174,28 @@
 			你看着影片。<br>
 		<</if>>
 
+        <<avstatup>>
+
         <hr>
 		电视中：<br><br>
-        <<type 50ms>>
-		_content
+        <<type 40ms>>
+        _content
+		<!--<= _content.replace("，","，                          ").replace("。","。 \b \b \b \b \b \b \b").replace("<br>",`<br>&#8203&#8203&#8203&#8203&#8203&#8203&#8203`)>-->
         <</type>>
 
-		<<if $phase gte _av.content.length-1>>
+		<<if $phase gte _avlength-1>>
 			<br><br>
-			<!--影片结束了。-->
+            <<if _av.content[$avbranch].end is not undefined>>
+                <<for _i, _b range _av.content[$avbranch].end>>
+                    <<capture _b>>
+                    <<link [[_b.text|$passage]]>>_b.onclick <<set $phase to 0>><<set $avbranch to _b.branch>><</link>>_b.suffix
+                    <br>
+                    <</capture>>
+                <</for>>
+                <<set $avhidelink to true>>
+            <<else>>
+			    <!--影片结束了。-->
+            <</if>>
 		<</if>>
 	<</if>>
 <</widget>>
@@ -189,9 +209,12 @@
 <</widget>>
 
 <<widget avvar>>
+    <<if $avbranch is undefined>>
+        <<set $avbranch to "master">>
+    <</if>>
 	<<set _avname to $tvmod_av_play>>
 	<<set _av to setup.tvmodav[_avname]>>
-    <<set _addarousal to 10000/_av.content.length*random(0.5, 2)>>
+    <<set _addarousal to Math.max(10000/_av.content[$avbranch].msg.length*random(0.8, 2), 2000)>>
 <</widget>>
 
 <<widget avImagination>>
@@ -230,7 +253,7 @@
 	<<print $NPCList[$avnpcindex].fullDescription>>
 <</widget>>
 
-<<widget "avhe">><<silently>>
+<<widget avhe>><<silently>>
 	<!-- Add the option to call for named NPCs individually -->
 	<<if _args[0] gte 0>>
 		<<set $pronoun to $NPCList[_args[0]].pronoun>>
@@ -253,3 +276,45 @@
 <</silently>>_text_output
 <</widget>>
 
+<<widget avinitvar>>
+    <<set $avnpcli to ["罗宾","惠特尼","悉尼","凯拉尔","伊甸","黑狼","巨鹰"]>>
+    <<set $avnpcother to ["贝利"]>>
+<</widget>>
+
+<<widget avstatup>>
+        <!--贝利：加叛逆-->
+        <!--你，性别不同：加异装癖-->
+    <!---->
+    <<set _player to $imaginationMap>>
+    <<if $avImagination and $avstatup is undefined>>
+        <<set $avstatup to true>>
+        <!--你：惠特尼、伊甸: 加支配-->
+        <<if _player.includes("你")>>
+            <<if _player.includes("惠特尼")>>
+                <br>
+                你幻想着与惠特尼的关系。<<gdom>><<npcincr Whitney dom 1>>
+            <</if>>
+            <<if _player.includes("伊甸")>>
+                <br>
+                你渴望着伊甸强有力的身体。<<gdom>><<npcincr Eden dom 5>>
+            <</if>>
+            <!--巨鹰，黑狼：加兽交-->
+            <<if _player.includes("黑狼")>>
+                <br>   
+                你幻想着黑狼柔软的毛发。<<deviancy4>>
+            <</if>>
+            <<if _player.includes("巨鹰")>>
+                <br>   
+                你幻想着巨鹰对你的宠爱。<<deviancy4>>
+            <</if>>
+        <</if>>
+        
+        <!--多个LI：加淫乱、意识-->
+        <<set _avli to $avnpcli.filter(i => _player.includes(i))>>
+        <<if _avli.length gte 2>>
+            <br>   
+            你想象着_avli.join('、')他们在一起淫乱的样子，似乎意识到了什么。<<awareness 2>><<gawareness>><<promiscuity4>>
+        <</if>>
+
+    <</if>>
+<</widget>>
