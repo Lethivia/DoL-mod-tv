@@ -1,17 +1,23 @@
 :: TV Play AV List
-<<if $phase gt 0>>
+<<if $phase gt 0 or $avbranch is not "main">>
 	你将影片从光碟机中拿了出来，放入盒中收好。<br>
-	<<if $avnpcindex is not undefined>><<unset $avnpcindex>><</if>>
-	<<if $avImaginationMap>><<unset $avImaginationMap>><</if>>
-    <<unset $avbranch>>
-    <<unset $avnpcli>>
-    <<unset $avnpcother>>
-    <<unset $avstatup>>
 	<<endcombat>>
 <</if>>
-你现在可以播放的影片有：
-<br>
-<<showavimg $tvmod_av "play">>
+<<set $phase to 0>>
+<<unset $avnpcindex>>
+<<unset $avImaginationMap>>
+<<unset $avbranch>>
+<<unset $avnpcli>>
+<<unset $avnpcother>>
+<<unset $avstatup>>
+<<unset $avhidelink>>
+<<if $tvmod_av.length gt 0>>
+    你现在可以播放的影片有：
+    <br>
+    <<showavimg $tvmod_av "play">>
+<<else>>
+    你没什么光碟可以播放，或许可以去成人用品店找西里斯看看？
+<</if>>
 <br><br>
 <<link [[返回|Watch TV]]>><<endcombat>><<$masturbationstart to 0>><<set $avImagination to false>><</link>>
 
@@ -39,7 +45,9 @@
 
 <br><br>
 <<if $phase gte _avlength-1>>
+    <<if _av.content[$avbranch].end is undefined>>
 	<<link [[结束|TV Play AV List]]>><</link>>
+    <</if>>
 <<elseif $avhidelink>>
 	<<unset $avhidelink>>
 <<else>>
@@ -70,9 +78,11 @@
 <<masturbationactions>>
 
 <<if $phase gte _avlength-1>>
+    <<if _av.content[$avbranch].end is undefined>>
 	<div id="masturbationButtons">
 		<div id="next"><<link [[结束|TV Play AV List]]>><</link>><<nexttext>></div>
 	</div>
+    <</if>>
 <<elseif $avhidelink>>
 	<<unset $avhidelink>>
 <<else>>
@@ -106,7 +116,9 @@
 
 <<set $avMasturbation to false>>
 <<if $phase gte _avlength-1>>
+    <<if _av.content[$avbranch].end is undefined>>
 	<<link [[结束|TV Play AV List]]>><</link>><<nexttext>>
+    <</if>>
 <<elseif $avhidelink>>
 	<<unset $avhidelink>>
 <<else>>
@@ -180,7 +192,6 @@
 		电视中：<br><br>
         <<type 40ms>>
         _content
-		<!--<= _content.replace("，","，                          ").replace("。","。 \b \b \b \b \b \b \b").replace("<br>",`<br>&#8203&#8203&#8203&#8203&#8203&#8203&#8203`)>-->
         <</type>>
 
 		<<if $phase gte _avlength-1>>
@@ -195,6 +206,17 @@
                 <<set $avhidelink to true>>
             <<else>>
 			    <!--影片结束了。-->
+                <<switch _av.type>>
+                    <<case "口交">><br>你学到了一些口活技巧。<<oralskill 5>>
+                    /*<<case "诱惑">><br><<seductionskill 5>>*/
+                    <<case "乳交">><br>你学到了一些乳交技巧。<<chestskill 5>>
+                    /*<<case "臀部">><br><<bottomskill 5>>*/
+                    /*<<case "大腿">><br><<thighskill 5>>*/
+                    <<case "手部">><br>你学到了一些手部技巧。<<handskill 5>>
+                    <<case "肛交">><br>你学到了一些肛交技巧。<<analskill 5>>
+                    <<case "足交">><br>你学到了一些足交技巧。<<feetskill 5>>
+                    <<default>><br>type:_av.type
+                <</switch>>
             <</if>>
 		<</if>>
 	<</if>>
@@ -210,7 +232,7 @@
 
 <<widget avvar>>
     <<if $avbranch is undefined>>
-        <<set $avbranch to "master">>
+        <<set $avbranch to "main">>
     <</if>>
 	<<set _avname to $tvmod_av_play>>
 	<<set _av to setup.tvmodav[_avname]>>
@@ -282,8 +304,6 @@
 <</widget>>
 
 <<widget avstatup>>
-        <!--贝利：加叛逆-->
-        <!--你，性别不同：加异装癖-->
     <!---->
     <<set _player to $imaginationMap>>
     <<if $avImagination and $avstatup is undefined>>
@@ -301,11 +321,28 @@
             <!--巨鹰，黑狼：加兽交-->
             <<if _player.includes("黑狼")>>
                 <br>   
-                你幻想着黑狼柔软的毛发。<<deviancy4>>
+                你似乎摸到了黑狼柔软的毛发。<<deviancy4>>
             <</if>>
             <<if _player.includes("巨鹰")>>
                 <br>   
-                你幻想着巨鹰对你的宠爱。<<deviancy4>>
+                你想象着巨鹰对你的宠爱。<<deviancy4>>
+            <</if>>
+
+            <!--贝利：加叛逆-->
+            <<if _player.includes("贝利")>>
+                <br>   
+                虽然只是你的想象，但贝利也得任你摆布。<<greb>><<reb 1>>
+            <</if>>
+
+            <!--你，性别不同：加异装癖-->
+            <<set _gender to $player.gender_appearance>>
+            <<set _you to _av.npc[_player.indexOf("你")]>>
+            <<if ["f", "m"].includes(_gender) and _gender is not _you.gender>> 
+			    <<if !$backgroundTraits.includes("crossdresser")>>
+			    	<<set $crossdressingTrait to ($crossdressingTrait gte 1 ? $crossdressingTrait + 1 : 1)>>
+                    <br>
+                    你将自己带入了另一种性别，要是真的该多好啊.. <span class='purple'>|异装癖进度: <<print Math.trunc($crossdressingTrait)>>%</span>
+			    <</if>>
             <</if>>
         <</if>>
         
@@ -313,7 +350,7 @@
         <<set _avli to $avnpcli.filter(i => _player.includes(i))>>
         <<if _avli.length gte 2>>
             <br>   
-            你想象着_avli.join('、')他们在一起淫乱的样子，似乎意识到了什么。<<awareness 2>><<gawareness>><<promiscuity4>>
+            你想象着_avli.join('、')他们在一起淫乱的样子，似乎触动了心底的什么东西。<<awareness 2>><<gawareness>><<promiscuity4>>
         <</if>>
 
     <</if>>

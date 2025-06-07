@@ -1,13 +1,23 @@
 :: TV Adultshop	
-你手里的影片有：
-<br>
-<<showavimg $tvmod_av>>
+
+<<if $tvmod_av and $tvmod_av.length gt 0>>
+    你手里的影片有：
+    <br>
+    <<showavimg $tvmod_av>>
+<<else>>
+    你手里什么影片都没有。
+<</if>>
 
 <<listavforsale>>
 <br><br>
-你还可以购买：
-<br>
-<<showavimg _av_for_sale "buy">>
+
+<<if _av_for_sale.length gt 0>>
+    你还可以购买：
+    <br>
+    <<showavimg _av_for_sale "buy">>
+<<else>>
+    这里的影片你都有了。
+<</if>>
 
 <br><br>
 <<link [[返回|Adult Shop]]>><</link>>
@@ -134,6 +144,10 @@
 </style>
 <div class="grid-container">
 	<<for _t range _args[0]>>
+        <<if not Object.keys(setup.tvmodav).includes(_t)>>
+            _args[0].splice(_args[0].indexOf(_t))
+            <<continue>>
+        <</if>>
 		<<capture _t>>
 <div class="thumbnail-wrapper">
   <div class="thumbnail">
