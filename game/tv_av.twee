@@ -364,9 +364,11 @@
 	<<set _content to _av.content[$avbranch].msg.join("<br>")>>
     <<set _avlength to _av.content[$avbranch].msg.length>>
 
+	<div id="text-area">
 	<<textplay 40ms 200ms 300ms 500ms>>
     _content
 	<</textplay>>
+	</div>
 
 <</widget>>
 
@@ -434,28 +436,29 @@
   height: 100vh;
   box-sizing: border-box;
 }
-/* 上半部，textplay 内容和按钮 */
+
+/* 上半部容器，竖向布局 */
 #upper {
+  display: flex;
+  flex-direction: column;
+  height: 40%;           /* 保持上半部 40% */
   position: relative;
-  flex: 0 0 40%;
+  border-bottom: 1px solid #ccc;
+}
+/* 文字区单独滚动 */
+#text-area {
+  flex: 1;
   overflow-y: auto;
-  padding: 10px;
-  box-sizing: border-box;
 }
-/* 播放按钮区域，固定在上半部底部 */
+/* 按钮区固定在 #upper 底部 */
 #play-button {
-  position: sticky;
-  bottom: 1px;
-  left: 50%;
-  transform: translateX(-50%);
-  /* 背景与样式可根据需求调整 */
-  background: rgba(0,0,0,0.2);
+  flex: 0 0 auto;        /* 不随伸缩 */
+  text-align: center;
   padding: 4px 8px;
-  border-radius: 4px;
-  z-index: 1;
 }
-/* SugarCube link 样式调整（可选） */
+/* Link 样式 */
 #play-button a.tw-link {
+  margin: 0 6px;
   color: #fff;
   text-decoration: none;
   font-size: 1.2em;
@@ -463,6 +466,7 @@
 #play-button a.tw-link:hover {
   color: #ff0;
 }
+
 
 /* 下半部，进度条和 widget 区域 */
 #lower {
