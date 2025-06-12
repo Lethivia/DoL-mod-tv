@@ -32,7 +32,8 @@
 
 <<set $avImagination to false>>
 <br><br>
-<<link [[观看|TV Play AV]]>><<pass _av.passtime>><<set $phase to 0>><<$masturbationstart to 1>><<genavnpcall>><<arousal random(150, 250)>><</link>><<garousal>><br>
+<!--<link [[观看|TV Play AV]]>><<pass _av.passtime>><<set $phase to 0>><<$masturbationstart to 1>><<genavnpcall>><<arousal random(150, 250)>><</link>><<garousal>><br-->
+<<link [[观看|TV Play AV EX]]>><<set $phase to 0>><<$masturbationstart to 1>><<genavnpcall>><</link>><br>
 <<if $awareness gte 200>>
     <<link [[臆想|TV Play AV]]>><<pass _av.passtime>><<set $phase to 0>><<$masturbationstart to 1>><<avImagination true>><<genavnpcall>><<arousal _addarousal>><</link>><<combataware 3>><<ggarousal>><br>
 <</if>>
@@ -355,3 +356,161 @@
 
     <</if>>
 <</widget>>
+
+<<widget showAvContentEx>>
+	<<set _type to _args[0]>>
+	<<avvar>>
+
+	<<set _content to _av.content[$avbranch].msg.join("<br>")>>
+    <<set _avlength to _av.content[$avbranch].msg.length>>
+
+	<<textplay 40ms 200ms 300ms 500ms>>
+    _content
+	<</textplay>>
+
+<</widget>>
+
+<<widget avplay>>
+    <!-- textplay 内容：这里示例，实际使用你已有的 <<textplay ...>> -->
+	<<showAvContentEx>>
+    <!-- 播放/暂停按钮 -->
+    <div id="play-button">
+	  <<link "⏪">><<set TextPlay.speedFactor to -2>><<set TextPlay.paused to false>>          <</link>>
+	  <<link "⏯️">><<set TextPlay.speedFactor to 1>><<set TextPlay.paused to !TextPlay.paused>><</link>>
+	  <<link "⏩">><<set TextPlay.speedFactor to 5>><<set TextPlay.paused to false>>           <</link>>
+	</div>
+<</widget>>
+
+<<widget tvplayex>>
+	电视上显示着现在的时间：<<ampm>><br>
+	<<arousalcaption>>
+
+	<<switch _playmode>>
+	<<case "view">>
+		你专注的看着影片。<<garousal>><<arousal random(1,10)>>
+		<br>
+		<<pass 30 seconds>>
+		<<if $arousal gte $arousalmax>>
+			影片的内容刺激着你，竟然让你在没有接触的情况下高潮了。
+			<<orgasm>>
+		<</if>>
+		<br><br>
+		<<link 自慰>><<set _playmode to "masturbationstart">><</link>>
+	<<case "masturbationstart">>
+		<<effects>>
+		<<masturbationstart>>
+		<<set $masturbationstat += 1>>
+		<<set _playmode to "masturbation">>
+		你边看影片边开始自慰。<<garousal>><<arousal `random(1,10)*10`>>
+		<<if $arousal gte $arousalmax>>
+			你刚摸到私处就已经高潮了。
+			<<orgasm>>
+		<</if>>
+	<<case "masturbation">>
+		<<effects>>
+		<<masturbationeffects>>
+		<<masturbationactions>>
+		<<if $arousal gte $arousalmax>>
+			你边看影片边自慰，达到了高潮。
+			<<orgasm>>
+		<</if>>
+		<<pass 20 seconds>>
+		<br><br>
+		<<link 停止自慰>><<set _playmode to "view">><</link>>
+	<</switch>>
+<</widget>>
+
+:: TV Play AV EX
+<<avvar>>
+<<set $widgetList to ["tvplayex"]>>
+<!-- 外层容器 -->
+<style>
+/* Story Stylesheet */
+
+/* 外层容器，垂直分布上下两部分，占满可视高度 */
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+}
+/* 上半部，textplay 内容和按钮 */
+#upper {
+  position: relative;
+  flex: 0 0 40%;
+  overflow-y: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+/* 播放按钮区域，固定在上半部底部 */
+#play-button {
+  position: sticky;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* 背景与样式可根据需求调整 */
+  background: rgba(0,0,0,0.2);
+  padding: 4px 8px;
+  border-radius: 4px;
+  z-index: 1;
+}
+/* SugarCube link 样式调整（可选） */
+#play-button a.tw-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+#play-button a.tw-link:hover {
+  color: #ff0;
+}
+
+/* 下半部，进度条和 widget 区域 */
+#lower {
+  flex: 0 0 60%;
+  overflow-y: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  border-top: 1px solid #ccc;
+}
+/* 进度条样式 */
+#progress-container {
+  margin-bottom: 8px;
+}
+#progress-bar {
+  width: 100%;
+  height: 20px;
+}
+/* widget 渲染区 */
+#widget-area {
+  /* 根据需要调整样式 */
+}
+/* 自定义进度条背景 */
+.tealbar-bg {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+</style>
+
+<div id="container">
+  <!-- 上半部 -->
+  <div id="upper">
+	
+  </div>
+
+  <!-- 下半部 -->
+  <div id="lower">
+    <!-- widget 渲染区 -->
+    <div id="widget-area">
+      <!-- 初始可留空，播放后会每秒渲染 -->
+		你手握遥控器，准备按下<<link 播放键>><<set _playmode to "view">><<script>>setup.startAVTimer();<</script>><</link>>
+    </div>
+  </div>
+	<div id="masturbationButtons">
+		<div id="next"><<link [[结束|TV Play AV List]]>><<script>>setup.stopAVTimer();<</script>><<set $phase = 0>><</link>></div>
+	</div>
+</div>
+

@@ -1,10 +1,11 @@
 {
     "name": "tv",
-    "version": "5.4.9.3-g",
+    "version": "5.4.9.3-h",
     "styleFileList": [],
     "scriptFileList_inject_early": [],
     "scriptFileList": [
 		"game/tv.js",
+		"game/textPlay.js",
 		"game/tvMenu.js"
 	],
     "tweeFileList": [
