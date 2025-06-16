@@ -35,7 +35,8 @@
 <!--<link [[观看|TV Play AV]]>><<pass _av.passtime>><<set $phase to 0>><<$masturbationstart to 1>><<genavnpcall>><<arousal random(150, 250)>><</link>><<garousal>><br-->
 <<link [[观看|TV Play AV EX]]>><<set $phase to 0>><<$masturbationstart to 1>><<genavnpcall>><</link>><br>
 <<if $awareness gte 200>>
-    <<link [[臆想|TV Play AV]]>><<pass _av.passtime>><<set $phase to 0>><<$masturbationstart to 1>><<avImagination true>><<genavnpcall>><<arousal _addarousal>><</link>><<combataware 3>><<ggarousal>><br>
+    <!--<link [[臆想|TV Play AV]]>><<pass _av.passtime>><<set $phase to 0>><<$masturbationstart to 1>><<avImagination true>><<genavnpcall>><<arousal _addarousal>><</link>><<combataware 3>><<ggarousal>><br-->
+    <<link [[臆想|TV Play AV EX Imagination]]>><<set $phase to 0>><<$masturbationstart to 1>><<avImagination true>><<genavnpcall>><</link>><<combataware 3>><br>
 <</if>>
 <<link [[结束|TV Play AV List]]>><<set $phase to 1>><</link>><br>
 
@@ -358,22 +359,64 @@
 <</widget>>
 
 <<widget showAvContentEx>>
-	<<set _type to _args[0]>>
 	<<avvar>>
 
-	<<set _content to _av.content[$avbranch].msg.join("<br>")>>
+	<<set _content to _av.content[$avbranch].msg.join("")>>
     <<set _avlength to _av.content[$avbranch].msg.length>>
 
-	<div id="text-area">
-	<<textplay 40ms 200ms 300ms 500ms>>
-    _content
-	<</textplay>>
-	</div>
+	<<append "#text-area">>
+		<<textplay 40ms 200ms 300ms 500ms>> 
+		_content 
+		<</textplay>>
+	<</append>>
 
 <</widget>>
 
+<<widget avShowNext>>
+			
+    <<if _av.content[$avbranch].end is not undefined>>
+        <<for _i, _b range _av.content[$avbranch].end>>
+            <<capture _b>>
+			<br>
+            <<link _b.text>>
+				_b.onclick
+				<<set $phase to 0>>
+				<<set $avbranch to _b.branch>>
+				<<replace '#avreplace'>><</replace>> 
+				<<showAvContentEx>>
+			<</link>>_b.suffix
+            <</capture>>
+        <</for>>
+    <<else>>
+	    <!--影片结束了。-->
+		<<script>>setup.stopAVTimer();<</script>>
+
+		<<replace '#widget-area'>>
+			<<avstatup>>
+			<br>
+			<<if $masturbationorgasm gte 1>>
+				你高潮了$masturbationorgasm次，歇了一会儿后开始收拾床上的残局。
+			<<else>>
+				你克制住了自己，但内心有些压抑。<<garousal>><<gstress>><<arousal 100>><<stress 20>>
+			<</if>>
+			<span class='pink'>
+        	<<switch _av.type>>
+        	    <<case "口交">><br>你学到了一些口活技巧。<<oralskill 5>>
+        	    /*<<case "诱惑">><br><<seductionskill 5>>*/
+        	    <<case "乳交">><br>你学到了一些乳交技巧。<<chestskill 5>>
+        	    /*<<case "臀部">><br><<bottomskill 5>>*/
+        	    /*<<case "大腿">><br><<thighskill 5>>*/
+        	    <<case "手部">><br>你学到了一些手部技巧。<<handskill 5>>
+        	    <<case "肛交">><br>你学到了一些肛交技巧。<<analskill 5>>
+        	    <<case "足交">><br>你学到了一些足交技巧。<<feetskill 5>>
+        	    <<default>><br>type:_av.type
+        	<</switch>>
+			</span>
+		<</replace>>
+    <</if>>
+<</widget>>
+
 <<widget avplay>>
-    <!-- textplay 内容：这里示例，实际使用你已有的 <<textplay ...>> -->
 	<<showAvContentEx>>
     <!-- 播放/暂停按钮 -->
     <div id="play-button">
@@ -390,37 +433,69 @@
 	<<switch _playmode>>
 	<<case "view">>
 		你专注的看着影片。<<garousal>><<arousal random(1,10)>>
-		<br>
 		<<pass 30 seconds>>
 		<<if $arousal gte $arousalmax>>
-			影片的内容刺激着你，竟然让你在没有接触的情况下高潮了。
+			<br>
+			<span class='pink'>影片的内容刺激着你，竟然让你在没有接触的情况下高潮了。</span>
 			<<orgasm>>
 		<</if>>
-		<br><br>
+		<br>
 		<<link 自慰>><<set _playmode to "masturbationstart">><</link>>
 	<<case "masturbationstart">>
+		你边看影片边开始自慰。<<garousal>><<arousal `random(1,10)*10`>>
+		<br>
 		<<effects>>
 		<<masturbationstart>>
 		<<set $masturbationstat += 1>>
 		<<set _playmode to "masturbation">>
-		你边看影片边开始自慰。<<garousal>><<arousal `random(1,10)*10`>>
 		<<if $arousal gte $arousalmax>>
-			你刚摸到私处就已经高潮了。
+			<span class='pink'>你刚摸到私处就已经高潮了。</span>
 			<<orgasm>>
 		<</if>>
 	<<case "masturbation">>
-		<<effects>>
-		<<masturbationeffects>>
-		<<masturbationactions>>
+		你边看影片边自慰着。<<ggarousal>><<arousal `random(5,10)*50`>>
+		<br>
 		<<if $arousal gte $arousalmax>>
-			你边看影片边自慰，达到了高潮。
+			<br>
+			<span class='pink'>影片的内容和你的动作共同刺激着你，让你达到了高潮。</span>
 			<<orgasm>>
 		<</if>>
+		<<masturbationeffects>>
+		<<masturbationactions>>
 		<<pass 20 seconds>>
-		<br><br>
 		<<link 停止自慰>><<set _playmode to "view">><</link>>
+		<br>
 	<</switch>>
+	<br><br>
 <</widget>>
+
+:: TV Play AV EX Imagination
+    <<avvar>>
+	你正在决定臆想对象：
+	<br><br>
+	<<if $imaginationMap is undefined>>
+		<<set $imaginationMap to []>>
+		<<for _i,_npc range _av.npc>>
+			<<set $imaginationMap.push(_npc.name)>>
+		<</for>>
+	<</if>>
+	<<for _i,_npc range _av.npc>>
+		<<capture _i>>
+		_npc.name: 
+		<<listbox "$imaginationMap[_i]" autoselect>>
+			<<optionsfrom [_npc.name, "你"].concat($avnpcli, $avnpcother)>>
+		<</listbox>>
+		<</capture>>
+		<br>
+	<</for>>
+	<<set $avhidelink to true>>
+	<br><br>
+	<<link [[确定|TV Play AV EX]]>>
+		<<set $avImaginationChange to false>>
+		<<for _i,_x range $imaginationMap>>
+			<<genavnpc _i _x>>
+		<</for>>
+	<</link>>
 
 :: TV Play AV EX
 <<avvar>>
@@ -441,7 +516,7 @@
 #upper {
   display: flex;
   flex-direction: column;
-  height: 40%;           /* 保持上半部 40% */
+  height: 40%;
   position: relative;
   border-bottom: 1px solid #ccc;
 }
@@ -502,7 +577,6 @@
 <div id="container">
   <!-- 上半部 -->
   <div id="upper">
-	
   </div>
 
   <!-- 下半部 -->

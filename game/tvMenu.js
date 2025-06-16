@@ -62,8 +62,8 @@ setup.tvmodav = {
 “<<avnpc 0>>先生娇羞的表情看起来十分享受呢！看来不用问都知道我的服务让你舒服至极～，你想要射在哪里呀。”<<avnpc 1>>用挑逗的语气说道。
 `,],
             end: [
-                {text:"射到嘴里", branch:"b1", suffix:"", onclick:""},
-                {text:"射到脸上", branch:"b2", suffix:"", onclick:""},
+                {text:"射到嘴里", branch:"b1", suffix:"<<gggarousal>>", onclick:"<<arousal 4000>>"},
+                {text:"射到脸上", branch:"b2", suffix:"<<gggarousal>>", onclick:"<<arousal 4000>>"},
                 ]
             },
         b1:{
