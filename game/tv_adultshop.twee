@@ -74,7 +74,7 @@
 		<<else>>
 			_t
 		<</if>>
-		: <<print setup.tvmodav[_t].name>> <mouse class="tooltip linkBlue">(?)<span><<print setup.tvmodav[_t].desc>></span></mouse>
+		<mouse class="tooltip linkBlue">(?)<span><<print setup.tvmodav[_t].desc>></span></mouse>
 		<</capture>>
 		<br>
 	<</for>>
@@ -163,7 +163,7 @@
 		<<else>>
 			_t
 		<</if>>
-		: <<print setup.tvmodav[_t].name>> <mouse class="tooltip linkBlue">(?)<span><<print setup.tvmodav[_t].desc>></span></mouse>
+		<mouse class="tooltip linkBlue">(?)<span><<print setup.tvmodav[_t].desc>></span></mouse>
   </div>
 </div>
 		<</capture>>

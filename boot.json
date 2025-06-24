@@ -1,6 +1,6 @@
 {
     "name": "tv",
-    "version": "5.4.9.3-i",
+    "version": "5.4.9.3-k",
     "styleFileList": [],
     "scriptFileList_inject_early": [],
     "scriptFileList": [
@@ -19,6 +19,7 @@
     ],
     "imgFileList": [
 		"img/av/tv.png",
+		"img/av/4.png",
 		"img/av/2.png",
 		"img/av/3.png"
 	],
@@ -38,7 +39,7 @@
                 {
                     "passage": "Bedroom",
                     "findString": "<<tableText \"noicon\">>",
-                    "replace": "<<tableText \"noicon\">><br>一台电视就在你的床前，你可以舒服地靠在床上观看。<br>\n<<icon "tv.png">><<link [[电视|Watch TV]]>><</link>>\n<br>\n"
+                    "replace": "<<tableText \"noicon\">><br>一台电视就在你的床前，你可以舒服地靠在床上观看。<br>\n<<icon \"tv.png\">><<link [[电视|Watch TV]]>><</link>>\n<br>\n"
                 },
                 {
                     "passage": "Adult Shop",
