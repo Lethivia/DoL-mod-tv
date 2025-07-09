@@ -205,15 +205,52 @@
 	<br>
 	完成交配后，雌性会离开城市上空，在远郊的山体缝隙或断壁中筑巢，独自孵育下一代。而雄性则继续留守城市高处，重复飞翔，直到新一轮季节更替。
 <</switch>>
+	
+	<<if $deviancy gte 75>>
+		<br><br>
+		你的丰富的异种交配经验让你发现了电视节目中的大量错误，你敢肯定节目制作人一定没有你专业，至少在异种交配方面。
+	<<elseif $deviancy gte 35>>
+		<br><br>
+		你的发现电视节目中的内容似乎和你的体验有些出入。
+	<<else>>
+		<br><br>
+		你发现原来还有这么多奇妙的物种。
+	<</if>>
+	<br>
 
 	<div id='avoptions'>
+		<hr>
+		对于这个节目，你的看法是：<br>
 		<<link "抗拒">>
 			<<replace '#avoptions'>>
-				<<set $deviancy -= 2>><<trauma 40>>
+				<<if $deviancy gte 75>>
+					<<set $deviancy -= 4>><<trauma 40>>
+					你为你的荒诞过往感到不安，但你知道这将跟随你很久，你决定尝试远离这些曾经让你痴迷的东西。<<ggtrauma>>
+				<<else $deviancy gte 35>>
+					<<set $deviancy -= 2>><<trauma 20>>
+					你知道这些荒诞的行为是不正常的，虽然让你痴迷，但你觉得自己应该还能逃离。<<gtrauma>>
+				<<else>>
+					<<set $deviancy -= 1>>
+					你对电视节目内容嗤之以鼻，谁又会痴迷这些呢？
+				<</if>>
+				<br>
+				<<tvreturn>>
 			<</replace>>
-		<</link>><<llcontrol>><<gtrauma>><span class='purple'>| -异种癖</span>
-		<<link "接受">><</link>><span class='purple'>| +异种癖</span>
+		<</link>><span class='purple'>| -异种癖</span>
+		<<link "接受">>
+			<<replace '#avoptions'>>
+				<<if $deviancy gte 60>>
+					你痴迷于此，心痒难耐。电视节目对你来说就像隔靴搔痒一般，你恨不能马上钻进屏幕里来上已发，现在、立即、马上！
+				<<else $deviancy gte 35>>
+					只看电视节目似乎已经无法满足你了，你渴望用你的身体去亲自体验。
+				<<else>>
+					电视节目中的内容似乎触动了你心里的某些东西，让你蠢蠢欲动。
+				<</if>>
+				<<deviancy3>>
+				<br>
+				<<tvreturn>>
+			<</replace>>
+		<</link>><span class='purple'>| +异种癖</span>
 	</div>
 
 <br>
-<<tvreturn>>
