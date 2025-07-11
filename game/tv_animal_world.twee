@@ -223,10 +223,11 @@
 		对于这个节目，你的看法是：<br>
 		<<link "抗拒">>
 			<<replace '#avoptions'>>
+				<br>
 				<<if $deviancy gte 75>>
 					<<set $deviancy -= 4>><<trauma 40>>
-					你为你的荒诞过往感到不安，但你知道这将跟随你很久，你决定尝试远离这些曾经让你痴迷的东西。<<ggtrauma>>
-				<<else $deviancy gte 35>>
+					你为你的荒诞的过往感到不安，但你知道这将跟随你很久，你决定尝试远离这些曾经让你痴迷的东西。<<ggtrauma>>
+				<<elseif $deviancy gte 35>>
 					<<set $deviancy -= 2>><<trauma 20>>
 					你知道这些荒诞的行为是不正常的，虽然让你痴迷，但你觉得自己应该还能逃离。<<gtrauma>>
 				<<else>>
@@ -234,23 +235,23 @@
 					你对电视节目内容嗤之以鼻，谁又会痴迷这些呢？
 				<</if>>
 				<br>
-				<<tvreturn>>
 			<</replace>>
 		<</link>><span class='purple'>| -异种癖</span>
+		<br>
 		<<link "接受">>
 			<<replace '#avoptions'>>
+				<br>
 				<<if $deviancy gte 60>>
-					你痴迷于此，心痒难耐。电视节目对你来说就像隔靴搔痒一般，你恨不能马上钻进屏幕里来上已发，现在、立即、马上！
-				<<else $deviancy gte 35>>
+					你痴迷于此，心痒难耐。电视节目对你来说就像隔靴搔痒一般，你恨不能马上钻进屏幕里来上一发，现在、立即、马上！
+				<<elseif $deviancy gte 35>>
 					只看电视节目似乎已经无法满足你了，你渴望用你的身体去亲自体验。
 				<<else>>
 					电视节目中的内容似乎触动了你心里的某些东西，让你蠢蠢欲动。
 				<</if>>
 				<<deviancy3>>
 				<br>
-				<<tvreturn>>
 			<</replace>>
 		<</link>><span class='purple'>| +异种癖</span>
 	</div>
-
-<br>
+	<br>
+	<<tvreturn>>

@@ -10,7 +10,7 @@ setup.tvmodav = {
 `
 在繁华的城市中，有一座平凡的办公楼。在这座办公楼中，有一位名叫<<avnpc 1>>的女性上班族，初入职场的<<avhe 1>>对工作还不太熟悉，经常犯一些低级错误。
 
-而<<avhe 1>>的<<avnpc 0>>，一位名叫<<avnpc 0>>中年人，早已经对<<avnpc 1>>垂涎欲滴。<<avnpc 0>>是个高大威猛的人，深邃的眼神总是不经意地扫视着<<avnpc 1>>的身体。<<avhe 0>>时常以工作为理由找<<avnpc 1>>单独谈话，期待能有机会接近<<avhe 1>>。
+而<<avhe 1>>的上司，一位名叫<<avnpc 0>>中年人，早已经对<<avnpc 1>>垂涎欲滴。<<avnpc 0>>是个高大威猛的人，深邃的眼神总是不经意地扫视着<<avnpc 1>>的身体。<<avhe 0>>时常以工作为理由找<<avnpc 1>>单独谈话，期待能有机会接近<<avhe 1>>。
 
 一天，<<avnpc 0>>照旧借口需要与<<avnpc 1>>讨论公司业务，将<<avhe 1>>邀至办公室附近的咖啡厅。两人面对面坐着，空气仿佛凝固了一般，气氛变得异常紧张。
 
@@ -52,6 +52,8 @@ setup.tvmodav = {
 
 然而，其<<avhe 0>>人似乎并没有发现这段关系。<<avhe 0>>们视<<avnpc 1>>为“得力干将”，并给予了<<avhe 1>>更多的责任和权力。但<<avnpc 1>>知道，这不过是一场扭曲的游戏，<<avhe 1>>不过是<<avnpc 0>>满足欲望的玩物而已。
 `,],
+		},
+		},
 		passtime: 15,
 		cost:500,
 		type:"职场",
@@ -64,7 +66,7 @@ setup.tvmodav = {
 			* lvl：体格 1~20，数值越高越健壮
 			* */
 			{name:"田中", status:"a", pronoun:"m", gender:"m", lvl:13},
-			{name:"中原里绪", status:"a", pronoun:"f", gender:"f", lvl:7},
+			{name:"中原里绪", nickname:"里绪", status:"a", pronoun:"f", gender:"f", lvl:7},
 		]
 	},
 	"AV1":{

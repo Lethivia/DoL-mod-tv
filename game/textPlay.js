@@ -38,7 +38,7 @@
       // 4. 事件：pointerdown 控制快进/回退；在容器上 click 切换暂停
       const onPointerDown = e => {
         if (e.pointerType === 'mouse' && e.button !== 0) return;
-        TextPlay.speedFactor = e.clientX > window.innerWidth/2 ? 5 : -2;
+        TextPlay.speedFactor = e.clientX > window.innerWidth/2 ? 8 : -3;
       };
       const onPointerUp   = () => { TextPlay.speedFactor = 1; };
       const onClick       = () => { TextPlay.paused = !TextPlay.paused; };

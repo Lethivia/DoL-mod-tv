@@ -9,6 +9,7 @@
 		"game/tvMenu.js"
 	],
     "tweeFileList": [
+        "game/tv_animal_world.twee",
         "game/tv_weather_forecast.twee",
         "game/tv_recipe.twee",
         "game/tv.twee",

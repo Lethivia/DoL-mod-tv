@@ -273,7 +273,11 @@
 	<<else>>
 		<<set $avnpcindex to 0>>
 	<</if>>
-	<<print $NPCList[$avnpcindex].fullDescription>>
+	<<if _args[1] is 1 and not $avImagination>>
+		<<print _av.npc[$avnpcindex].nickname>>
+	<<else>>
+		<<print $NPCList[$avnpcindex].fullDescription>>
+	<</if>>
 <</widget>>
 
 <<widget avhe>><<silently>>
@@ -408,7 +412,7 @@
         	    <<case "手交">><br>你学到了一些手部技巧。<<handskill 5>>
         	    <<case "肛交">><br>你学到了一些肛交技巧。<<analskill 5>>
         	    <<case "足交">><br>你学到了一些足交技巧。<<feetskill 5>>
-        	    <<default>><br>type:_av.type
+        	    <<default>>
         	<</switch>>
 			</span>
 		<</replace>>

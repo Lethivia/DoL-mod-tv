@@ -50,11 +50,12 @@
 :: TV Adultshop Widget [widget]
 <<widget tvgetav>>
 	<<set _av to _args[0]>>
+	<<set _name to setup.tvmodav[_av].name>>
 	<<if $tvmod_av is undefined>>
 		<<set $tvmod_av to []>>
 	<</if>>
 	<br>
-	<span class='gold'>你获得了一张影片:《setup.tvmodav[_av].name》</span>
+	<span class='gold'>你获得了一张光碟:《_name》</span>
 	<<if $tvmod_av.includes(_av)>>
 		，但你其实已经有了。	
 	<<else>>
@@ -153,6 +154,7 @@
             <<continue>>
         <</if>>
 		<<capture _t>>
+		<<set _av to setup.tvmodav[_t]>>
 <div class="thumbnail-wrapper">
   <div class="thumbnail">
     <img @src="''+ setup.tvmodav[_t].img">
@@ -161,11 +163,11 @@
   </div>
   <div class="title">
 		<<if _args[1] is "buy">>
-			<<link [[setup.tvmodav[_t].name|TV Adultshop Buy]]>><<set $tvmod_av_buy to _t>><</link>><span class="gold">(£<<print setup.tvmodav[_t].cost>>)</span>
+			<<link [[_av.name |TV Adultshop Buy]]>><<set $tvmod_av_buy to _t>><</link>><span class="gold">(£<<print setup.tvmodav[_t].cost>>)</span>
 		<<elseif _args[1] is "play">>
-			<<link [[setup.tvmodav[_t].name|TV Play AV Enter]]>><<set $tvmod_av_play to _t>><</link>>
+			<<link [[_av.name |TV Play AV Enter]]>><<set $tvmod_av_play to _t>><</link>>
 		<<else>>
-			setup.tvmodav[_t].name
+			_av.name
 		<</if>>
 		<mouse class="tooltip linkBlue">(?)<span><<print setup.tvmodav[_t].desc>></span></mouse>
   </div>
