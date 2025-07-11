@@ -23,17 +23,18 @@
 <<link [[返回|Adult Shop]]>><</link>>
 
 :: TV Adultshop Open
-剧情1，西里斯感谢PC帮忙送PC一张影片，并表示后续进其他货
+西里斯招呼你过去。
 <br>
-<<tvgetav "HSODA-055">>
+“我最近在进一批新货，所以店里有些顾不上了，要不是有你帮忙真就忙不过来了。” <<nnpc_he "Sirris">>说到，“正好货都进的差不多了，这个算是给你的额外报酬，希望你以后也多多捧场。”
+<br>
+说完，西里斯将一张光碟递了过来。
+<br>
+<<tvgetav "AV0">>
 
 <br><br>
 <<link [[返回|Adult Shop]]>><</link>>
 
 :: TV Adultshop Buy
-剧情2，你向西里斯购买$tvmod_av_buy
-<br>
-
 <<set _av to setup.tvmodav[$tvmod_av_buy]>>
 <<set _cost to 0 - _av.cost*100>>
 <<if $money gte _av.cost*100>>
@@ -53,7 +54,7 @@
 		<<set $tvmod_av to []>>
 	<</if>>
 	<br>
-	<span class='gold'>你获得了一张影片:《_av》</span>
+	<span class='gold'>你获得了一张影片:《setup.tvmodav[_av].name》</span>
 	<<if $tvmod_av.includes(_av)>>
 		，但你其实已经有了。	
 	<<else>>
@@ -148,6 +149,9 @@
             _args[0].splice(_args[0].indexOf(_t))
             <<continue>>
         <</if>>
+        <<if setup.tvmodav[_t].hide>>
+            <<continue>>
+        <</if>>
 		<<capture _t>>
 <div class="thumbnail-wrapper">
   <div class="thumbnail">
@@ -157,11 +161,11 @@
   </div>
   <div class="title">
 		<<if _args[1] is "buy">>
-			<<link [[_t|TV Adultshop Buy]]>><<set $tvmod_av_buy to _t>><</link>><span class="gold">(£<<print setup.tvmodav[_t].cost>>)</span>
+			<<link [[setup.tvmodav[_t].name|TV Adultshop Buy]]>><<set $tvmod_av_buy to _t>><</link>><span class="gold">(£<<print setup.tvmodav[_t].cost>>)</span>
 		<<elseif _args[1] is "play">>
-			<<link [[_t|TV Play AV Enter]]>><<set $tvmod_av_play to _t>><</link>>
+			<<link [[setup.tvmodav[_t].name|TV Play AV Enter]]>><<set $tvmod_av_play to _t>><</link>>
 		<<else>>
-			_t
+			setup.tvmodav[_t].name
 		<</if>>
 		<mouse class="tooltip linkBlue">(?)<span><<print setup.tvmodav[_t].desc>></span></mouse>
   </div>

@@ -26,9 +26,9 @@
 <<avinitvar>>
 <<avvar>>
 
-你将<span class="blue">《_avname》</span>插入电视旁的光碟机，走回床边拿起遥控器。
+你将<span class="blue">《_av.name》</span>插入电视旁的光碟机，走回床边拿起遥控器。
 <br>
-从封面看来，这部影片讲的是_av.desc
+从封面看来，这部影片讲的是_av.desc，导演是_av.auth
 
 <<set $avImagination to false>>
 <br><br>
@@ -217,7 +217,7 @@
                     <<case "手部">><br>你学到了一些手部技巧。<<handskill 5>>
                     <<case "肛交">><br>你学到了一些肛交技巧。<<analskill 5>>
                     <<case "足交">><br>你学到了一些足交技巧。<<feetskill 5>>
-                    <<default>><br>type:_av.type
+                    <<default>>
                 <</switch>>
             <</if>>
 		<</if>>
@@ -236,8 +236,7 @@
     <<if $avbranch is undefined>>
         <<set $avbranch to "main">>
     <</if>>
-	<<set _avname to $tvmod_av_play>>
-	<<set _av to setup.tvmodav[_avname]>>
+	<<set _av to setup.tvmodav[$tvmod_av_play]>>
     <<set _addarousal to Math.max(10000/_av.content[$avbranch].msg.length*random(0.8, 2), 2000)>>
 <</widget>>
 
