@@ -1,6 +1,6 @@
 {
     "name": "tv",
-    "version": "5.4.9.4",
+    "version": "5.4.9.5",
     "styleFileList": [],
     "scriptFileList_inject_early": [],
     "scriptFileList": [
@@ -19,7 +19,7 @@
 		"game/tv_adultshop.twee"
     ],
     "imgFileList": [
-		"img/av/tv.png",
+		"img/misc/icon/tv.png",
 		"img/av/0.png",
 		"img/av/4.png",
 		"img/av/2.png",
