@@ -164,7 +164,7 @@ setup.tvmodav = {
 `,]}
 		},
 		passtime: 30,
-		cost:800,
+		cost:2500,
 		type:"口交",
 		npc:[
 			/*
@@ -316,7 +316,7 @@ setup.tvmodav = {
 				]}
 		},
 		passtime: 30,
-		cost:2000,
+		cost:2500,
 		type:"手交",
 		npc:[
 			/*
@@ -385,7 +385,7 @@ setup.tvmodav = {
 `,]}
 		},
 		passtime: 30,
-		cost:800,
+		cost:2500,
 		type:"口交",
 		npc:[
 			/*
