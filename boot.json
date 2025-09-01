@@ -1,6 +1,6 @@
 {
     "name": "tv",
-    "version": "5.4.9.6",
+    "version": "5.4.9.8",
     "styleFileList": [],
     "scriptFileList_inject_early": [],
     "scriptFileList": [
@@ -21,6 +21,7 @@
     "imgFileList": [
 		"img/misc/icon/tv.png",
 		"img/av/0.png",
+		"img/av/5.png",
 		"img/av/4.png",
 		"img/av/2.png",
 		"img/av/3.png"
