@@ -335,7 +335,7 @@ setup.tvmodav = {
 		desc: "男主角与花狞舞是一对青梅竹马，但花狞舞的控制欲很强，总喜欢欺负男主角，故事发生在男主角在房间自慰时，被花狞舞碰巧看到的那一天...",
 		auth: "如同",
 		img: "img/av/5.png",
-		passtime: 90,
+		passtime: 100,
 		content: {
             main: {
                 msg: [`
