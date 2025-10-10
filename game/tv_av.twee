@@ -476,6 +476,9 @@
 
 :: TV Play AV EX Imagination
     <<avvar>>
+	<!-- 如果 _av.customnpc 不存在则创建为数组 -->
+	<<if typeof _av.customnpc === "undefined">><<set _av.customnpc to []>><</if>>
+
 	你正在决定臆想对象：
 	<br><br>
 	<<if $imaginationMap is undefined>>
@@ -488,11 +491,35 @@
 		<<capture _i>>
 		_npc.name: 
 		<<listbox "$imaginationMap[_i]" autoselect>>
-			<<optionsfrom [_npc.name, "你"].concat($avnpcli, $avnpcother)>>
+			<<optionsfrom [_npc.name, "你"].concat($avnpcli, $avnpcother, _av.customnpc)>>
 		<</listbox>>
 		<</capture>>
 		<br>
 	<</for>>
+	<br>
+
+	自定义臆想对象： 
+	<<textbox "_npcInput" "" autofocus>>
+	<<link [[添加|TV Play AV EX Imagination]]>>
+		<<if typeof _npcInput !== "undefined" && _npcInput.trim() !== "">>
+	
+			<!-- 可选：避免重复添加（若允许重复可移除此判断） -->
+			<<if !_av.customnpc.includes(_npcInput)>>
+				<<set _av.customnpc.push(_npcInput)>>
+			<</if>>
+	
+			<<set _npcInput to "">>
+		<</if>>
+	<</link>>
+	&nbsp;<!-- 用空格分隔按钮 -->
+	<<link [[删除|TV Play AV EX Imagination]]>>
+		<<if typeof _av !== "undefined" && typeof _av.customnpc !== "undefined" && _npcInput.trim() !== "">>
+			<<if _av.customnpc.includes(_npcInput)>>
+				<<set _av.customnpc.splice(_av.customnpc.indexOf(_npcInput), 1)>>
+			<</if>>
+		<</if>>
+	<</link>>
+
 	<<set $avhidelink to true>>
 	<br><br>
 	<<link [[确定|TV Play AV EX]]>>
